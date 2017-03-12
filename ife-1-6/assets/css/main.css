@@ -6,7 +6,7 @@ body {
 
 .body-main {
     width: 980px;
-    height: 1386px;
+    height: auto;
     margin: 0 auto;
     position: relative;
     background-color: white;
@@ -14,11 +14,10 @@ body {
 
 .index {
     width: 892px;
-    height: 1264px;
 }
 
 .index-top {
-    height: 620px;
+    position: relative;
 }
 
 /*index-top-left*/
@@ -26,6 +25,7 @@ body {
     height: 100%;
     width: 641px;
     padding-top: 33px;
+    display: inline-block;
 }
 
 .top-left-img {
@@ -47,7 +47,6 @@ body {
 
 /*index-left-content*/
 .index-left-content {
-    height: 286px;
     padding-top: 42px;
     position: relative;
 }
@@ -57,66 +56,145 @@ body {
     display: inline-block;
 }
 
-.index-left-content > ul .left-content1 {
+.index-left-content > ul .left-content-left {
     width: 228px;
 }
 
-.index-left-content > ul .left-content2 {
+.index-left-content > ul .left-content-center {
     width: 204px;
     margin-left: 30px;
     margin-right: 30px;
 }
 
-.index-left-content > ul .left-content3 {
+.index-left-content > ul .left-content-right {
     width: 134px;
 }
 
 .public-left-content-h {
-    font-size: 16px;
-    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+    font: 12px/16px "Microsoft YaHei", Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-decoration: underline;
 }
 
-.index-left-content ul .left-content1 > h1 {
+.index-left-content ul .left-content-left > a {
     color: #418c59;
 }
 
-.index-left-content ul .left-content2 > h1 {
+.index-left-content ul .left-content-center > a {
     color: #d2994f;
 }
 
-.index-left-content ul .left-content3 > h1 {
+.index-left-content ul .left-content-right > a {
     color: #cc7680;
 }
 
 .index-left-content ul .plblic-left-content-p {
-    font-family: SimSun, Arial, Helvetica, sans-serif;
+    font: 12px/16px SimSun, Arial, Helvetica, sans-serif;
     color: #767777;
-    line-height: 16px;
 }
 
-.index-left-content ul .left-content3 > p {
+.index-left-content ul .left-content-right > p {
     line-height: 21px;
 }
 
-.index-left-content ul .left-content3 > ul {
+.index-left-content ul .left-content-right > ul {
     margin-top: 30px;
-    font-family: Regular, Arial, Helvetica, sans-serif;
-    line-height: 16px;
+    font: 12px/16px Regular, Arial, Helvetica, sans-serif;
     background: #ffffff;
     filter: alpha(opacity:70);
     opacity: 0.7;
 }
 
-.index-left-content ul .left-content3 ul span {
+.index-left-content ul .left-content-right ul span {
     font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
     color: #cd4a48;
     font-style: italic;
 }
 
 /*index-top-right*/
+.index-top-right {
+    width: 203px;
+    display: inline-block;
+    float: right;
+    margin-top: 33px;
+    border-top:2px solid #cc8091;
+}
+.index-top-right1 {
+    margin-top: 14px;
+}
+
+.index-top-right1 .top-right1-p1,.index-top-right1 .top-right1-p2 {
+    font: 24px/30px "Microsoft YaHei", Arial, Helvetica, sans-serif;
+}
+.index-top-right1 .top-right1-p1 span{
+    border-bottom: 2px solid #000;
+    width: 90px;
+    display: block;
+}
+.index-top-right1 .top-right1-p2 span {
+    border-bottom: 2px solid #000;
+    width: 180px;
+    display: block;
+}
+.index-top-right1 .top-right1-p1:first-letter{
+    font-size: 30px;
+}
+.index-top-right2{
+    margin-top: 20px;
+    font: 116px/116px "Microsoft YaHei", Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: #75b86b;
+}
+.index-top-right3{
+    position: relative;
+    color: #cc8091;
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+}
+.top-right3-left {
+    font-size: 55px;
+    line-height: 55px;
+    float: left;
+}
+.top-right3-right {
+    float: left;
+    margin-top: 17px;
+}
+.top-right3-right .right3-right-top{
+    font-size: 21px;
+    line-height: 21px;
+}
+.top-right3-right .right3-right-bottom{
+    font-size: 12px;
+    line-height: 12px;
+    color: #000;
+}
+
+/*index-bottom*/
+.index-bottom {
+    margin-top: 74px;
+    position: relative;
+}
 
 
+/*index-bottom-left*/
+.index-bottom-left{
+    width: 415px;
+    display: inline-block;
+}
+
+
+
+/*index-bottom-right*/
+.index-bottom-right{
+    width: 458px;
+    height: auto;
+    display: inline-block;
+    margin-right: 0px;
+
+}
+.index-bottom-right .bottom-top img{
+    width: 458px;
+    height: 275px;
+}
 
 
