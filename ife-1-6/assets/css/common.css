@@ -1,0 +1,37 @@
+.public-center{
+    margin: 0 auto;
+    position: relative;
+}
+.public-header{
+    width: 892px;
+    height: 60px;
+    border-bottom-color: #938e8c;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+.public-header-link{
+    height: 60px;
+    width: 110px;
+    margin-bottom: 0;
+    background-color: #d45d5c;
+    position: relative;
+}
+
+.public-header a {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    color: white;
+}
+.public-header p {
+    position: absolute;
+    right:1px;
+    bottom: 5px;
+    color: red;
+}
+
+.public-footer{
+    width: 892px;
+    height: 60px;
+    background-color: cornflowerblue;
+}

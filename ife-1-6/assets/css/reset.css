@@ -1,0 +1,27 @@
+body,div,dd,dl,dt,h1,h2,h3,h4,h5,h6,input,ul,ol,a,p,textarea ,form{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+ul li ,ol li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+img{
+    border: none;
+}
+.clearfloat:after,.clearfloat:before {
+    content:"";
+    display: table;
+}
+.clearfloat:after{
+    clear: both;
+    overflow: hidden;
+}
