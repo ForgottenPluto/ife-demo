@@ -33,5 +33,5 @@
 .public-footer{
     width: 892px;
     height: 60px;
-    background-color: cornflowerblue;
+    border-top: 1px solid #938e8c;
 }
