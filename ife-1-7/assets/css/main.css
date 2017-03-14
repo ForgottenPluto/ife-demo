@@ -1,0 +1,264 @@
+body {
+    background-color: #000;
+    font-family: Heiti, “黑体”, “Microsoft YaHei”, “微软雅黑”, Helvetica, Tahoma, Arial, STXihei, “华文细黑”, SimSun, “宋体”, sans-serif;
+}
+
+.index {
+    margin: 0 auto;
+    width: 1280px;
+    min-width: 1280px;
+    height: auto;
+    background-color: #fff;
+}
+
+/*index-nav*/
+.index-nav {
+    width: 100%;
+    height: 56px;
+}
+
+.index-nav-book {
+    float: left;
+    width: 37px;
+    margin-top: 10px;
+    margin-left: 59px;
+}
+
+.index-nav-text {
+    float: left;
+    font-size: 21px;
+    margin-left: 10px;
+    line-height: 56px;
+}
+
+.index-nav-right {
+    float: right;
+    width: 500px;
+}
+
+.index-nav-right ul li {
+    float: left;
+    width: 70px;
+    font: 14px/56px “Microsoft YaHei”, “微软雅黑”;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.index-nav-right ul li a:link, .index-nav-right ul li a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.index-nav-right ul li a:hover, .index-nav-right ul li a:active {
+    text-decoration: none;
+    color: #e74f4d;
+    border-bottom: 3px solid #e74f4d;
+}
+
+.index-nav button {
+    float: right;
+    width: 65px;
+    height: 56px;
+    font: 14px/14px “Microsoft YaHei”, “微软雅黑”;
+    background-color: #fff;
+    border: none;
+    margin-right: 20px;
+    color: #e74f4d;
+}
+
+.index-nav button img {
+    vertical-align: bottom;
+}
+
+/*index-banner*/
+.index-banner {
+    width: 100%;
+    height: 691px;
+    background-image: url("../imgs/demo1.png");
+}
+
+.index-banner-text1 {
+    font: 60px/60px “Microsoft YaHei”, “微软雅黑”;
+    color: #fff;
+    float: left;
+    display: block;
+    margin-left: 144px;
+    margin-top: 229px;
+}
+
+.index-banner-text2 {
+    font: 21px/30px “Microsoft YaHei”, “微软雅黑”;
+    display: block;
+    width: 300px;
+    color: #fffdfd;
+    margin-left: 144px;
+    margin-top: 310px;
+
+}
+
+.index-banner-button {
+    width: 332px;
+    height: 65px;
+    font: 30px/65px “Microsoft YaHei”, “微软雅黑”;
+    background-color: #e7504d;
+    color: #fff;
+    border: none;
+    margin-top: 68px;
+    margin-left: 144px;
+}
+
+/*index-banner-two*/
+.index-banner-two {
+    width: 100%;
+    height: 250px;
+    background-color: #fff;
+}
+.index-banner-two .banner-two1 li{
+    float: left;
+    width: 50px;
+    margin: 50px 135px 0 135px;
+
+}
+
+.index-banner-two .banner-two2 li{
+    float: left;
+    width: 154px;
+    height: 52px;
+    text-align: center;
+    font: 14px/18px Heiti, “黑体”;
+    margin: 47px 83px 0  83px;
+    color: #767777;
+}
+.index-banner-two .banner-two2 li span{
+    content: "";
+    height: 52px;
+    border-left: 2px solid #767777;
+}
+.index-banner-two .banner-two2-border li{
+    float: left;
+    width: 325px;
+    height: 52px;
+    border-right: 2px solid #767777;
+    position: relative;
+    top:-52px;
+}
+
+/*index-title*/
+.index-title {
+    width: 100%;
+    height: 360px;
+    background-color: #edecec;
+    text-align: center;
+}
+
+.index-title p {
+    font-size: 54px;
+    line-height: 57px;
+    color: #a1a1a1;
+}
+.index-title img {
+    margin-top: 90px;
+    margin-bottom: 48px;
+    width: 113px;
+    height: 109px;
+    position: relative;
+    left: -470px;
+
+}
+
+/*index-map-search*/
+.index-map-search {
+    height: 341px;
+    width: 100%;
+    background-image: url("../imgs/map.png");
+    text-align: center;
+}
+.map-search-p1{
+    margin-top: 50px;
+    font: 21px/41px “Microsoft YaHei”, “微软雅黑”;
+    color: #fff;
+}
+
+.map-search-p2 {
+    border-top: 2px solid #fff;
+    width: 30px;
+    margin: 0 auto;
+}
+.map-search-p3{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font: 12px/31px “Microsoft YaHei”, “微软雅黑”;
+    color: #fff;
+}
+.search-form-wrapper{
+    font: 12px/26px “Microsoft YaHei”, “微软雅黑”;
+    color: #323333;
+}
+#search-country{
+    width: 238px;
+    height: 35px;
+    margin-right: 28px;
+}
+
+#search-province{
+    width: 238px;
+    height: 35px;
+    margin-right: 28px;
+}
+#search-city{
+    width: 238px;
+    height: 35px;
+    margin-right: 28px;
+}
+#search-button{
+    width: 238px;
+    height: 35px;
+}
+
+/*index-map-activity*/
+.index-map-activity {
+    height: 570px;
+    width: 100%;
+    background-color: #f8f8f8;
+}
+
+/*index-activity-guild*/
+。index-activity-guild {
+    height: 566px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+/*index-banner-three*/
+.index-banner-three {
+    height: 521px;
+    width: 100%;
+}
+
+/*index-banner-title*/
+.index-banner-title {
+    height: 300px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+/*index-activity-join*/
+.index-activity-join {
+    height: 450px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+/*index-link*/
+.index-link {
+    height: 362px;
+    width: 100%;
+    background-color: #33363f;
+}
+
+/*index-footer*/
+.index-footer {
+    height: 55px;
+    width: 100%;
+    background-color: #303039;
+}
