@@ -1,6 +1,6 @@
 body {
     background-color: #000;
-    font-family: Heiti, “黑体”, “Microsoft YaHei”, “微软雅黑”, Helvetica, Tahoma, Arial, STXihei, “华文细黑”, SimSun, “宋体”, sans-serif;
+    font-family: Heiti, "黑体", "Microsoft YaHei", "微软雅黑", Helvetica, Tahoma, Arial, STXihei, "华文细黑", SimSun, "宋体", sans-serif;
 }
 
 .index {
@@ -39,7 +39,7 @@ body {
 .index-nav-right ul li {
     float: left;
     width: 70px;
-    font: 14px/56px “Microsoft YaHei”, “微软雅黑”;
+    font: 14px/56px "Microsoft YaHei", "微软雅黑";
     text-align: center;
     margin-right: 30px;
 }
@@ -59,7 +59,7 @@ body {
     float: right;
     width: 65px;
     height: 56px;
-    font: 14px/14px “Microsoft YaHei”, “微软雅黑”;
+    font: 14px/14px "Microsoft YaHei", "微软雅黑";
     background-color: #fff;
     border: none;
     margin-right: 20px;
@@ -78,7 +78,7 @@ body {
 }
 
 .index-banner-text1 {
-    font: 60px/60px “Microsoft YaHei”, “微软雅黑”;
+    font: 60px/60px "Microsoft YaHei", "微软雅黑";
     color: #fff;
     float: left;
     display: block;
@@ -87,7 +87,7 @@ body {
 }
 
 .index-banner-text2 {
-    font: 21px/30px “Microsoft YaHei”, “微软雅黑”;
+    font: 21px/30px "Microsoft YaHei", "微软雅黑";
     display: block;
     width: 300px;
     color: #fffdfd;
@@ -99,7 +99,7 @@ body {
 .index-banner-button {
     width: 332px;
     height: 65px;
-    font: 30px/65px “Microsoft YaHei”, “微软雅黑”;
+    font: 30px/65px "Microsoft YaHei", "微软雅黑";
     background-color: #e7504d;
     color: #fff;
     border: none;
@@ -113,34 +113,37 @@ body {
     height: 250px;
     background-color: #fff;
 }
-.index-banner-two .banner-two1 li{
+
+.index-banner-two .banner-two1 li {
     float: left;
     width: 50px;
     margin: 50px 135px 0 135px;
 
 }
 
-.index-banner-two .banner-two2 li{
+.index-banner-two .banner-two2 li {
     float: left;
     width: 154px;
     height: 52px;
     text-align: center;
-    font: 14px/18px Heiti, “黑体”;
-    margin: 47px 83px 0  83px;
+    font: 14px/18px Heiti, "黑体";
+    margin: 47px 83px 0 83px;
     color: #767777;
 }
-.index-banner-two .banner-two2 li span{
+
+.index-banner-two .banner-two2 li span {
     content: "";
     height: 52px;
     border-left: 2px solid #767777;
 }
-.index-banner-two .banner-two2-border li{
+
+.index-banner-two .banner-two2-border li {
     float: left;
     width: 325px;
     height: 52px;
     border-right: 2px solid #767777;
     position: relative;
-    top:-52px;
+    top: -52px;
 }
 
 /*index-title*/
@@ -156,6 +159,7 @@ body {
     line-height: 57px;
     color: #a1a1a1;
 }
+
 .index-title img {
     margin-top: 90px;
     margin-bottom: 48px;
@@ -173,9 +177,10 @@ body {
     background-image: url("../imgs/map.png");
     text-align: center;
 }
-.map-search-p1{
+
+.map-search-p1 {
     margin-top: 50px;
-    font: 21px/41px “Microsoft YaHei”, “微软雅黑”;
+    font: 21px/41px "Microsoft YaHei", "微软雅黑";
     color: #fff;
 }
 
@@ -184,33 +189,38 @@ body {
     width: 30px;
     margin: 0 auto;
 }
-.map-search-p3{
+
+.map-search-p3 {
     margin-top: 20px;
     margin-bottom: 40px;
-    font: 12px/31px “Microsoft YaHei”, “微软雅黑”;
+    font: 12px/31px "Microsoft YaHei", "微软雅黑";
     color: #fff;
 }
-.search-form-wrapper{
-    font: 12px/26px “Microsoft YaHei”, “微软雅黑”;
+
+.search-form-wrapper {
+    font: 12px/26px "Microsoft YaHei", "微软雅黑";
     color: #323333;
 }
-#search-country{
+
+#search-country {
     width: 238px;
     height: 35px;
     margin-right: 28px;
 }
 
-#search-province{
+#search-province {
     width: 238px;
     height: 35px;
     margin-right: 28px;
 }
-#search-city{
+
+#search-city {
     width: 238px;
     height: 35px;
     margin-right: 28px;
 }
-#search-button{
+
+#search-button {
     width: 238px;
     height: 35px;
 }
@@ -220,13 +230,79 @@ body {
     height: 570px;
     width: 100%;
     background-color: #f8f8f8;
+    text-align: center;
+}
+
+.map-activity-content {
+    display: inline-block;
+    width: 225px;
+    height: 390px;
+    margin: 100px 18px auto 18px;
+
+}
+
+.index-map-activity h1 {
+    font: 12px/26px "Microsoft YaHei", "微软雅黑";
+}
+
+.index-map-activity p {
+    font: 12px/26px "Microsoft YaHei", "微软雅黑";
+    color: #767777;
+}
+
+.content-lg {
+    font: 20px/26px "Microsoft YaHei", "微软雅黑" !important;
+    letter-spacing: 25px;
 }
 
 /*index-activity-guild*/
-。index-activity-guild {
+.index-activity-guild {
     height: 566px;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #fff;
+}
+
+.index-activity-guild > img {
+    height: 566px;
+    width: 852px;
+}
+
+.activity-guild-content {
+    width: 428px;
+    float: right;
+    height: 566px;
+    text-align: center;
+}
+
+.activity-guild-content h1 {
+    font: 20px/30px SimSun,  "宋体";
+    color: #000;
+    font-weight: bold;
+    margin-top: 165px;
+}
+
+.activity-guild-content h1 span {
+    color: #e7504d;
+}
+
+.activity-guild-content p {
+    font: 12px/30px SimSun,  "宋体";
+    color: #aaaaaa;
+    width: 288px;
+    margin: 15px auto 0 70px;
+    text-align: left;
+}
+
+.activity-guild-content a {
+    width: 106px;
+    height: 34px;
+    font: 12px/34px "Microsoft YaHei", "微软雅黑";
+    color: #e25c60;
+    border: 1px solid #e25c60;
+    margin: 35px auto 0 164px;
+}
+.activity-guild-content img{
+    margin-top: 10px;
 }
 
 /*index-banner-three*/
@@ -234,31 +310,257 @@ body {
     height: 521px;
     width: 100%;
 }
-
+.index-banner-three img{
+    float: left;
+    width: 429px;
+    height:521px;
+}
+.banner-three-text1{
+    width:425px;
+    height: 100%;
+    float: left;
+    color: #fff;
+    background-color: #e7504d;
+    text-align: center;
+}
+.banner-three-text2{
+    width:425px;
+    height: 100%;
+    float: left;
+    background-color: #fff;
+    text-align: center;
+}
+.index-banner-three p{
+    margin-top: 170px;
+    font: 21px/30px  Heiti, "黑体";
+}
+.index-banner-three .banner-three-text1 span{
+    width: 30px;
+    border-top: 2px solid #fff;
+    display: block;
+    margin: 25px auto;
+}
+.index-banner-three .banner-three-text2 span{
+    width: 30px;
+    border-top: 2px solid #000;
+    display: block;
+    margin: 25px auto;
+}
+.index-banner-three .banner-three-text1 a:link,.index-banner-three .banner-three-text1 a:visited{
+    width: 169px;
+    height: 43px;
+    margin: 0 auto;
+    text-decoration: none;
+    font: 21px/43px Heiti, "黑体";
+    color: #fff;
+    border: 2px solid #fff;
+}
+.index-banner-three .banner-three-text2 a:link,.index-banner-three .banner-three-text2 a:visited{
+    width: 169px;
+    height: 43px;
+    margin: 0 auto;
+    text-decoration: none;
+    font: 21px/43px Heiti, "黑体";
+    color: #e7504d;
+    border: 2px solid #e7504d;
+}
 /*index-banner-title*/
 .index-banner-title {
-    height: 300px;
+    height: 282px;
     width: 100%;
     background-color: #ffffff;
+    text-align: center;
 }
-
+.index-banner-title h1{
+    font: 21px/30px Heiti, "黑体";
+    margin-top: 118px;
+}
+.index-banner-title span{
+    width: 30px;
+    border-top: 2px solid #e74f4d;
+    display: block;
+    margin: 8px auto;
+}
+.index-banner-title p{
+    width: 423px;
+    height: 34px;
+    font: 12px/18px "Microsoft YaHei", "微软雅黑";
+    color: #aaaaaa;
+    margin: 0 auto;
+}
 /*index-activity-join*/
 .index-activity-join {
     height: 450px;
     width: 100%;
     background-color: #ffffff;
+    padding-left: 138px;
 }
+.activity-join-right{
+    width: 660px;
+    height: auto;
+    display: inline-block;
+    margin-left: 55px;
+}
+
+
+
+.input-name,.input-age,.input-phone,.input-address{
+    width: 310px;
+    height: 40px;
+    float: left;
+    background-color: #edecee;
+    font: 12px/12px SimSun, "宋体";
+    margin-left: 18px;
+    margin-top: 14px;
+    border: 2px solid #edecee;
+    color: #000;
+}
+.input-text{
+    width: 638px;
+    height: 121px;
+    background-color: #edecee;
+    font: 12px/12px SimSun, "宋体";
+    margin-left: 18px;
+    margin-top: 14px;
+    border: 2px solid #edecee;
+    color: #A2A0A1;
+}
+.input-submit{
+    width: 638px;
+    height: 40px;
+    float: right;
+    background-color: #edecee;
+    border: none;
+    font: 12px/12px SimSun, "宋体";
+    color: #000;
+    position: relative;
+    top: 10px;
+    left: -4px;
+}
+
+
+
+
+.activity-join-left{
+    float: left;
+    width: 292px;
+    height: auto;
+    margin-top: 18px;
+
+}
+.activity-join-left h1{
+    width: 100%;
+    font: 14px/14px Heiti, "黑体";
+    display: inline-block;
+
+}
+.activity-join-left p{
+    width: 100%;
+    max-height: 42px;
+    font: 12px/21px SimSun, "宋体";
+    margin-top: 26px;
+    color: #bcbbba;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /*white-space: nowrap;*/
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+
+}
+.activity-join-left button{
+    float: right;
+    background-color: #fff;
+    border: none;
+    font: 12px/12px SimSun, "宋体";
+}
+
+
+
+
+
+
 
 /*index-link*/
 .index-link {
     height: 362px;
     width: 100%;
     background-color: #33363f;
+    text-align: center;
+    position: relative;
+
+}
+.index-link h1{
+    font:21px/21px Heiti, "黑体";
+    color: #fff;
+    margin: 90px auto 10px auto;
+    display: inline-block;
+}
+.index-link p{
+    width: 470px;
+    font:12px/18px SimSun, "宋体";
+    color: #fff;
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+.index-link form{
+    height: 40px;
+    padding: auto;
+    margin-top: 30px;
 }
 
+
+
+.index-link form input{
+    width: 430px;
+    height: 40px;
+    font: 14px/40px "Microsoft YaHei", "微软雅黑";
+    color: #aaa;
+    background-color: #fff;
+
+}
+
+.index-link form input+input{
+    width: 80px;
+    height: 40px;
+    font: 15px/40px "Microsoft YaHei", "微软雅黑";
+    color: #fff;
+    background-color: #aaa;
+    position: absolute;
+}
+
+
+
+
+
+
+
+.index-link ul li{
+    display: inline-block;
+    margin-top: 35px;
+}
 /*index-footer*/
 .index-footer {
     height: 55px;
     width: 100%;
     background-color: #303039;
+    text-align: left;
+}
+.index-footer p{
+    width: 68px;
+    height: auto;
+    font: 12px/55px SimSun, "宋体";
+    margin-left: 97px;
+    color: #fff;
+    display: inline-block;
+}
+.index-footer a:link, .index-footer a:visited, .index-footer a:hover, .index-footer a:active{
+    width: 68px;
+    float: right;
+    display: inline-block;
+    font: 12px/55px SimSun, "宋体";
+    color: #fff;
+    margin-right: 39px;
+    text-decoration: none;
 }

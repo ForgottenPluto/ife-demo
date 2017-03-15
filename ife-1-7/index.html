@@ -7,7 +7,7 @@
     <title>Title</title>
 </head>
 <body>
-<div class="index">
+<div class="index" id="index-top">
     <div class="index-nav cleanfloat">
         <div class="index-nav-book">
             <img src="assets/imgs/book-small.png" alt="book picture"></div>
@@ -63,6 +63,7 @@
                 <option value="China" selected="selected">中国</option>
             </select>
             <select name="province" id="search-province">
+
                 <option value="北京市">北京市</option>
                 <option value="天津市">天津市</option>
                 <option value="河北省">河北省</option>
@@ -70,28 +71,112 @@
                 <option value="内蒙古自治区">内蒙古自治区</option>
                 <option value="辽宁省">辽宁省</option>
             </select>
-            <select name="city" id="search-city" >
+            <select name="city" id="search-city">
                 <option value="城市">城市</option>
             </select>
             <button id="search-button">搜索</button>
         </form>
     </div>
-    <div class="index-map-activity">
+    <div class="index-map-activity cleanfloat">
+        <div class="map-activity-content">
+            <img src="assets/imgs/demo8.png" alt="demo8 picture">
+            <h1>北京活动</h1>
+            <p>新社区大联盟</p>
+        </div>
+        <div class="map-activity-content"><h1></h1>
+            <h1 class="content-lg">上海活动</h1>
+            <p>夜上海新景观探索</p>
+            <img src="assets/imgs/demo9.png" alt="demo9 picture">
+        </div>
 
+        <div class="map-activity-content">
+            <img src="assets/imgs/demo10.png" alt="demo10 picture"
+            >
+            <h1>深圳活动</h1>
+            <p>全新海岸线观点站</p>
+        </div>
+        <div class="map-activity-content">
+            <img src="assets/imgs/demo11.png" alt="demo11 picture">
+            <h1>香港活动</h1>
+            <p>奢侈消费大派送</p>
+        </div>
     </div>
     <div class="index-activity-guild">
         <img src="assets/imgs/demo2.png" alt="demo2 picture">
+        <div class="activity-guild-content">
+            <h1>新世界/<span>01</span></h1>
+            <p>新世界是个新世界新世界是个新世界新世界是个新世界 新世界是个新世界新世界是个新世界新世界是个新世界 新世界是个新世界新世界是个新世界新世界是个新世界 新世界是个新世界新世界是个新世界</p>
+            <a href="javascript:void(0)">更多详情</a>
+            <img src="assets/imgs/demo12.png" alt="demo12 picture">
+        </div>
     </div>
     <div class="index-banner-three">
+        <div class="banner-three-text1">
+            <p>新时代<br>
+            关于爱生活的我们</p>
+            <span></span>
+            <a href="javascript:void(0)">查看更多</a>
+        </div>
+        <div class="banner-three-text2">
+            <p>新时代<br>
+            关于爱生活的我们</p>
+            <span></span>
+            <a href="javascript:void(0)">查看更多</a>
+        </div>
         <img src="assets/imgs/demo3.png" alt="demo3 picture">
     </div>
     <div class="index-banner-title">
         <h1>成为我们的志愿者</h1>
+        <span></span>
         <p>新世界的大家庭需要每一个爱生活的人的加入，如果你够年轻，有梦想，有激情 那就不要犹豫，快来加入我们，成为改变所有人生活的人 </p>
     </div>
-    <div class="index-activity-join"></div>
-    <div class="index-link"></div>
-    <div class="index-footer"></div>
+    <div class="index-activity-join">
+        <form action="#" class="activity-join-right clearfloat">
+            <input class="input-name" type="text" placeholder="   姓名:">
+            <input class="input-age" type="text" placeholder="   年龄:">
+            <input class="input-phone" type="text" placeholder="   联系方式:">
+            <input class="input-address" type="text" placeholder="   联系地址">
+            <textarea class="input-text" name="input-text" id="input-text" cols="30" rows="10">请简单描述你梦想的生活:</textarea>
+            <input class="input-submit" type="submit" value="提交申请">
+        </form>
+        <div class="activity-join-left clearfloat">
+            <div>
+                <h1>新世界志愿者协议</h1>
+                <p>加入新世界志愿者的人员必须遵守中华人民共共和国的 相关法律法规，并且本着平等资源的原则加入新世界志愿者的人员必须遵守中华人民共共和国的 相关法律法规，并且本着平等资源的原则加入新世界志愿者的人员必须遵守中华人民共共和国的 相关法律法规，并且本着平等资源的原则</p>
+                <button>∨ more</button>
+            </div>
+            <div>
+                <h1>新世界志愿者权利</h1>
+                <p>加入新世界志愿者的人员必须遵守中华人民共共和国的 相关法律法规，并且本着平等资源的原则加入新世界 </p>
+                <button>∨ more</button>
+            </div>
+            <div>
+                <h1>更多条款</h1>
+                <p></p>
+                <button>∨ more</button>
+            </div>
+        </div>
+    </div>
+    <div class="index-link clearfloat">
+        <h1>联系我们</h1>
+        <p>为了更好的获取我们最新的产品资讯，您可以留下您的电子邮箱快速订阅我们的产品资讯 也可以通过以下任何方式关注我们动态</p>
+        <form  action="#" class="clearfloat">
+            <input type="text" placeholder="   someone@email.com">
+            <input type="submit" value="提交">
+        </form>
+
+        <ul>
+            <li><a href="javascript:void (0)"><img src="assets/imgs/demo13.png" alt="logo1"></a></li>
+            <li><a href="javascript:void (0)"><img src="assets/imgs/demo14.png" alt="logo2"></a></li>
+            <li><a href="javascript:void (0)"><img src="assets/imgs/demo15.png" alt="logo3"></a></li>
+            <li><a href="javascript:void (0)"><img src="assets/imgs/demo16.png" alt="logo4"></a></li></ul>
+
+    </div>
+    <div class="index-footer">
+        <p>@2016新世界</p>
+        <a href="#index-top">Back to top</a>
+
+    </div>
 </div>
 
 </body>
