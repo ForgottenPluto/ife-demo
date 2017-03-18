@@ -4,71 +4,45 @@ body {
 }
 
 .index {
-    margin: 0 auto;
-    width: 1280px;
-    min-width: 1280px;
-    height: auto;
+    /*margin: 0 auto;*/
+    max-width: 1280px;
     background-color: #fff;
 }
 
 /*index-nav*/
-/*.index-nav {*/
-    /*width: 100%;*/
-    /*height: 56px;*/
-/*}*/
-
-/*.index-nav-book {*/
-    /*float: left;*/
-    /*width: 37px;*/
-    /*margin-top: 10px;*/
-    /*margin-left: 59px;*/
-/*}*/
-
-/*.index-nav-text {*/
-    /*float: left;*/
+/*.index-nav p{*/
     /*font-size: 21px;*/
     /*margin-left: 10px;*/
-    /*line-height: 56px;*/
+    /*line-height: 21px;*/
+    /*margin-top: 10px;*/
 /*}*/
 
-/*.index-nav-right {*/
-    /*float: right;*/
-    /*width: 500px;*/
-/*}*/
+.index-nav-right ul li {
+    font: 14px/.1em "Microsoft YaHei", "微软雅黑";
 
-/*.index-nav-right ul li {*/
-    /*float: left;*/
-    /*width: 70px;*/
-    /*font: 14px/56px "Microsoft YaHei", "微软雅黑";*/
-    /*text-align: center;*/
-    /*margin-right: 30px;*/
-/*}*/
+}
+.index-nav-right ul li a:link, .index-nav-right ul li a:visited {
+    text-decoration: none;
+    color: #000;
+}
 
-/*.index-nav-right ul li a:link, .index-nav-right ul li a:visited {*/
-    /*text-decoration: none;*/
-    /*color: #000;*/
-/*}*/
+.index-nav-right ul li a:hover, .index-nav-right ul li a:active {
+    text-decoration: none;
+    color: #e74f4d;
+    border-bottom: 3px solid #e74f4d;
+}
 
-/*.index-nav-right ul li a:hover, .index-nav-right ul li a:active {*/
-    /*text-decoration: none;*/
-    /*color: #e74f4d;*/
-    /*border-bottom: 3px solid #e74f4d;*/
-/*}*/
+.index-nav button {
+    font: 14px/.1em "Microsoft YaHei", "微软雅黑";
+    background-color: #fff;
+    border: none;
+    color: #e74f4d;
+    margin-top: 10px;
+}
 
-/*.index-nav button {*/
-    /*float: right;*/
-    /*width: 65px;*/
-    /*height: 56px;*/
-    /*font: 14px/14px "Microsoft YaHei", "微软雅黑";*/
-    /*background-color: #fff;*/
-    /*border: none;*/
-    /*margin-right: 20px;*/
-    /*color: #e74f4d;*/
-/*}*/
-
-/*.index-nav button img {*/
-    /*vertical-align: bottom;*/
-/*}*/
+.index-nav button img {
+    vertical-align: bottom;
+}
 
 /*index-banner*/
 .index-banner {

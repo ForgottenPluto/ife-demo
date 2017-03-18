@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
     <title>ife-1-7-bootstrap</title>
 </head>
 <body>
-<div class="index container" id="index-top">
-    <div class="row index-nav clearfix nav navbar-default">
-        <div class="col-md-1 index-nav-book ">
-            <img src="assets/imgs/book-small.png" alt="book picture"></div>
-        <div class="col-md-1 index-nav-text">
-            <p>新世界</p>
-        </div>
+<div class="index container-fluid" id="index-top">
+    <div class="row clearfix nav navbar-default index-nav">
+        <div class="navbar-header col-md-6">
 
+                <img class="col-md-1 img-responsive" src="assets/imgs/book-small.png" alt="book picture">
+                <p class="col-md-2">新世界</p>
+                <button type="button" id="nav-button" class="navbar-toggle" data-toggle="collapse" data-target="#harder-nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+        </div>
         <div class="index-nav-right col-md-5">
             <ul class="nav nav-tabs">
                 <li><a href="javascript:void(0)">首页</a></li>
@@ -116,13 +119,13 @@
     <div class="index-banner-three">
         <div class="banner-three-text1">
             <p>新时代<br>
-            关于爱生活的我们</p>
+                关于爱生活的我们</p>
             <span></span>
             <a href="javascript:void(0)">查看更多</a>
         </div>
         <div class="banner-three-text2">
             <p>新时代<br>
-            关于爱生活的我们</p>
+                关于爱生活的我们</p>
             <span></span>
             <a href="javascript:void(0)">查看更多</a>
         </div>
@@ -163,7 +166,7 @@
     <div class="index-link clearfloat">
         <h1>联系我们</h1>
         <p>为了更好的获取我们最新的产品资讯，您可以留下您的电子邮箱快速订阅我们的产品资讯 也可以通过以下任何方式关注我们动态</p>
-        <form  action="#" class="clearfloat">
+        <form action="#" class="clearfloat">
             <input type="text" placeholder="   someone@email.com">
             <input type="submit" value="提交">
         </form>
@@ -172,7 +175,8 @@
             <li><a href="javascript:void (0)"><img src="assets/imgs/demo13.png" alt="logo1"></a></li>
             <li><a href="javascript:void (0)"><img src="assets/imgs/demo14.png" alt="logo2"></a></li>
             <li><a href="javascript:void (0)"><img src="assets/imgs/demo15.png" alt="logo3"></a></li>
-            <li><a href="javascript:void (0)"><img src="assets/imgs/demo16.png" alt="logo4"></a></li></ul>
+            <li><a href="javascript:void (0)"><img src="assets/imgs/demo16.png" alt="logo4"></a></li>
+        </ul>
 
     </div>
     <div class="index-footer">
