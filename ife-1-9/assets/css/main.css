@@ -1,5 +1,128 @@
 @charset "utf-8";
+/*public*/
+.public-center {
+  margin: 0 auto;
+}
+/*topnav*/
+.topnav {
+  margin: 0 auto;
+  width: 1280px;
+  height: 55px;
+  background-color: #2189bf;
+  border-bottom: 1px solid #4a9fca;
+}
+.top-left-ico {
+  width: 36px;
+  height: 36px;
+  margin: 10px 50px;
+  float: left;
+  overflow: hidden;
+}
+.top-form {
+  float: right;
+  width: 470px;
+  height: 56px;
+  position: relative;
+}
+.top-form .inputIcon-button {
+  position: absolute;
+  width: 19px;
+  background-color: #fff;
+  border: none;
+  padding: 0;
+  top: 20px;
+  left: 5px;
+  outline: none;
+  font: 12px/12px Heiti, "Microsoft YaHei", "微软雅黑", serif;
+}
+.top-form .top-form-input {
+  float: left;
+  width: 314px;
+  height: 26px;
+  margin: 14px 0;
+  border: 1px solid #acd3e7;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  font: 12px/12px Heiti, "黑体", serif;
+  padding-left: 25px;
+}
+.top-form .join-ico {
+  float: left;
+  margin: 20px 4px auto 20px;
+}
+.top-form .join {
+  float: left;
+  margin: 18px 0;
+  background-color: #2189bf;
+  border: none;
+  color: #fff;
+}
 /*index*/
-body {
-  font-size: 12px;
+.index {
+  width: 1280px;
+  height: auto;
+  margin: 0 auto;
+}
+.leftSideBar {
+  width: 259px;
+  height: 1209px;
+  background-color: #2a2e3d;
+  border-right: 1px solid #525561;
+  border-bottom: 1px solid #6d707a;
+  font: 16px/20px Heiti, "黑体", serif;
+  color: #fff;
+}
+.joinMan {
+  width: auto;
+  height: 98px;
+  padding: 18px 18px 22px 45px;
+}
+.pictureBox {
+  width: 58px;
+  height: 58px;
+  -moz-border-radius: 60px;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+  border: 2px solid #dfdedf;
+  padding: 2px;
+  display: inline-block;
+  text-align: center;
+}
+.pictureBox img {
+  width: 50px;
+  height: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.joinName {
+  width: 120px;
+  height: 60px;
+  font: 16px/60px Heiti, "黑体", serif;
+  float: right;
+  text-align: left;
+}
+/*manData*/
+.manData {
+  width: auto;
+  height: 52px;
+  color: #6e8095;
+}
+.manData span {
+  font: 16px/18px Heiti, "黑体", serif;
+}
+.manData p {
+  font: SimSun, "宋体", 12px, 12px;
+}
+.collect {
+  display: inline-block;
+  padding-right: 30px;
+  padding-left: 62px;
+  border-right: 3px solid #323647;
+}
+.fans {
+  display: inline-block;
+  padding-left: 30px;
 }

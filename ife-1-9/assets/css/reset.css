@@ -18,31 +18,42 @@ p,
 input,
 textarea,
 form {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
 }
+
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
+
 textarea {
-  border: none;
+    border: none;
 }
+
 ul li,
 ol li {
-  list-style: none;
+    list-style: none;
 }
+
 img {
-  border: none;
-  display: block;
+    border: none;
+    display: block;
 }
+
 .clearfix:before,
 .clearfix:after {
-  content: "";
-  display: table;
+    content: "";
+    display: table;
 }
+
 .clearfix:before {
-  clear: both;
-  overflow: hidden;
+    clear: both;
+    overflow: hidden;
+}
+
+body {
+    background-color: #000000;
+    font-family: Heiti, "黑体", "Microsoft YaHei", "微软雅黑", Helvetica, Tahoma, Arial, STXihei, "华文细黑", SimSun, "宋体", sans-serif;
 }
