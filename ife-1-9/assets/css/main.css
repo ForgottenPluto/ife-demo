@@ -128,18 +128,25 @@
 }
 /*manFolder*/
 .manFolder {
+  width: 259px;
+  height: auto;
   padding-left: 45px;
   font: 12px/12px Heiti, "黑体", serif;
 }
-.publicButton {
-  width: 20px;
-  height: 17px;
-  margin: 17px auto;
-  color: #6e8095;
+.manFolder nav > ul > li {
+  margin: 14px 0 34px 0;
 }
 .publicButton a {
   display: inline;
   margin-left: 10px;
+}
+.publicButton a:link,
+.publicButton a:visited {
+  color: #6e8095;
+}
+.publicButton a:hover,
+.publicButton a:active {
+  color: #fff;
 }
 .publicButton img {
   width: 12px;
@@ -147,4 +154,26 @@
   display: inline;
   overflow: hidden;
   background-color: #2a2e3d;
+}
+.publicVice-Button {
+  margin: 19px 22px 0 22px;
+}
+.publicVice-Button img {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  overflow: hidden;
+}
+.publicVice-Button a {
+  display: inline-block;
+  margin-left: 10px;
+  text-align: start;
+}
+.publicVice-Button a:link,
+.publicVice-Button a:visited {
+  color: #6e8095;
+}
+.publicVice-Button a:hover,
+.publicVice-Button a:active {
+  color: #fff;
 }
