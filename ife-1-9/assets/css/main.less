@@ -170,6 +170,7 @@
 }
 
 /*manFolder*/
+
 .manFolder {
   .size(259px, auto);
   padding-left: 45px;
@@ -177,34 +178,48 @@
   & nav > ul > li {
     margin: 14px 0 34px 0;
   }
+  //默认子文件显示none
+  & > nav > ul > li > ul {
+    display: none;
+  }
 }
 
 .publicButton {
   & a {
-    display: inline;
+    display: inline-block;
     margin-left: 10px;
+    vertical-align: 1px;
 
-    &:link,&:visited{
+    &:link, &:visited {
       color: #6e8095;
 
     }
-    &:hover, &:active {
+    &:hover{
+      color: #6e8095;
+    }
+    &:active {
       color: #fff;
     }
 
   }
   & img {
     .size(12px, 12px);
-    display: inline;
+    display: inline-block;
     overflow: hidden;
     background-color: #2a2e3d;
-
   }
 
 }
 
+.publicButton-On {
+  & a {
+    &:link, &:visited {
+      color: #fff !important;
+    }
+  }
+}
+
 .publicVice-Button {
-  //.size(259px, auto);
   margin: 19px 22px 0 22px;
   & img {
     .size(12px, 12px);
@@ -214,20 +229,45 @@
   & a {
     display: inline-block;
     margin-left: 10px;
-    text-align: start;
+    vertical-align: 1px;
 
     &:link, &:visited {
       color: #6e8095;
+    }
+    &:hover{
+      color: #6e8095;
+    }
+    &:active {
+      color: #fff;
+    }
+  }
+}
+
+.publicViceButton-On {
+
+  & img {
+    .size(12px, 12px);
+    display: inline-block;
+    overflow: visible;
+  }
+  & a {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: 1px;
+
+    &:link, &:visited {
+      color: #fff;
     }
 
     &:hover, &:active {
       color: #fff;
     }
   }
-
 }
 
+.current {
 
+}
 
 
 

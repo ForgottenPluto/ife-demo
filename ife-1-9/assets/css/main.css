@@ -136,24 +136,34 @@
 .manFolder nav > ul > li {
   margin: 14px 0 34px 0;
 }
+.manFolder > nav > ul > li > ul {
+  display: none;
+}
 .publicButton a {
-  display: inline;
+  display: inline-block;
   margin-left: 10px;
+  vertical-align: 1px;
 }
 .publicButton a:link,
 .publicButton a:visited {
   color: #6e8095;
 }
-.publicButton a:hover,
+.publicButton a:hover {
+  color: #6e8095;
+}
 .publicButton a:active {
   color: #fff;
 }
 .publicButton img {
   width: 12px;
   height: 12px;
-  display: inline;
+  display: inline-block;
   overflow: hidden;
   background-color: #2a2e3d;
+}
+.publicButton-On a:link,
+.publicButton-On a:visited {
+  color: #fff !important;
 }
 .publicVice-Button {
   margin: 19px 22px 0 22px;
@@ -167,13 +177,34 @@
 .publicVice-Button a {
   display: inline-block;
   margin-left: 10px;
-  text-align: start;
+  vertical-align: 1px;
 }
 .publicVice-Button a:link,
 .publicVice-Button a:visited {
   color: #6e8095;
 }
-.publicVice-Button a:hover,
+.publicVice-Button a:hover {
+  color: #6e8095;
+}
 .publicVice-Button a:active {
+  color: #fff;
+}
+.publicViceButton-On img {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  overflow: visible;
+}
+.publicViceButton-On a {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: 1px;
+}
+.publicViceButton-On a:link,
+.publicViceButton-On a:visited {
+  color: #fff;
+}
+.publicViceButton-On a:hover,
+.publicViceButton-On a:active {
   color: #fff;
 }
