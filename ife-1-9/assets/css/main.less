@@ -108,6 +108,7 @@
 
 .leftSideBar {
   .size(259px, 1209px);
+  display: inline-block;
   background-color: #2a2e3d;
   .border(right, #525561);
   .border(bottom, #6d707a, 1px);
@@ -173,10 +174,10 @@
 
 .manFolder {
   .size(259px, auto);
-  padding-left: 45px;
   .public-font(hei, 12px, 12px);
   & nav > ul > li {
-    margin: 14px 0 34px 0;
+    .size(100%,auto);
+    padding: 14px 46px;
   }
   //默认子文件显示none
   & > nav > ul > li > ul {
@@ -208,7 +209,9 @@
     overflow: hidden;
     background-color: #2a2e3d;
   }
-
+}
+.viceIcoLeft{
+  margin-right: 8px;
 }
 
 .publicButton-On {
@@ -265,16 +268,35 @@
   }
 }
 
-.current {
-
+.publicDocument-Button{
+  margin: 19px 22px 0 41px;
+  display: none;
 }
 
+.publicDocumentButton-On{
+  & a {
+    &:link, &:visited {
+      color: #fff !important;
+    }
+  }
+}
 
-
-
-
-
-
+/*indexMain*/
+.indexMain{
+  .size(1021px,auto);
+  float: right;
+  //display: inline-block;
+}
+.indexFooter{
+  .size(100%,30px);
+  padding: 9px 30px;
+  background-color: #fff;
+}
+.indexContent{
+  .size(100%,1179px);
+  padding: 19px 59px;
+  background-color: #eeeeed;
+}
 
 
 
