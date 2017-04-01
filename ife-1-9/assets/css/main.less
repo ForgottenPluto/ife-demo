@@ -3,7 +3,6 @@
 @font-r: serif;
 
 /*public*/
-
 .public-font(hei,@script: 12px,@height: 12px) {
   font: @script/@height Heiti, "黑体", @font-r;
 }
@@ -176,7 +175,7 @@
   .size(259px, auto);
   .public-font(hei, 12px, 12px);
   & nav > ul > li {
-    .size(100%,auto);
+    .size(100%, auto);
     padding: 14px 46px;
   }
   //默认子文件显示none
@@ -195,7 +194,7 @@
       color: #6e8095;
 
     }
-    &:hover{
+    &:hover {
       color: #6e8095;
     }
     &:active {
@@ -210,7 +209,8 @@
     background-color: #2a2e3d;
   }
 }
-.viceIcoLeft{
+
+.viceIcoLeft {
   margin-right: 8px;
 }
 
@@ -237,7 +237,7 @@
     &:link, &:visited {
       color: #6e8095;
     }
-    &:hover{
+    &:hover {
       color: #6e8095;
     }
     &:active {
@@ -268,12 +268,12 @@
   }
 }
 
-.publicDocument-Button{
+.publicDocument-Button {
   margin: 19px 22px 0 41px;
   display: none;
 }
 
-.publicDocumentButton-On{
+.publicDocumentButton-On {
   & a {
     &:link, &:visited {
       color: #fff !important;
@@ -282,29 +282,250 @@
 }
 
 /*indexMain*/
-.indexMain{
-  .size(1021px,auto);
+.indexMain {
+  .size(1021px, auto);
   float: right;
   //display: inline-block;
 }
-.indexFooter{
-  .size(100%,30px);
+
+.indexFooter {
+  .size(100%, 30px);
   padding: 9px 30px;
   background-color: #fff;
 }
-.indexContent{
-  .size(100%,1179px);
-  padding: 19px 59px;
+
+.indexContent {
+  .size(100%, 1179px);
+  padding: 19px 50px;
   background-color: #eeeeed;
 }
 
+/*更改下拉符号，兼容未解决*/
 
+/*.publicSelectCSS{
+  border: solid 1px #cbcbcb !important;
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  background: url("../imags/selectico.png") no-repeat scroll right center transparent;
+}*/
+//select::-ms-expand { display: none; }
+/*结束*/
+.publicLine1 {
+  height: 23px;
+  margin: 5px 0 0 16px;
+  .public-font(hei, 12px, 23px);
+  .border(all, #cbcbcb, 1px);
+  color: #000;
+  //.publicSelectCSS;
+}
 
+/*mainLine1*/
+.mainLine1 {
+  .size(890px, 85px);
+  .public-center;
+  .public-font(hei, 12px, 23px);
+  .border(all, #dddee0);
+  color: #aaa;
+  padding: 9px 29px;
+  background-color: #fff;
+  & .line1QueryWrappet {
+    float: left;
+    & select {
+      width: 68px;
+      .publicLine1;
+    }
+  }
+  & .line1DealWrappet {
+    width: 190px;
+    margin-left: 38px;
+    float: left;
+    & label {
+      float: left;
+      width: 162px;
+    }
 
+    & select {
+      width: 118px;
+      .publicLine1;
 
+    }
+    & input {
+      float: right;
+      margin-top: -17px;
+      color: #fff;
+    }
+  }
+  & .line1DateWrappet {
+    margin-left: 32px;
+    width: 300px !important;
+    float: left;
+    & select {
+      .publicLine1
+    }
+    & .line1Date {
+      .size(120px, 23px);
+      .border(all, #cbcbcb, 1px);
+      margin-left: 16px;
+      margin-right: 6px;
+    }
+    & .line1Time {
+      width: 69px;
+    }
+    & .line1People {
+      width: 69px;
+      margin-right: 6px;
+    }
+    & .line1Number {
+      width: 120px;
+    }
 
+  }
+  & .line1Search {
+    float: left;
+    .public-font(hei, 12px, 23px);
+    margin: 19PX 28px;
+    .size(50px, 25px);
+    background-color: #388ac1;
+    color: #fff;
+    border: none;
 
+  }
+}
 
+/*mainLine2*/
+.publicLine2Wrapper {
+  background-color: #fff;
+  height: 65px;
+  .border(top, #dddee0);
+  .border(left, #dddee0);
+  margin-right: 5px;
+  float: left;
+}
+
+.mainLine2 {
+  margin: 9px auto;
+  .size(890px, 65px);
+  .public-font(wei);
+  & .line2ButtonLeft {
+    .publicLine2Wrapper;
+    width: 29px;
+    overflow: hidden;
+  }
+  & .line2Deal {
+    float: left;
+    & li {
+      font-weight: bold;
+      padding-top: 14px;
+      text-align: center;
+      .publicLine2Wrapper;
+      width: 110px;
+      & span {
+        margin-left: 5px;
+      }
+      & div {
+        margin: 13px auto;
+        display: block;
+        font-size: 21px;
+        font-weight: normal;
+        color: #ec6500;
+        & img {
+          display: inline-block;
+        }
+        & p {
+          display: inline;
+        }
+      }
+
+    }
+  }
+  & .line2ButtonRight {
+    .publicLine2Wrapper;
+    width: 29px;
+    overflow: hidden;
+  }
+  & .line2HistorySearch {
+    float: left;
+    padding: 16px 19px;
+    .size(129px, 65px);
+    .border(top, #dddee0);
+    .border(left, #dddee0);
+    background-color: #fff;
+    & img {
+      display: inline-block;
+    }
+    & label {
+      margin-top: 10px;
+      display: block;
+      width: 50px;
+      float: right;
+    }
+  }
+}
+
+/*mainLine3*/
+.mainLine3 {
+  .public-center;
+  .size(100%, auto);
+  .public-font(hei);
+  margin-top: 22px;
+  @line3Color: #43b29e; //临时变量
+  @line3HeightTop:100%;
+  @line3Height: 10%; //临时变量
+  & > p {
+    .public-font(wei);
+    margin-left: 15px;
+  }
+  & nav {
+    margin-top: 7px;
+    & ul {
+      & li {
+        float: left;
+        .size(200px, 70px);
+        margin: 0 15px;
+        .border(all, #d3d4d8, 1px);
+        background-color: #fff;
+        .public-font(hei);
+        & .line3LeftBorder {
+          float: left;
+          .size(3px, 68px);
+          background-color: @line3Color; //后期js控制颜色
+        }
+        & .line3Content {
+          .size(105px, 68px);
+          margin-left: 8px;
+          float: left;
+          //margin-bottom: 17px;
+          & .line3ContentTop {
+            display: block;
+            margin-bottom: 15px;
+            margin-top: 20px;
+          }
+          & .line3ContentBottom {
+            color: #aaaaaa;
+            font-size: 10px;
+            display: block;
+
+          }
+        }
+        & .line3RightWrapper {
+          .size(60px, 56px);
+          float: right;
+          background-color: @line3Color;
+          margin-right: 15px;
+          margin-bottom: 12px;
+          & .line3RightHeight {
+            height:  @line3HeightTop - @line3Height; //后期js控制高度
+            background-color: #FFF; //后期js控制颜色
+          }
+
+        }
+
+      }
+    }
+  }
+
+}
 
 
 

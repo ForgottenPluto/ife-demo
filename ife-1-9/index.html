@@ -13,7 +13,8 @@
         <button class="inputIcon-button">
             <img src="assets/imags/inputIco.png" alt="#">
         </button>
-        <input class="top-form-input" type="text" name="#">
+        <label for="top-input"></label>
+        <input class="top-form-input" id="top-input" type="text" name="#">
         <img class="join-ico" src="assets/imags/toprightico.png" alt="#">
         <button class="join">登录</button>
     </form>
@@ -109,31 +110,122 @@
             <p>C站 / 个人报表/文件一/文档一</p>
         </div>
         <div class="indexContent">
-            <div class="mainWrappet">
-                <form class="mainLine1">
-                    <div>
-                        <label for="line1Query">查询项<select name="query" id="line1Query">
-                                <option value="第一项">第一项</option>
-                                <option value="第二项">第二项</option></select>
+            <form class="mainLine1 clearfix">
+                <div class="line1QueryWrappet clearfix">
+                    <label for="line1Query">查询项<select name="query" id="line1Query">
+                        <option value="1">第一项</option>
+                        <option value="2">第二项</option>
+                    </select>
+                    </label>
+                </div>
+                <div class="line1DealWrappet clearfix">
+                    <label for="line1Buyer">买方<select name="小A" id="line1Buyer">
+                        <option value="小A">小A</option>
+                    </select>
+                    </label>
+                    <label for="line1Seller">卖方<select name="小C" id="line1Seller">
+                        <option value="小C">小C</option>
+                    </select>
+                    </label>
+                    <input type="image" src="assets/imags/buttonSwop.png" alt="#">
+                </div>
+                <div class="line1DateWrappet clearfix">
+                    <div class="line1DateTop">
+                        <label for="line1Date">日期<input type="date" id="line1Date" class="line1Date"></label>
+                        <label for="line1Time">总耗时<select name="time" id="line1Time" class="line1Time">
+                            <option value="8">8日</option>
+                        </select>
                         </label>
                     </div>
-                    <div>
-                        <label for="line1Buyer">买方<select name="小A" id="line1Buyer">
-                            <option value="小A">小A</option></select>
+                    <div class=" line1DateBottom">
+                        <label for="line1People">人数<select name="people" id="line1People" class="line1People">
+                            <option value="10">10人</option>
+                        </select>
                         </label>
-                        <label for="line1Seller">卖方<select name="小C" id="line1Seller">
-                        <option value="小A">小C</option></select>
+                        <label for="ling1Number">成交项<select name="number" id="ling1Number" class="line1Number">
+                            <option value="10">10项</option>
+                        </select>
                         </label>
-                        <img src="" alt="#">
                     </div>
-                    <div></div>
-                    <div></div>
-                </form>
-                <div class="mainLine2"></div>
-                <div class="mainLine3"></div>
-                <div class="mainLine4"></div>
-                <div class="mainLine5"></div>
+                </div>
+                <button class="line1Search">搜索</button>
+            </form>
+            <div class="mainLine2 clearfix">
+                <input class="line2ButtonLeft" type="image" src="assets/imags/leftico.png">
+                <nav class="line2Deal">
+                    <ul>
+                        <li><p>10:00<span>am</span></p>
+                            <div><img src="assets/imags/moneyico.png" alt="#">
+                                <p>1200</p></div>
+                        </li>
+                        <li><p>11:00<span>am</span></p>
+                            <div><img src="assets/imags/moneyico.png" alt="#">
+                                <p>1300</p></div>
+                        </li>
+                        <li><p>12:00<span>am</span></p>
+                            <div><img src="assets/imags/moneyico.png" alt="#">
+                                <p>1200</p></div>
+                        </li>
+                        <li><p>01:00<span>pm</span></p>
+                            <div><img src="assets/imags/moneyico.png" alt="#">
+                                <p>1400</p></div>
+                        </li>
+                        <li><p>02:00<span>pm</span></p>
+                            <div><img src="assets/imags/moneyico.png" alt="#">
+                                <p>1500</p></div>
+                        </li>
+                        <li><p>03:00<span>pm</span></p>
+                            <div><img src="assets/imags/moneyico.png" alt="#">
+                                <p>1800</p></div>
+                        </li>
+                    </ul>
+                </nav>
+                <input class="line2ButtonRight" type="image" src="assets/imags/rightico.png">
+                <div class="line2HistorySearch">
+                    <input id="historySearch" type="image" src="assets/imags/dateico.png"><label for="historySearch">历史查询</label>
+                </div>
             </div>
+            <div class="mainLine3 clearfix">
+                <p>2016年4月份统计</p>
+                <nav>
+                    <ul>
+                        <li>
+                            <div class="line3LeftBorder"></div>
+                            <div class="line3Content">
+                                <p class="line3ContentTop">133311</p>
+                                <p class="line3ContentBottom">成交量</p>
+                            </div>
+                            <div class="line3RightWrapper"><div class="line3RightHeight"></div></div>
+                        </li>
+                        <li>
+                            <div class="line3LeftBorder"></div>
+                            <div class="line3Content">
+                                <p class="line3ContentTop">133311</p>
+                                <p class="line3ContentBottom">成交量</p>
+                            </div>
+                            <div class="line3RightWrapper"><div class="line3RightHeight"></div></div>
+                        </li>
+                        <li>
+                            <div class="line3LeftBorder"></div>
+                            <div class="line3Content">
+                                <p class="line3ContentTop">133311</p>
+                                <p class="line3ContentBottom">成交量</p>
+                            </div>
+                            <div class="line3RightWrapper"><div class="line3RightHeight"></div></div>
+                        </li>
+                        <li>
+                            <div class="line3LeftBorder"></div>
+                            <div class="line3Content">
+                                <p class="line3ContentTop">133311</p>
+                                <p class="line3ContentBottom">成交量</p>
+                            </div>
+                            <div class="line3RightWrapper"><div class="line3RightHeight"></div></div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="mainLine4"></div>
+            <div class="mainLine5"></div>
         </div>
     </div>
 </div>

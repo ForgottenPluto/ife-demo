@@ -236,6 +236,247 @@
 .indexContent {
   width: 100%;
   height: 1179px;
-  padding: 19px 59px;
+  padding: 19px 50px;
   background-color: #eeeeed;
+}
+/*更改下拉符号，兼容未解决*/
+/*.publicSelectCSS{
+  border: solid 1px #cbcbcb !important;
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  background: url("../imags/selectico.png") no-repeat scroll right center transparent;
+}*/
+/*结束*/
+.publicLine1 {
+  height: 23px;
+  margin: 5px 0 0 16px;
+  font: 12px/23px Heiti, "黑体", serif;
+  border: 1px solid #cbcbcb;
+  color: #000;
+}
+/*mainLine1*/
+.mainLine1 {
+  width: 890px;
+  height: 85px;
+  margin: 0 auto;
+  font: 12px/23px Heiti, "黑体", serif;
+  border: 1px solid #dddee0;
+  color: #aaa;
+  padding: 9px 29px;
+  background-color: #fff;
+}
+.mainLine1 .line1QueryWrappet {
+  float: left;
+}
+.mainLine1 .line1QueryWrappet select {
+  width: 68px;
+  height: 23px;
+  margin: 5px 0 0 16px;
+  font: 12px/23px Heiti, "黑体", serif;
+  border: 1px solid #cbcbcb;
+  color: #000;
+}
+.mainLine1 .line1DealWrappet {
+  width: 190px;
+  margin-left: 38px;
+  float: left;
+}
+.mainLine1 .line1DealWrappet label {
+  float: left;
+  width: 162px;
+}
+.mainLine1 .line1DealWrappet select {
+  width: 118px;
+  height: 23px;
+  margin: 5px 0 0 16px;
+  font: 12px/23px Heiti, "黑体", serif;
+  border: 1px solid #cbcbcb;
+  color: #000;
+}
+.mainLine1 .line1DealWrappet input {
+  float: right;
+  margin-top: -17px;
+  color: #fff;
+}
+.mainLine1 .line1DateWrappet {
+  margin-left: 32px;
+  width: 300px !important;
+  float: left;
+}
+.mainLine1 .line1DateWrappet select {
+  height: 23px;
+  margin: 5px 0 0 16px;
+  font: 12px/23px Heiti, "黑体", serif;
+  border: 1px solid #cbcbcb;
+  color: #000;
+}
+.mainLine1 .line1DateWrappet .line1Date {
+  width: 120px;
+  height: 23px;
+  border: 1px solid #cbcbcb;
+  margin-left: 16px;
+  margin-right: 6px;
+}
+.mainLine1 .line1DateWrappet .line1Time {
+  width: 69px;
+}
+.mainLine1 .line1DateWrappet .line1People {
+  width: 69px;
+  margin-right: 6px;
+}
+.mainLine1 .line1DateWrappet .line1Number {
+  width: 120px;
+}
+.mainLine1 .line1Search {
+  float: left;
+  font: 12px/23px Heiti, "黑体", serif;
+  margin: 19PX 28px;
+  width: 50px;
+  height: 25px;
+  background-color: #388ac1;
+  color: #fff;
+  border: none;
+}
+/*mainLine2*/
+.publicLine2Wrapper {
+  background-color: #fff;
+  height: 65px;
+  border-top: 1px solid #dddee0;
+  border-left: 1px solid #dddee0;
+  margin-right: 5px;
+  float: left;
+}
+.mainLine2 {
+  margin: 9px auto;
+  width: 890px;
+  height: 65px;
+  font: 12px/12px Heiti, "Microsoft YaHei", "微软雅黑", serif;
+}
+.mainLine2 .line2ButtonLeft {
+  background-color: #fff;
+  height: 65px;
+  border-top: 1px solid #dddee0;
+  border-left: 1px solid #dddee0;
+  margin-right: 5px;
+  float: left;
+  width: 29px;
+  overflow: hidden;
+}
+.mainLine2 .line2Deal {
+  float: left;
+}
+.mainLine2 .line2Deal li {
+  font-weight: bold;
+  padding-top: 14px;
+  text-align: center;
+  background-color: #fff;
+  height: 65px;
+  border-top: 1px solid #dddee0;
+  border-left: 1px solid #dddee0;
+  margin-right: 5px;
+  float: left;
+  width: 110px;
+}
+.mainLine2 .line2Deal li span {
+  margin-left: 5px;
+}
+.mainLine2 .line2Deal li div {
+  margin: 13px auto;
+  display: block;
+  font-size: 21px;
+  font-weight: normal;
+  color: #ec6500;
+}
+.mainLine2 .line2Deal li div img {
+  display: inline-block;
+}
+.mainLine2 .line2Deal li div p {
+  display: inline;
+}
+.mainLine2 .line2ButtonRight {
+  background-color: #fff;
+  height: 65px;
+  border-top: 1px solid #dddee0;
+  border-left: 1px solid #dddee0;
+  margin-right: 5px;
+  float: left;
+  width: 29px;
+  overflow: hidden;
+}
+.mainLine2 .line2HistorySearch {
+  float: left;
+  padding: 16px 19px;
+  width: 129px;
+  height: 65px;
+  border-top: 1px solid #dddee0;
+  border-left: 1px solid #dddee0;
+  background-color: #fff;
+}
+.mainLine2 .line2HistorySearch img {
+  display: inline-block;
+}
+.mainLine2 .line2HistorySearch label {
+  margin-top: 10px;
+  display: block;
+  width: 50px;
+  float: right;
+}
+/*mainLine3*/
+.mainLine3 {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  font: 12px/12px Heiti, "黑体", serif;
+  margin-top: 22px;
+}
+.mainLine3 > p {
+  font: 12px/12px Heiti, "Microsoft YaHei", "微软雅黑", serif;
+  margin-left: 15px;
+}
+.mainLine3 nav {
+  margin-top: 7px;
+}
+.mainLine3 nav ul li {
+  float: left;
+  width: 200px;
+  height: 70px;
+  margin: 0 15px;
+  border: 1px solid #d3d4d8;
+  background-color: #fff;
+  font: 12px/12px Heiti, "黑体", serif;
+}
+.mainLine3 nav ul li .line3LeftBorder {
+  float: left;
+  width: 3px;
+  height: 68px;
+  background-color: #43b29e;
+}
+.mainLine3 nav ul li .line3Content {
+  width: 105px;
+  height: 68px;
+  margin-left: 8px;
+  float: left;
+}
+.mainLine3 nav ul li .line3Content .line3ContentTop {
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+.mainLine3 nav ul li .line3Content .line3ContentBottom {
+  color: #aaaaaa;
+  font-size: 10px;
+  display: block;
+}
+.mainLine3 nav ul li .line3RightWrapper {
+  width: 60px;
+  height: 56px;
+  float: right;
+  background-color: #43b29e;
+  margin-right: 15px;
+  margin-bottom: 12px;
+}
+.mainLine3 nav ul li .line3RightWrapper .line3RightHeight {
+  height: 90%;
+  background-color: #FFF;
 }
