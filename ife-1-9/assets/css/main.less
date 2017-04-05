@@ -22,34 +22,36 @@
   -webkit-border-radius: @size;
   border-radius: @size;
 }
+
 .public-radius-topright(@size: 5px) {
   -moz-border-radius-topright: @size;
   -webkit-border-top-right-radius: @size;
   border-top-right-radius: @size;
 }
+
 .public-radius-topleft(@size: 5px) {
   -moz-border-radius-topleft: @size;
   -webkit-border-top-left-radius: @size;
   border-top-left-radius: @size;
 }
 
-.border(left, @color , @size: 1px) {
+.border(left, @color: #000 , @size: 1px) {
   border-left: @size solid @color;
 }
 
-.border(right ,@color, @size: 1px) {
+.border(right ,@color: #000, @size: 1px) {
   border-right: @size solid @color;
 }
 
-.border(top, @color, @size: 1px) {
+.border(top, @color: #000, @size: 1px) {
   border-top: @size solid @color;
 }
 
-.border(bottom, @color, @size: 1px) {
+.border(bottom, @color: #000, @size: 1px) {
   border-bottom: @size solid @color;
 }
 
-.border(all,@color, @size: 1px) {
+.border(all,@color: #000, @size: 1px) {
   border: @size solid @color;
 }
 
@@ -542,8 +544,7 @@
 /*mainLine4 and mainLine5 wrapper*/
 .publicLine45Wrapper {
   height: 355px;
-  background-image: url("../imags/publicLineBack.png");
-  background-repeat: repeat-x;
+  background: url("../imags/publicLineBack.png") repeat-x;
   overflow: hidden;
   .public-radius(5px);
   border-top: solid #d0d2d5 1px;
@@ -599,7 +600,7 @@
             color: #000;
 
           }
-          &:hover,& :active {
+          &:hover, & :active {
             .size(82px, 31px);
             color: #000;
             background-color: #fff;
@@ -639,7 +640,92 @@
     margin-top: 13px;
     width: 350px;
     .publicLine45Wrapper;
+    & h2 {
+      .public-font(wei);
+      color: #c3c2c2;
+      margin-top: 4px;
+      text-indent: 16px;
+    }
+    & p {
+      .public-font(wei);
+      color: #535353;
+      margin-top: 7px;
+      text-indent: 16px;
+    }
+    & .ling4MainWrapper {
+      padding-top: 14px;
+      padding-left: 35px;
+    }
+    & .line4TopWrapper {
+      width: 280px;
+      .border(bottom, #e8e8e8, 1px);
+      padding-bottom: 9px;
+    }
+    & .line4MiddleWrapper {
+      width: 314px;
+      .border(bottom, #e8e8e8, 1px);
+      & .middleLeftWrapper {
+        .size(95px, 45px);
+        padding-bottom: 9px;
+        .border(right, #e8e8e8, 1px);
+        display: inline-block;
+      }
+      & .middleRightWrapper {
+        display: inline-block;
+        padding-bottom: 9px;
+      }
+    }
+    & .middleBottomWrapper {
+      .size(280px, 146px);
+      .border(bottom, #e8e8e8, 1px);
+      & textarea {
+        margin-left: 15px;
+        margin-top: 7px;
+        .public-font(wei);
+        color: #535353;
+        resize: none;
+      }
+    }
+    & .line4RightBotton {
+      float: right;
+      .public-font(hei, 12px, 23px);
+      margin: -15px 35px;
+      .size(50px, 25px);
+      background-color: #388ac1;
+      color: #fff;
+      border: none;
 
+    }
+    & .ChckeBoxWrapper {
+      .public-font(wei);
+      margin-top: 6px;
+      color: #c3c2c2;
+      position: relative;
+      & .inputCheck {
+        //visibility: hidden;
+        //position: absolute;
+        display: inline-block;
+        opacity: 0;
+        &:checked + label {
+          background: url("../imags/inputback.png") no-repeat;
+        }
+      }
+      & .check1 {
+        position: absolute;
+        left: -1px;
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        background: url("../imags/inputbackoff.png") no-repeat;
+        background-size: cover;
+      }
+
+      & span {
+        margin-top: -13px;
+        display: block;
+        margin-left: 22px;
+      }
+    }
   }
 
 }
@@ -664,6 +750,67 @@
   }
 }
 
+.publicLin5Select {
+  height: 20px;
+  .public-font(hei, 12px, 20px);
+  .border(all, #cdcece);
+  //margin-right: 6px;
+  text-align: center;
+
+}
+
+.line5MenologyWrapper {
+  .size(100%, 100%);
+  padding-top: 10px;
+  .public-font(hei);
+  & .MenologyTop {
+    width: auto;
+    text-align: center;
+    & .select1 {
+      width: 66px;
+      .publicLin5Select;
+
+    }
+    & .select2 {
+      width: 82px;
+      .publicLin5Select;
+
+    }
+    & .select3 {
+      width: 78px;
+      .publicLin5Select;
+    }
+    & button {
+      .size(62px, 20px);
+      .border(all, #cdcece);
+      .public-font(hei, 12px, 18px);
+      padding: 0;
+      background-color: #fff;
+      vertical-align: -1px;
+    }
+
+  }
+  & .MenologyMiddle{
+    .size(310px,30px);
+    .border(bottom,#e1e1e1,2px);
+    .border(top,#a9cfec,2px);
+    margin: 10px auto;
+    & td{
+      width: 44px;
+      text-align: center;
+      line-height: 23px;
+    }
+  }
+  & .MenologyBottom{
+    width: 310px;
+
+
+
+
+
+  }
+
+}
 
 
 

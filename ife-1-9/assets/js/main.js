@@ -1,19 +1,22 @@
 $(function () {
-    $(".publicButton a").bind("click",buttonOnClickFile);
-    $(".publicVice-Button a").bind("click",buttonOnClickFile);
-    $(".publicDocument-Button a").bind("click",buttonOnClickDocument);
+    $(document).ready(showDate());
+    $(".publicButton a").bind("click", buttonOnClickFile);
+    $(".publicVice-Button a").bind("click", buttonOnClickFile);
+    $(".publicDocument-Button a").bind("click", buttonOnClickDocument);
+
+    /*加载运行*/
+    //showData();//显示时间
 
 
+    /*登录*/
 
 
+    /*交换买卖方 */
+
+    /*左右移动  */
 
 
-
-    // $(".publicButton a").click(buttonOnClickFile);
-    // $(".publicVice-Button a").click(buttonOnClickFile);
-    // $(".publicDocument-Button a").click(buttonOnClickDocument);
-
-
+    /*左边公共栏*/
     function buttonOnClickFile() {
         var $folder = $(this).parent().siblings();//点击的下一级设为变量
         if ($folder.is(":visible")) {
@@ -44,7 +47,22 @@ $(function () {
             .children("img").attr("src", "assets/imags/documentOFF.png");//更改图标
         $(this).siblings().attr("src", "assets/imags/documentON.png");//选中设置白色
         $(this).parent().addClass("publicDocumentButton-On");//选中设置白色
-
     }
 
-})
+
+    /*日历功能*/
+
+    /*显示时间*/
+    function showDate() {
+        for (var ye = 1970; ye <= 2070; ye++) {
+            var yearHtml = "<option value=" + ye + ">" + ye + "年" + "</option>";
+            $(".MenologyTop .select1").append(yearHtml);
+        }
+        for (var mo = 1; mo <= 12; mo++) {
+            var mouthHtml = "<option value=" + mo + ">" + mo + "月" + "</option>";
+            $(".MenologyTop .select2").append(mouthHtml)
+                .attr("value", "mo");
+        }
+
+    }
+});
