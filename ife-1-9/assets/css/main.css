@@ -798,6 +798,10 @@
   text-align: center;
   line-height: 23px;
 }
-.line5MenologyWrapper .MenologyBottom {
+.line5MenologyWrapper .MenologyBottom table {
   width: 310px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 25px;
 }
