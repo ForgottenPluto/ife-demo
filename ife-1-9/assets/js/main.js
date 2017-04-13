@@ -117,6 +117,10 @@ $(function () {
             }else {
                 // selectLength[i].selected=false;
                 alert(selectChecked+1);
+
+
+
+
             }
         }
 
