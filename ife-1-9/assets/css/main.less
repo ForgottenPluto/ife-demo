@@ -5,11 +5,11 @@
 @font-wei: "Microsoft YaHei", "微软雅黑";
 
 /*public*/
-.public-font(hei,@script: 12px,@height: 12px) {
+.public-font(hei,@script: 1.2rem,@height: 1.2rem) {
   font: @script/@height @font-hei, @font-r;
 }
 
-.public-font(wei,@script: 12px,@height: 12px) {
+.public-font(wei,@script:  1.2rem,@height:  1.2rem) {
   font: @script/@height @font-wei, @font-r;
 }
 
@@ -125,7 +125,7 @@
   background-color: #2a2e3d;
   .border(right, #525561);
   .border(bottom, #6d707a, 1px);
-  .public-font(hei, 16px, 20px);
+  .public-font(hei, 1.6rem, 2rem);
   color: #fff;
 }
 
@@ -152,7 +152,7 @@
 
 .joinName {
   .size(120px, 60px);
-  .public-font(hei, 16px, 60px);
+  .public-font(hei, 1.6rem, 6rem);
   float: right;
   text-align: left;
 }
@@ -163,11 +163,11 @@
   color: #6e8095;
 
   & span {
-    .public-font(hei, 16px, 18px);
+    .public-font(hei, 1.6rem, 1.8rem);
   }
 
   & p {
-    font: @font-SimSun, 12px, 12px;
+    font: @font-SimSun, 1.2rem, 1.2rem;
   }
 }
 
@@ -184,13 +184,22 @@
 }
 
 /*manFolder*/
+.publicICO{
+  margin-top:-5px;
+  float: right;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 13px solid #eeeeed;
+  border-bottom: 10px solid transparent;
+}
 
 .manFolder {
   .size(259px, auto);
-  .public-font(hei, 12px, 12px);
+  .public-font(hei, 1.2rem, 1.2rem);
   & nav > ul > li {
     .size(100%, auto);
-    padding: 14px 46px;
+    padding: 14px 0 14px 46px;
   }
   //默认子文件显示none
   & > nav > ul > li > ul {
@@ -308,514 +317,13 @@
   background-color: #fff;
 }
 
-.indexContent {
+.publicPersonal{
   .size(100%, 1179px);
   padding: 19px 50px;
   background-color: #eeeeed;
+  //display: none;
 }
 
-/*更改下拉符号，兼容未解决*/
-
-/*.publicSelectCSS{
-  border: solid 1px #cbcbcb !important;
-  appearance:none;
-  -moz-appearance:none;
-  -webkit-appearance:none;
-  background: url("../imags/selectico.png") no-repeat scroll right center transparent;
-}*/
-//select::-ms-expand { display: none; }
-/*结束*/
-.publicLine1 {
-  height: 23px;
-  margin: 5px 0 0 16px;
-  .public-font(hei, 12px, 23px);
-  .border(all, #cbcbcb, 1px);
-  color: #000;
-  //.publicSelectCSS;
-}
-
-/*mainLine1*/
-.mainLine1 {
-  .size(890px, 85px);
-  .public-center;
-  .public-font(hei, 12px, 23px);
-  .border(all, #dddee0);
-  color: #aaa;
-  padding: 9px 29px;
-  background-color: #fff;
-  & .line1QueryWrappet {
-    float: left;
-    & select {
-      width: 68px;
-      .publicLine1;
-    }
-  }
-  & .line1DealWrappet {
-    width: 190px;
-    margin-left: 38px;
-    float: left;
-    & label {
-      float: left;
-      width: 162px;
-    }
-
-    & select {
-      width: 118px;
-      .publicLine1;
-
-    }
-    & input {
-      float: right;
-      margin-top: -17px;
-      color: #fff;
-    }
-  }
-  & .line1DateWrappet {
-    margin-left: 32px;
-    width: 300px !important;
-    float: left;
-    & select {
-      .publicLine1
-    }
-    & .line1Date {
-      .size(120px, 23px);
-      .border(all, #cbcbcb, 1px);
-      margin-left: 16px;
-      margin-right: 6px;
-    }
-    & .line1Time {
-      width: 69px;
-    }
-    & .line1People {
-      width: 69px;
-      margin-right: 6px;
-    }
-    & .line1Number {
-      width: 120px;
-    }
-
-  }
-  & .line1Search {
-    float: left;
-    .public-font(hei, 12px, 23px);
-    margin: 19PX 28px;
-    .size(50px, 25px);
-    background-color: #388ac1;
-    color: #fff;
-    border: none;
-
-  }
-}
-
-/*mainLine2*/
-.publicLine2Wrapper {
-  background-color: #fff;
-  height: 65px;
-  .border(top, #dddee0);
-  .border(left, #dddee0);
-  margin-right: 5px;
-  float: left;
-}
-
-.mainLine2 {
-  margin: 9px auto;
-  .size(890px, 65px);
-  .public-font(wei);
-  & .line2ButtonLeft {
-    .publicLine2Wrapper;
-    width: 29px;
-    overflow: hidden;
-  }
-  & .line2Deal {
-    float: left;
-    & li {
-      font-weight: bold;
-      padding-top: 14px;
-      text-align: center;
-      .publicLine2Wrapper;
-      width: 110px;
-      & span {
-        margin-left: 5px;
-      }
-      & div {
-        margin: 13px auto;
-        display: block;
-        font-size: 21px;
-        font-weight: normal;
-        color: #ec6500;
-        & img {
-          display: inline-block;
-        }
-        & p {
-          display: inline;
-        }
-      }
-
-    }
-  }
-  & .line2ButtonRight {
-    .publicLine2Wrapper;
-    width: 29px;
-    overflow: hidden;
-  }
-  & .line2HistorySearch {
-    float: left;
-    padding: 16px 19px;
-    .size(129px, 65px);
-    .border(top, #dddee0);
-    .border(left, #dddee0);
-    background-color: #fff;
-    & img {
-      display: inline-block;
-    }
-    & label {
-      margin-top: 10px;
-      display: block;
-      width: 50px;
-      float: right;
-    }
-  }
-}
-
-/*mainLine3*/
-.mainLine3 {
-  .public-center;
-  .size(100%, auto);
-  .public-font(hei);
-  margin-top: 22px;
-  @line3Color: #43b29e; //临时变量
-  @line3HeightTop: 100%;
-  @line3Height: 10%; //临时变量
-  & > p {
-    .public-font(wei);
-    margin-left: 15px;
-  }
-  & nav {
-    margin-top: 7px;
-    & ul {
-      & li {
-        float: left;
-        .size(200px, 70px);
-        margin: 0 15px;
-        .border(all, #d3d4d8, 1px);
-        background-color: #fff;
-        .public-font(hei);
-        & .line3LeftBorder {
-          float: left;
-          .size(3px, 68px);
-          background-color: @line3Color; //后期js控制颜色
-        }
-        & .line3Content {
-          .size(105px, 68px);
-          margin-left: 8px;
-          float: left;
-          //margin-bottom: 17px;
-          & .line3ContentTop {
-            display: block;
-            margin-bottom: 15px;
-            margin-top: 20px;
-          }
-          & .line3ContentBottom {
-            color: #aaaaaa;
-            font-size: 10px;
-            display: block;
-
-          }
-        }
-        & .line3RightWrapper {
-          .size(60px, 56px);
-          float: right;
-          background-color: @line3Color;
-          margin-right: 15px;
-          margin-bottom: 12px;
-          & .line3RightHeight {
-            height: @line3HeightTop - @line3Height; //后期js控制高度
-            background-color: #FFF; //后期js控制颜色
-          }
-
-        }
-
-      }
-    }
-  }
-
-}
-
-/*mainLine4 and mainLine5 wrapper*/
-.publicLine45Wrapper {
-  height: 355px;
-  background: url("../imags/publicLineBack.png") repeat-x;
-  overflow: hidden;
-  .public-radius(5px);
-  border-top: solid #d0d2d5 1px;
-  border-right: solid #d8d9db 1px;
-  border-bottom: solid #d8d8db 1px;
-  border-left: solid #ced1d4 1px;
-  & .lineTitle {
-    height: 25px;
-    .public-font(wei);
-    color: #aaa;
-    margin: 15px auto auto 20px;
-  }
-}
-
-/*mainLine4*/
-.mainLine4Wrapper {
-  .public-center;
-  width: 890px;
-  & .line4Left {
-    width: 530px;
-    float: left;
-    margin-top: 13px;
-
-    .publicLine45Wrapper;
-    & nav {
-      .public-center;
-      width: 100%;
-      padding-left: 20px;
-
-      & ul li {
-        //float: left;
-        //margin-right: 5px;
-        //margin-top: 12px;
-        //.public-font(wei, 12px, 30px);
-        //text-align: center;
-        //.size(82px, 30px);
-        //background-color: #ededf0;
-        //.public-radius(4px);
-        & a {
-          float: left;
-          margin-right: 5px;
-          margin-top: 12px;
-          .public-font(wei, 12px, 30px);
-          text-align: center;
-          background-color: #ededf0;
-          .public-radius-topleft(4px);
-          .public-radius-topright(4px);
-          display: inline-block;
-          .size(82px, 31px);
-          &:link, &:visited {
-            background-color: #ededf0;
-            .size(82px, 30px);
-            color: #000;
-
-          }
-          &:hover, & :active {
-            .size(82px, 31px);
-            color: #000;
-            background-color: #fff;
-            border-top: solid #cacbcb 1px;
-            border-left: solid #cacbcb 1px;
-            border-right: solid #cacbcb 1px;
-
-          }
-        }
-
-      }
-    }
-    .tableWrapper {
-      .public-radius(4px);
-      .size(490px, 250px);
-      margin-left: 20px;
-      margin-top: 42px;
-      .border(all, #cacbcb);
-      & table {
-        .size(400px, 186px);
-        margin-top: 28px;
-        margin-left: 36px;
-        border: solid #cacbcb 1px;
-        border-collapse: collapse;
-        & tr td {
-          padding: 10px 5px 10px 17px;
-          .border(all, #e6e6e6);
-          font: 12px/12px SimSun, "宋体";
-
-        }
-      }
-    }
-
-  }
-  & .line4Right {
-    float: right;
-    margin-top: 13px;
-    width: 350px;
-    .publicLine45Wrapper;
-    & h2 {
-      .public-font(wei);
-      color: #c3c2c2;
-      margin-top: 4px;
-      text-indent: 16px;
-    }
-    & p {
-      .public-font(wei);
-      color: #535353;
-      margin-top: 7px;
-      text-indent: 16px;
-    }
-    & .ling4MainWrapper {
-      padding-top: 14px;
-      padding-left: 35px;
-    }
-    & .line4TopWrapper {
-      width: 280px;
-      .border(bottom, #e8e8e8, 1px);
-      padding-bottom: 9px;
-    }
-    & .line4MiddleWrapper {
-      width: 314px;
-      .border(bottom, #e8e8e8, 1px);
-      & .middleLeftWrapper {
-        .size(95px, 45px);
-        padding-bottom: 9px;
-        .border(right, #e8e8e8, 1px);
-        display: inline-block;
-      }
-      & .middleRightWrapper {
-        display: inline-block;
-        padding-bottom: 9px;
-      }
-    }
-    & .middleBottomWrapper {
-      .size(280px, 146px);
-      .border(bottom, #e8e8e8, 1px);
-      & textarea {
-        margin-left: 15px;
-        margin-top: 7px;
-        .public-font(wei);
-        color: #535353;
-        resize: none;
-      }
-    }
-    & .line4RightBotton {
-      float: right;
-      .public-font(hei, 12px, 23px);
-      margin: -15px 35px;
-      .size(50px, 25px);
-      background-color: #388ac1;
-      color: #fff;
-      border: none;
-
-    }
-    & .ChckeBoxWrapper {
-      .public-font(wei);
-      margin-top: 6px;
-      color: #c3c2c2;
-      position: relative;
-      & .inputCheck {
-        //visibility: hidden;
-        //position: absolute;
-        display: inline-block;
-        opacity: 0;
-        &:checked + label {
-          background: url("../imags/inputback.png") no-repeat;
-        }
-      }
-      & .check1 {
-        position: absolute;
-        left: -1px;
-        display: inline-block;
-        width: 14px;
-        height: 14px;
-        background: url("../imags/inputbackoff.png") no-repeat;
-        background-size: cover;
-      }
-
-      & span {
-        margin-top: -13px;
-        display: block;
-        margin-left: 22px;
-      }
-    }
-  }
-
-}
-
-/*mainline5Wrapper*/
-.mainLine5Wrapper {
-  .public-center;
-  width: 890px;
-  & .line5Left {
-    float: left;
-    margin-top: 7px;
-    width: 350px;
-    .publicLine45Wrapper;
-
-  }
-  & .line5Right {
-    float: right;
-    margin-top: 7px;
-    width: 530px;
-    .publicLine45Wrapper;
-
-  }
-}
-
-.publicLin5Select {
-  height: 20px;
-  .public-font(hei, 12px, 20px);
-  .border(all, #cdcece);
-  //margin-right: 6px;
-  text-align: center;
-
-}
-
-.line5MenologyWrapper {
-  .size(100%, 100%);
-  padding-top: 10px;
-  .public-font(hei);
-  & .MenologyTop {
-    width: auto;
-    text-align: center;
-    & .select1 {
-      width: 66px;
-      .publicLin5Select;
-
-    }
-    & .select2 {
-      width: 82px;
-      .publicLin5Select;
-
-    }
-    & .select3 {
-      width: 78px;
-      .publicLin5Select;
-    }
-    & button {
-      .size(62px, 20px);
-      .border(all, #cdcece);
-      .public-font(hei, 12px, 18px);
-      padding: 0;
-      background-color: #fff;
-      vertical-align: -1px;
-    }
-
-  }
-  & .MenologyMiddle{
-    .size(310px,30px);
-    .border(bottom,#e1e1e1,2px);
-    .border(top,#a9cfec,2px);
-    margin: 10px auto;
-    & td{
-      width: 44px;
-      text-align: center;
-      line-height: 23px;
-    }
-  }
-  & .MenologyBottom{
-    & table{
-      .size(310px,auto);
-      .public-center;
-      text-align: center;
-      line-height: 25px;
-    }
-
-
-
-
-
-  }
-
-}
 
 
 

@@ -7,6 +7,12 @@ $(function () {
     // $(".returnButton").bind("click",selectClick);
     $(".MenologyTop .select1").bind("change", selectClick);
 
+    /*加载后自动触发*/
+   // $("#button-report").click();
+    $("#button-report").parent().siblings().show();
+
+
+
     /*测试程序*/
     // function buttonText() {
     //     var textDay=new Date(showMenology());
@@ -28,7 +34,9 @@ $(function () {
 
     /*左边公共栏一级按钮*/
     function buttonOnClickFile() {
+       // var $navIco = $(this).siblings("span");
         var $folder = $(this).parent().siblings();//点击的下一级设为变量
+        //if($navIco.)
         if ($folder.is(":visible")) {
             //下级要关闭----------------------------------------------------未调试
             $folder.parent()
