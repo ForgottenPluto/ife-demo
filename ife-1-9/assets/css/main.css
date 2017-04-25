@@ -1,4 +1,26 @@
 @charset "utf-8";
+@font-face {
+  font-family: 'iconfont';
+  /* project id 285309 */
+  src: url('//at.alicdn.com/t/font_9x9nlgrl6a5g66r.eot');
+  src: url('//at.alicdn.com/t/font_9x9nlgrl6a5g66r.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_9x9nlgrl6a5g66r.woff') format('woff'), url('//at.alicdn.com/t/font_9x9nlgrl6a5g66r.ttf') format('truetype'), url('//at.alicdn.com/t/font_9x9nlgrl6a5g66r.svg#iconfont') format('svg');
+}
+/*@font-face {
+  font-family: 'iconfontleft';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/iconfont.woff') format('woff'),
+  url('../font/iconfont.ttf') format('truetype'),
+  url('../font/iconfont.svg#iconfontleft') format('svg');
+}*/
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
 /*public*/
 .public-center {
   margin: 0 auto;
@@ -13,7 +35,7 @@
 }
 .top-left-ico {
   width: 36px;
-  height: 36px;
+  height: 35px;
   margin: 10px 50px;
   float: left;
   overflow: hidden;
@@ -108,24 +130,26 @@
 /*manData*/
 .manData {
   width: auto;
-  height: 52px;
+  height: 42px;
   color: #6e8095;
+  margin-bottom: 18px;
+}
+.manData div {
+  height: 42px;
+  display: inline-block;
+  padding-left: 30px;
+}
+.manData .collect {
+  border-right: 3px solid #323647;
+  padding-right: 30px;
+  padding-left: 62px;
 }
 .manData span {
-  font: 1.6rem/1.8rem Heiti, "黑体", serif;
+  font: 1.6rem/1.6rem Heiti, "黑体", serif;
 }
 .manData p {
   font: SimSun, "宋体", 1.2rem, 1.2rem;
-}
-.collect {
-  display: inline-block;
-  padding-right: 30px;
-  padding-left: 62px;
-  border-right: 3px solid #323647;
-}
-.fans {
-  display: inline-block;
-  padding-left: 30px;
+  margin-top: -4px;
 }
 /*manFolder*/
 .publicICO {
@@ -147,12 +171,14 @@
   height: auto;
   padding: 14px 0 14px 46px;
 }
-.manFolder > nav > ul > li > ul {
+.manFolder > nav > ul > li ul {
   display: none;
+}
+.publicButton {
+  color: #6e8095;
 }
 .publicButton a {
   display: inline-block;
-  margin-left: 10px;
   vertical-align: 1px;
 }
 .publicButton a:link,
@@ -165,15 +191,14 @@
 .publicButton a:active {
   color: #fff;
 }
-.publicButton img {
-  width: 12px;
-  height: 12px;
-  display: inline-block;
-  overflow: hidden;
-  background-color: #2a2e3d;
+.publicButton i {
+  margin-right: 10px;
 }
 .viceIcoLeft {
   margin-right: 8px;
+}
+.publicButton-On {
+  color: #fff !important;
 }
 .publicButton-On a:link,
 .publicButton-On a:visited {
@@ -181,16 +206,10 @@
 }
 .publicVice-Button {
   margin: 19px 22px 0 22px;
-}
-.publicVice-Button img {
-  width: 12px;
-  height: 12px;
-  display: inline-block;
-  overflow: hidden;
+  color: #6e8095;
 }
 .publicVice-Button a {
   display: inline-block;
-  margin-left: 10px;
   vertical-align: 1px;
 }
 .publicVice-Button a:link,
@@ -203,48 +222,28 @@
 .publicVice-Button a:active {
   color: #fff;
 }
-.publicViceButton-On img {
-  width: 12px;
-  height: 12px;
-  display: inline-block;
-  overflow: visible;
-}
-.publicViceButton-On a {
-  display: inline-block;
-  margin-left: 10px;
-  vertical-align: 1px;
-}
-.publicViceButton-On a:link,
-.publicViceButton-On a:visited {
-  color: #fff;
-}
-.publicViceButton-On a:hover,
-.publicViceButton-On a:active {
-  color: #fff;
+.publicVice-Button i {
+  margin-right: 5px;
 }
 .publicDocument-Button {
   margin: 19px 22px 0 41px;
-  display: none;
+  color: #6e8095;
 }
-.publicDocumentButton-On a:link,
-.publicDocumentButton-On a:visited {
-  color: #fff !important;
+.publicDocument-Button a {
+  display: inline-block;
+  vertical-align: 1px;
 }
-/*indexMain*/
-.indexMain {
-  width: 1021px;
-  height: auto;
-  float: right;
+.publicDocument-Button a:link,
+.publicDocument-Button a:visited {
+  color: #6e8095;
 }
-.indexFooter {
-  width: 100%;
-  height: 30px;
-  padding: 9px 30px;
-  background-color: #fff;
+.publicDocument-Button a:hover {
+  color: #6e8095;
 }
-.publicPersonal {
-  width: 100%;
-  height: 1179px;
-  padding: 19px 50px;
-  background-color: #eeeeed;
+.publicDocument-Button a:active {
+  color: #fff;
+}
+.publicDocument-Button i {
+  margin-right: 5px;
+  margin-left: 15px;
 }

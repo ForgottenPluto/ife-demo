@@ -24,7 +24,7 @@ form {
   outline: none;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 textarea {
   border: none;
