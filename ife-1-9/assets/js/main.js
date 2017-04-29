@@ -1,16 +1,16 @@
 $(function () {
     $(document).ready(showDate());
     // $(document).ready(showMenology());
-    $(".publicButton a").bind("click", buttonOneClick);
+
     $(".publicVice-Button a").bind("click", buttonTwoClick);
     $(".publicDocument-Button a").bind("click", buttonThreeClick);
-    // $(".returnButton").bind("click",selectClick);
+    //$(".returnButton").bind("click",selectClick);
     $(".MenologyTop .select1").bind("change", selectClick);
 
     /*左边工具栏事件*/
 
     /*加载后自动触发*/
-    $("#personalReport").click();//默认个人报表
+    // $("#personalReport").click();//默认个人报表
 
 
     /*测试程序*/
@@ -34,66 +34,21 @@ $(function () {
 
     /*左边公共栏按钮*/
 
-
-    /*左边公共栏一级按钮*/
-    function buttonOneClick() {
-        var $folder = $(this).parent();//一级目录设为变量
-        var thisID=document.getElementsByClassName(this.id);
-        function buttonOn() {
-            $folder.children("span").addClass("publicICO");//增加三角标记
-            $folder.addClass("oneChecked");
-            $folder.parent().css("background-color", "#393e4e");//背景颜色
-            $folder.addClass("publicButton-On")
-                .siblings().show();                                            //点击显示
-            return false;
-        }
-
-        function buttonOff() {
-            $folder.children("span").removeClass("publicICO");//移除三角标记
-            $folder.removeClass("oneChecked");
-            $folder.parent()
-                .css("background-color", "inherit")//背景颜色
-                .children(".publicButton-On").removeClass("publicButton-On");
-            $folder.removeClass("publicButton-On")//隐藏目录
-                .siblings().hide();
-            return false;
-        }
-
-        if ($folder.is(".oneChecked")) {
-            thisID[0].style.display="none";
-            if ($(".manFolder div.twoChecked").length > 0) {
-                $(".twoChecked>a").click();
-            }
-            buttonOff();
-        } else {
-            thisID[0].style.display="inline-block";
-            if ($(".manFolder div.oneChecked").length > 0) {
-                $(".oneChecked>a").click();
-            }
-            buttonOn();
-        }
-
-    }
-
-
     /*个人报表二级*/
     function buttonTwoClick() {
         var $folder = $(this).parent();
+
         function buttonOn() {
-            $folder.addClass("twoChecked");
-            $(".twoChecked").children("span").html("<i class='iconfont'>&#xe8eb;</i><i class='iconfont'>&#xe8ea;</i>");
-            $folder.addClass("publicButton-On")
-                .siblings().show();
+             $folder.addClass("publicButton-On twoChecked")
+             .siblings().slideDown(500);
+            $(".twoChecked>span").html("<i class='iconfont'>&#xe8eb;</i><i class='iconfont'>&#xe8ea;</i>");
             return false;
         }
 
         function buttonOff() {
-            $(".twoChecked").children("span").html("<i class='iconfont'>&#xe6a7;</i><i class='iconfont'>&#xe64f;</i>");
-            $folder.removeClass("twoChecked");
-            $folder.parent()
-                .children(".publicButton-On").removeClass("publicButton-On");
-            $folder.removeClass("publicButton-On")
-                .siblings().hide();
+            $(".twoChecked>span").html("<i class='iconfont'>&#xe6a7;</i><i class='iconfont'>&#xe64f;</i>");
+            $folder.removeClass("publicButton-On twoChecked")
+                .siblings().slideUp();
             return false;
         }
 
@@ -124,15 +79,12 @@ $(function () {
     function buttonThreeClick() {
         var $folder = $(this).parent();
         function buttonOn() {
-            $folder.addClass("threeChecked");
-            $folder.addClass("publicButton-On");
+            $folder.addClass("threeChecked publicButton-On");
             return false;
         }
 
         function buttonOff() {
-            $folder.removeClass("threeChecked");
-            $folder.parent()
-                .children(".publicButton-On").removeClass("publicButton-On");
+            $folder.removeClass("threeChecked publicButton-On");
             return false;
         }
 
@@ -148,12 +100,12 @@ $(function () {
 
 
     /*日历功能*/
-     /*function showMenology() {
-         var $clickYear=$(".MenologyTop .select1 option[selected=selected]");
-       var $clickMonth=$(".MenologyTop .select2 option[selected=selected]");
-       return[$clickYear,$clickMonth,1];
+    /*function showMenology() {
+     var $clickYear=$(".MenologyTop .select1 option[selected=selected]");
+     var $clickMonth=$(".MenologyTop .select2 option[selected=selected]");
+     return[$clickYear,$clickMonth,1];
      }
-*/
+     */
     /*显示时间*/
     function showDate() {
         var menologyDate = "";
@@ -188,24 +140,25 @@ $(function () {
             $MenologyBottom.append("<table><tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr></table>");
         }
     }
+
     /*动态更改select*/
     /*function selectClick() {
-        var selectChecked = $(this).val();
-        var selectLength = $(this).children("option");
-        for (var i = 0; i < selectLength.length; i++) {
-            if (selectLength[i].value == selectChecked) {
-                 //selectLength[i].selected=true;
-                alert(selectChecked);
-                return false;
-            } else {
-                //selectLength[i].selected=false;
-                //alert(selectChecked+ljx);
+     var selectChecked = $(this).val();
+     var selectLength = $(this).children("option");
+     for (var i = 0; i < selectLength.length; i++) {
+     if (selectLength[i].value == selectChecked) {
+     //selectLength[i].selected=true;
+     alert(selectChecked);
+     return false;
+     } else {
+     //selectLength[i].selected=false;
+     //alert(selectChecked+ljx);
 
 
-            }
-        }
+     }
+     }
 
-    }*/
+     }*/
 
 
 });

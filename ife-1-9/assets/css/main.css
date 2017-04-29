@@ -30,7 +30,7 @@
   margin: 0 auto;
   width: 1280px;
   height: 55px;
-  background-color: #2189bf;
+  background-color: #75B9E6;
   border-bottom: 1px solid #4a9fca;
 }
 .top-left-ico {
@@ -76,7 +76,7 @@
 .top-form .join {
   float: left;
   margin: 18px 0;
-  background-color: #2189bf;
+  background-color: #75B9E6;
   border: none;
   color: #fff;
 }
@@ -85,13 +85,15 @@
   width: 1280px;
   height: auto;
   margin: 0 auto;
+  border-right: 1px solid #E0E0DA;
+  border-left: 1px solid #E0E0DA;
 }
 .leftSideBar {
   width: 259px;
   height: 1209px;
   display: inline-block;
-  background-color: #2a2e3d;
-  border-right: 1px solid #525561;
+  background-color: #FCFCFC;
+  border-right: 1px solid #E6E6E6;
   border-bottom: 1px solid #6d707a;
   font: 1.6rem/2rem Heiti, "黑体", serif;
   color: #fff;
@@ -152,14 +154,26 @@
   margin-top: -4px;
 }
 /*manFolder*/
+.publicButton-On {
+  color: #75B9E6 !important;
+}
+.publicButton-On a:link,
+.publicButton-On a:visited {
+  color: #75B9E6 !important;
+}
 .publicICO {
-  margin-top: -5px;
-  float: right;
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-right: 13px solid #eeeeed;
-  border-bottom: 10px solid transparent;
+  background-color: #F7F7F7;
+  width: 90%;
+}
+.publicICO > ul {
+  display: inline-block;
+}
+.publicICO > div {
+  color: #75B9E6 !important;
+}
+.publicICO > div a:link,
+.publicICO > div a:visited {
+  color: #75B9E6 !important;
 }
 .manFolder {
   width: 259px;
@@ -170,9 +184,7 @@
   width: 100%;
   height: auto;
   padding: 14px 0 14px 46px;
-}
-.manFolder > nav > ul > li ul {
-  display: none;
+  border-top: 1px solid #E0E0DA;
 }
 .publicButton {
   color: #6e8095;
@@ -197,15 +209,8 @@
 .viceIcoLeft {
   margin-right: 8px;
 }
-.publicButton-On {
-  color: #fff !important;
-}
-.publicButton-On a:link,
-.publicButton-On a:visited {
-  color: #fff !important;
-}
 .publicVice-Button {
-  margin: 19px 22px 0 22px;
+  margin: 10px 22px 0 22px;
   color: #6e8095;
 }
 .publicVice-Button a {
@@ -226,8 +231,12 @@
   margin-right: 5px;
 }
 .publicDocument-Button {
-  margin: 19px 22px 0 41px;
+  display: none;
+  overflow: hidden;
   color: #6e8095;
+}
+.publicDocument-Button li {
+  margin: 10px 22px 0 41px;
 }
 .publicDocument-Button a {
   display: inline-block;
