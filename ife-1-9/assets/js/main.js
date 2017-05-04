@@ -1,4 +1,30 @@
 $(function () {
+    /*personalDepot.html*/
+
+    $(".depotWrapper>a img").bind("mouseenter", depotMouseShow);
+    $(".depotWrapper>div").bind("mouseleave", depotMouseHide);//mouseleave
+    $(".BlowUp").bind("click", blowUpClick);
+
+
+    function depotMouseShow(e) {
+        var $depotOperate = $(this).parent().siblings();
+        $depotOperate.show();
+        $depotOperate.children().children().animate({top: "42%"}, 200);
+        e.stopPropagation();
+    }
+
+    function depotMouseHide(e) {
+        var $this = $(this);
+        $this.hide();
+        $this.children().children().css("top", "0");
+        e.stopPropagation();
+    }
+
+    function blowUpClick() {
+        var $blowUpClick = $(this);
+        window
+    }
+
     $(document).ready(showDate());
     // $(document).ready(showMenology());
 
@@ -39,8 +65,8 @@ $(function () {
         var $folder = $(this).parent();
 
         function buttonOn() {
-             $folder.addClass("publicButton-On twoChecked")
-             .siblings().slideDown(500);
+            $folder.addClass("publicButton-On twoChecked")
+                .siblings().slideDown(500);
             $(".twoChecked>span").html("<i class='iconfont'>&#xe8eb;</i><i class='iconfont'>&#xe8ea;</i>");
             return false;
         }
@@ -78,6 +104,7 @@ $(function () {
     /*个人报表三级目录*/
     function buttonThreeClick() {
         var $folder = $(this).parent();
+
         function buttonOn() {
             $folder.addClass("threeChecked publicButton-On");
             return false;

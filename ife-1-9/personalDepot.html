@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.theme.css" type="text/css">
     <!--<link rel="stylesheet" href="assets/css/personalAccount.css" type="text/css">-->
     <!--<link rel="stylesheet" href="assets/css/personalCollect.css" type="text/css">-->
-    <!--<link rel="stylesheet" href="assets/css/personalDepot.css" type="text/css">-->
+    <link rel="stylesheet" href="assets/css/personalDepot.css" type="text/css">
     <!--<link rel="stylesheet" href="assets/css/personalRecord.css" type="text/css">-->
     <!--<link rel="stylesheet" href="assets/css/personalReport.css" type="text/css">-->
     <!--<link rel="stylesheet" href="assets/css/personalShare.css" type="text/css">-->
@@ -23,23 +23,19 @@
 
 </head>
 <body>
-<header class="topNav">
-
-            <img class="top-left-ico" src="assets/imags/topnavIco.png" alt="#">
-            <!--<button class="btn btn-default btn-xs">
-                <i class="iconfont">&#xe8ec;</i>
-                <a href="index.html"></a>&lt;!&ndash;临时&ndash;&gt;
-            </button>-->
-
-        <form class="top-form">
-            <div class="row">
-                <button class="inputIcon-button">
-                    <i class="iconfont">&#xe6d3;</i>
-                </button>
-                <input class="top-form-input" id="top-input" type="text" name="#">
-                <button class="join"><i class="iconfont">&#xe62f;</i>登录</button>
-            </div>
-        </form>
+<header class="topNav clearfix">
+    <img class="top-left-ico" src="assets/imags/topnavIco.png" alt="#">
+    <!--<button class="btn btn-default btn-xs">
+        <i class="iconfont">&#xe8ec;</i>
+        <a href="index.html"></a>&lt;!&ndash;临时&ndash;&gt;
+    </button>-->
+    <form class="top-form clearfix">
+        <button class="join"><i class="iconfont">&#xe62f;</i>登录</button>
+        <div class="inputIcoWrapper clearfix">
+            <button class="inputIcon-button"><i class="iconfont">&#xe6d3;</i></button>
+            <input class="top-form-input" id="top-input" type="text" name="#">
+        </div>
+    </form>
 </header>
 <div class="container-fluid">
     <div class="row">
@@ -99,45 +95,130 @@
                 </div>
             </div>
         </div>
-        <div class="col-xs-11 col-sm-9 indexMain">
+        <div class="col-xs-11 col-sm-10 indexMain">
             <div class="row">
                 <div class="col-lg-12 indexFooter">
                     <p>图库</p>
                 </div>
                 <div class="col-lg-12 personalDepot publicPersonal">
                     <div class="row">
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 depotWrapper">
                             <a class="thumbnail" href="#">
                                 <img src="assets/imags/picture/1.jpg" alt="#">
                             </a>
-                            <div>
+                            <div class="depotOperate">
                                 <div>
-                                    <button class="btn btn-default btn-xs" href="#"><i class="iconfont">&#xe62c;</i></button>
-                                    <button class="btn btn-default btn-xs" href="#"><i class="iconfont">&#xe6c5;</i></button>
-                                    <button class="btn btn-default btn-xs" href="#"><i class="iconfont">&#xe649;</i></button>
+                                    <a class="BlowUp" href="#" title="Blow Up"><i class="iconfont">&#xe6d3;</i></a>
+                                    <a class="Download" href="#" title="Download"><i class="iconfont">&#xe6c5;</i></a>
+                                    <a class="Delete" href="#" title="Delete"><i class="iconfont">&#xe649;</i></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 depotWrapper">
                             <a class="thumbnail" href="#">
                                 <img src="assets/imags/picture/2.jpg" alt="#">
                             </a>
+                            <div class="depotOperate">
+                                <div>
+                                    <a href="#" data-title="Blow Up"><i class="iconfont">&#xe6d3;</i></a>
+                                    <a href="#" data-title="Download"><i class="iconfont">&#xe6c5;</i></a>
+                                    <a href="#" data-title="Delete"><i class="iconfont">&#xe649;</i></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 depotWrapper">
                             <a class="thumbnail" href="#">
                                 <img src="assets/imags/picture/3.jpg" alt="#">
                             </a>
+                            <div class="depotOperate">
+                                <div>
+                                    <a href="#" data-title="Blow Up"><i class="iconfont">&#xe6d3;</i></a>
+                                    <a href="#" data-title="Download"><i class="iconfont">&#xe6c5;</i></a>
+                                    <a href="#" data-title="Delete"><i class="iconfont">&#xe649;</i></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 depotWrapper">
                             <a class="thumbnail" href="#">
                                 <img src="assets/imags/picture/4.jpg" alt="#">
                             </a>
+                            <div class="depotOperate">
+                                <div>
+                                    <a href="#" data-title="Blow Up"><i class="iconfont">&#xe6d3;</i></a>
+                                    <a href="#" data-title="Download"><i class="iconfont">&#xe6c5;</i></a>
+                                    <a href="#" data-title="Delete"><i class="iconfont">&#xe649;</i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 depotWrapper">
+                            <a class="thumbnail" href="#">
+                                <img src="assets/imags/picture/5.jpg" alt="#">
+                            </a>
+                            <div class="depotOperate">
+                                <div>
+                                    <a href="#" data-title="Blow Up"><i class="iconfont">&#xe6d3;</i></a>
+                                    <a href="#" data-title="Download"><i class="iconfont">&#xe6c5;</i></a>
+                                    <a href="#" data-title="Delete"><i class="iconfont">&#xe649;</i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 depotWrapper">
+                            <a class="thumbnail" href="#">
+                                <img src="assets/imags/picture/6.jpg" alt="#">
+                            </a>
+                            <div class="depotOperate">
+                                <div>
+                                    <a href="#" data-title="Blow Up"><i class="iconfont">&#xe6d3;</i></a>
+                                    <a href="#" data-title="Download"><i class="iconfont">&#xe6c5;</i></a>
+                                    <a href="#" data-title="Delete"><i class="iconfont">&#xe649;</i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 depotWrapper">
+                            <a class="thumbnail" href="#">
+                                <img src="assets/imags/picture/7.jpg" alt="#">
+                            </a>
+                            <div class="depotOperate">
+                                <div>
+                                    <a href="#" data-title="Blow Up"><i class="iconfont">&#xe6d3;</i></a>
+                                    <a href="#" data-title="Download"><i class="iconfont">&#xe6c5;</i></a>
+                                    <a href="#" data-title="Delete"><i class="iconfont">&#xe649;</i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 depotWrapper">
+                            <a class="thumbnail" href="#">
+                                <img src="assets/imags/picture/8.jpg" alt="#">
+                            </a>
+                            <div class="depotOperate">
+                                <div>
+                                    <a href="#" data-title="Blow Up"><i class="iconfont">&#xe6d3;</i></a>
+                                    <a href="#" data-title="Download"><i class="iconfont">&#xe6c5;</i></a>
+                                    <a href="#" data-title="Delete"><i class="iconfont">&#xe649;</i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                 </div>
             </div>
         </div>
+    </div>
+</div>
+<div class="pictureFrame">
+    <div class="LeftButton">
+        <a href="#"></a>
+    </div>
+    <div class="pictureZOOM">
+        <div>
+            <span></span>
+        </div>
+        <div>
+            <img src="assets/imags/picture/1.jpg" alt="#">
+        </div>
+    </div>
+    <div class="rightButton">
+        <a href="#"></a>
     </div>
 </div>
 <!--<script src="assets/js/less.min.js"></script>-->

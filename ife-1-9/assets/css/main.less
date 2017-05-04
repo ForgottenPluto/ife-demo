@@ -82,7 +82,7 @@
   max-height: @height;
 }
 
-body{
+body {
   max-width: 1280px;
   margin: 0 auto;
   .border(right, #E0E0DA, 1px);
@@ -93,64 +93,71 @@ body{
 .topNav {
   height: auto;
   background-color: #75B9E6;
-
   .border(bottom, #4a9fca);
-  & nav > div > img {
-    margin: 9px 35px auto 35px;
-  }
-}
-
-.top-left-ico {
-  max-width: 36px;
-  max-height: 35px;
-  margin: 10px 50px;
-  overflow: hidden;
-  display: inline-block;
-}
-
-.top-form {
-  float: right;
-  //.size(470px, 56px);
-  display: inline-block;
-  position: relative;
-  .inputIcon-button {
-    position: absolute;
-    //width: 19px;
-    max-height: 20px;
-    max-width: 18px;
-    background-color: #fff;
-    border: none;
-    padding: 0;
-    top: 16px;
-    left: 6px;
-    outline: none;
-    z-index: 999;
-  }
-  .top-form-input {
-    //float: left;
-    //.size(314px, 26px);
-    min-height: 26px;
-    border: 1px solid #acd3e7;
-    .public-radius(12px);
-    .public-font(hei);
-    padding-left: 25px;
+  & .top-left-ico {
+    width: 36px;
+    height: 35px;
+    margin: 10px 45px;
+    overflow: hidden;
     display: inline-block;
   }
-  .join {
-    min-width: 80px;
-    background-color: #75B9E6;
-    border: none;
-    color: #fff;
-    & i {
-      margin-right: 10px;
+  & .top-form {
+    float: right;
+    width: 50%;
+    padding-top: 14px;
+    & .inputIcoWrapper {
+      float: right;
+      width: 50%;
+      position: relative;
+      & .top-form-input {
+        width: 100%;
+        height: 26px;
+        border: 1px solid #acd3e7;
+        .public-radius(12px);
+        .public-font(hei);
+        padding-right: 25px;
+        padding-left: 10px;
+      }
+      & .inputIcon-button {
+        position: absolute;
+        right: 6px;
+        top: 3px;
+        float: right;
+        height: 20px;
+        width: 20px;
+        line-height: 100%;
+        background-color: #fff;
+        border: none;
+        padding: 0;
+        outline: none;
+        //margin-left: 2px;
+        & i {
+          font-size: 1.8rem;
+        }
+      }
+    }
+    & .join {
+      float: right;
+      margin-right: 20px;
+      margin-top: -4px;
+      width: 70px;
+      height: 30px;
+      //line-height: 16px;
+      background-color: #75B9E6;
+      border: none;
+      color: #fff;
+      & i {
+        margin-right: 10px;
+      }
     }
   }
+
 }
 
 /*index*/
 .leftSideBar {
   background-color: #FCFCFC;
-  min-width: 130px;
+  min-width: 125px;
   .border(right, #E6E6E6);
   .border(bottom, #E6E6E6, 1px);
   .public-font(hei, 1.6rem, 2rem);
@@ -174,7 +181,7 @@ body{
       overflow: hidden;
     }
   }
-  .joinName {
+  & .joinName {
     .public-font(hei, 1.6rem, 1.6rem);
     display: block;
     color: #848095;
@@ -348,15 +355,34 @@ body{
 @media (min-width: 0) and(max-width: 768px) {
   .topNav {
     & .top-left-ico {
-      margin-left: 5px;
+      width: 30px;
+      height: 30px;
+      margin: 5px 10px;
     }
-    & .top-form-input {
-      //float: right !important;
-    }
-    & .join {
-      padding: 0;
-      //float: right !important;
-
+    & .top-form {
+      width: 80%;
+      padding-top: 8px;
+      & .inputIcoWrapper {
+        width: 60%;
+        & .top-form-input {
+          height: 20px;
+        }
+        & .inputIcon-button {
+          right: 8px;
+          top: 5px;
+          height: 15px;
+          width: 15px;
+          & i {
+            font-size: 1.4rem;
+          }
+        }
+      }
+      & .join {
+        margin-right: 0;
+        & i {
+          margin-right: 5px;
+        }
+      }
     }
 
   }
