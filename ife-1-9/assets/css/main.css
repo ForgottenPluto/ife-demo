@@ -2,8 +2,8 @@
 @font-face {
   font-family: 'iconfont';
   /* project id 285309 */
-  src: url('//at.alicdn.com/t/font_cr1rbtcdc4k7qfr.eot');
-  src: url('//at.alicdn.com/t/font_cr1rbtcdc4k7qfr.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_cr1rbtcdc4k7qfr.woff') format('woff'), url('//at.alicdn.com/t/font_cr1rbtcdc4k7qfr.ttf') format('truetype'), url('//at.alicdn.com/t/font_cr1rbtcdc4k7qfr.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_tmrcfpuyu0s8m2t9.eot');
+  src: url('//at.alicdn.com/t/font_tmrcfpuyu0s8m2t9.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_tmrcfpuyu0s8m2t9.woff') format('woff'), url('//at.alicdn.com/t/font_tmrcfpuyu0s8m2t9.ttf') format('truetype'), url('//at.alicdn.com/t/font_tmrcfpuyu0s8m2t9.svg#iconfont') format('svg');
 }
 /*@font-face {
   font-family: 'iconfontleft';
@@ -27,6 +27,7 @@ body {
   margin: 0 auto;
   border-right: 1px solid #E0E0DA;
   border-left: 1px solid #E0E0DA;
+  position: relative;
 }
 /*topnav*/
 .topNav {
@@ -58,7 +59,9 @@ body {
   -moz-border-radius: 12px;
   -webkit-border-radius: 12px;
   border-radius: 12px;
-  font: 1.2rem/1.2rem Heiti, "黑体", serif;
+  font-family: Heiti, "黑体", serif;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
   padding-right: 25px;
   padding-left: 10px;
 }
@@ -97,12 +100,13 @@ body {
   min-width: 125px;
   border-right: 1px solid #E6E6E6;
   border-bottom: 1px solid #E6E6E6;
-  font: 1.6rem/2rem Heiti, "黑体", serif;
+  font-family: Heiti, "黑体", serif;
+  font-size: 1.6rem;
+  line-height: 2rem;
   color: #fff;
 }
 .joinMan {
   max-width: 260px;
-  max-height: auto;
   text-align: center;
   padding: 16px 0 0 0;
 }
@@ -126,7 +130,9 @@ body {
   overflow: hidden;
 }
 .joinMan .joinName {
-  font: 1.6rem/1.6rem Heiti, "黑体", serif;
+  font-family: Heiti, "黑体", serif;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
   display: block;
   color: #848095;
   margin: 10px auto;
@@ -156,11 +162,15 @@ body {
   min-width: 50px;
 }
 .manData span {
-  font: 1.6rem/1.6rem Heiti, "黑体", serif;
+  font-family: Heiti, "黑体", serif;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
   display: inline-block;
 }
 .manData p {
-  font: SimSun, "宋体", 1.2rem, 1.2rem;
+  font-family: SimSun, "宋体";
+  font-size: 1.2rem;
+  line-height: 1.2rem;
   display: inline-block;
 }
 /*manFolder*/
@@ -186,7 +196,9 @@ body {
   color: #75B9E6 !important;
 }
 .manFolder {
-  font: 1.4rem/1.2rem Heiti, "黑体", serif;
+  font-family: Heiti, "黑体", serif;
+  font-size: 1.4rem;
+  line-height: 1.2rem;
 }
 .manFolder > nav > ul {
   margin-bottom: 0;
@@ -276,7 +288,9 @@ body {
 .indexFooter {
   height: auto;
   background-color: #fff;
-  font: 1.4rem/3rem Heiti, "黑体", serif;
+  font-family: Heiti, "黑体", serif;
+  font-size: 1.4rem;
+  line-height: 3rem;
 }
 .indexFooter p {
   display: inline-block;

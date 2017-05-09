@@ -6,11 +6,11 @@
 
 @font-face {
   font-family: 'iconfont';  /* project id 285309 */
-  src: url('//at.alicdn.com/t/font_cr1rbtcdc4k7qfr.eot');
-  src: url('//at.alicdn.com/t/font_cr1rbtcdc4k7qfr.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_cr1rbtcdc4k7qfr.woff') format('woff'),
-  url('//at.alicdn.com/t/font_cr1rbtcdc4k7qfr.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_cr1rbtcdc4k7qfr.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_tmrcfpuyu0s8m2t9.eot');
+  src: url('//at.alicdn.com/t/font_tmrcfpuyu0s8m2t9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_tmrcfpuyu0s8m2t9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_tmrcfpuyu0s8m2t9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_tmrcfpuyu0s8m2t9.svg#iconfont') format('svg');
 }
 
 /*@font-face {
@@ -32,7 +32,9 @@
 
 /*public*/
 .public-font(hei,@script: 1.2rem,@height: 1.2rem) {
-  font: @script/@height @font-hei, @font-r;
+  font-family: @font-hei, @font-r;
+  font-size: @script;
+  line-height: @height;
 }
 
 .public-font(wei,@script:  1.2rem,@height:  1.2rem) {
@@ -87,6 +89,7 @@ body {
   margin: 0 auto;
   .border(right, #E0E0DA, 1px);
   .border(left, #E0E0DA, 1px);
+  position: relative;
 }
 
 /*topnav*/
@@ -165,7 +168,7 @@ body {
 }
 
 .joinMan {
-  .maxSize(260px, auto);
+  max-width: 260px;
   text-align: center;
   padding: 16px 0 0 0;
   & .pictureBox {
@@ -218,7 +221,9 @@ body {
     display: inline-block;
   }
   & p {
-    font: @font-SimSun, 1.2rem, 1.2rem;
+    font-family: @font-SimSun;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
     display: inline-block;
 
   }
