@@ -1,0 +1,357 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'iconfont';
+  /* project id 285309 */
+  src: url('//at.alicdn.com/t/font_8ve58xln6yywg66r.eot');
+  src: url('//at.alicdn.com/t/font_8ve58xln6yywg66r.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_8ve58xln6yywg66r.woff') format('woff'), url('//at.alicdn.com/t/font_8ve58xln6yywg66r.ttf') format('truetype'), url('//at.alicdn.com/t/font_8ve58xln6yywg66r.svg#iconfont') format('svg');
+}
+/*@font-face {
+  font-family: 'iconfontleft';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/iconfont.woff') format('woff'),
+  url('../font/iconfont.ttf') format('truetype'),
+  url('../font/iconfont.svg#iconfontleft') format('svg');
+}*/
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*public*/
+body {
+  margin: 0 auto;
+  border-right: 1px solid #E0E0DA;
+  border-left: 1px solid #E0E0DA;
+  position: relative;
+}
+/*topnav*/
+.topNav {
+  margin: 0 auto;
+  max-width: 1280px;
+  background-color: #75B9E6;
+  border-bottom: 1px solid #4a9fca;
+}
+.topNav .top-left-ico {
+  width: 36px;
+  height: 35px;
+  margin: 10px 45px;
+  overflow: hidden;
+  display: inline-block;
+}
+.topNav .top-form {
+  float: right;
+  width: 50%;
+  padding-top: 14px;
+}
+.topNav .top-form .inputIcoWrapper {
+  float: right;
+  width: 50%;
+  position: relative;
+}
+.topNav .top-form .inputIcoWrapper .top-form-input {
+  width: 100%;
+  height: 26px;
+  border: 1px solid #acd3e7;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  font-family: Heiti, "黑体", serif;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  padding-right: 25px;
+  padding-left: 10px;
+}
+.topNav .top-form .inputIcoWrapper .inputIcon-button {
+  position: absolute;
+  right: 6px;
+  top: 3px;
+  float: right;
+  height: 20px;
+  width: 20px;
+  line-height: 100%;
+  background-color: #fff;
+  border: none;
+  padding: 0;
+  outline: none;
+}
+.topNav .top-form .inputIcoWrapper .inputIcon-button i {
+  font-size: 1.8rem;
+}
+.topNav .top-form .join {
+  float: right;
+  margin-right: 20px;
+  margin-top: -4px;
+  width: 70px;
+  height: 30px;
+  background-color: #75B9E6;
+  border: none;
+  color: #fff;
+}
+.topNav .top-form .join i {
+  margin-right: 10px;
+}
+/*index*/
+.indexMain {
+  border-bottom: 1px solid #E6E6E6;
+}
+.leftSideBar {
+  background-color: #FCFCFC;
+  min-width: 125px;
+  height: 100%;
+  border-right: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+  font-family: Heiti, "黑体", serif;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #fff;
+}
+.joinMan {
+  max-width: 260px;
+  text-align: center;
+  padding: 16px 0 0 0;
+}
+.joinMan .pictureBox {
+  max-width: 58px;
+  height: 58px;
+  -moz-border-radius: 60px;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+  border: 2px solid #dfdedf;
+  padding: 2px;
+  margin: 0 auto;
+  display: block;
+}
+.joinMan .pictureBox img {
+  max-width: 50px;
+  height: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.joinMan .joinName {
+  font-family: Heiti, "黑体", serif;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  display: block;
+  color: #848095;
+  margin: 10px auto;
+}
+/*manData*/
+.manData {
+  max-width: 100%;
+  color: #6e8095;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.manData .collect {
+  padding: 0 5px !important;
+  min-width: 50px;
+}
+.manData .wall {
+  display: inline-block;
+  padding: 0 5px !important;
+}
+.manData .wall div {
+  width: 2px;
+  height: 40px;
+  background-color: #9380A1;
+}
+.manData .fans {
+  padding: 0 5px !important;
+  min-width: 50px;
+}
+.manData span {
+  font-family: Heiti, "黑体", serif;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  display: inline-block;
+}
+.manData p {
+  font-family: SimSun, "宋体";
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  display: inline-block;
+}
+/*manFolder*/
+.publicButton-On {
+  color: #75B9E6 !important;
+}
+.publicButton-On a:link,
+.publicButton-On a:visited {
+  color: #75B9E6 !important;
+}
+.publicICO {
+  background-color: #F7F7F7;
+  width: 90%;
+}
+.publicICO > ul {
+  display: inline-block;
+}
+.publicICO > div {
+  color: #75B9E6 !important;
+}
+.publicICO > div a:link,
+.publicICO > div a:visited {
+  color: #75B9E6 !important;
+}
+.manFolder {
+  font-family: Heiti, "黑体", serif;
+  font-size: 1.4rem;
+  line-height: 1.2rem;
+}
+.manFolder > nav > ul {
+  margin-bottom: 0;
+}
+.manFolder > nav > ul li {
+  border-top: 1px solid #E6E6E6;
+  width: auto;
+  height: 30px;
+  display: block;
+  text-align: center;
+}
+.manFolder > nav > ul li .publicButton {
+  display: block;
+  color: #6e8095;
+  width: 100%;
+}
+.manFolder > nav > ul li .publicButton:link,
+.manFolder > nav > ul li .publicButton:visited {
+  color: #6e8095;
+}
+.manFolder > nav > ul li .publicButton:hover,
+.manFolder > nav > ul li .publicButton:active {
+  color: #75B9E6;
+  background-color: #F7F7F7;
+}
+.manFolder > nav > ul li .publicButton i {
+  margin-left: -20px;
+  margin-right: 10%;
+  line-height: 29px;
+  display: inline-block;
+}
+.manFolder > nav > ul li .publicButton span {
+  vertical-align: 1px;
+  display: inline-block;
+  line-height: 29px;
+}
+.mainWrapper {
+  max-width: 1280px;
+}
+.mainWrapper > div {
+  position: relative;
+}
+.viceIcoLeft {
+  margin-right: 8px;
+}
+.publicVice-Button {
+  margin: 10px 22px 0 22px;
+  color: #6e8095;
+}
+.publicVice-Button a {
+  display: inline-block;
+  vertical-align: 1px;
+}
+.publicVice-Button a:link,
+.publicVice-Button a:visited {
+  color: #6e8095;
+}
+.publicVice-Button a:hover {
+  color: #6e8095;
+}
+.publicVice-Button a:active {
+  color: #fff;
+}
+.publicVice-Button i {
+  margin-right: 5px;
+}
+.publicDocument-Button {
+  display: none;
+  overflow: hidden;
+  color: #6e8095;
+}
+.publicDocument-Button li {
+  margin: 10px 22px 0 41px;
+}
+.publicDocument-Button a {
+  display: inline-block;
+  vertical-align: 1px;
+}
+.publicDocument-Button a:link,
+.publicDocument-Button a:visited {
+  color: #6e8095;
+}
+.publicDocument-Button a:hover {
+  color: #6e8095;
+}
+.publicDocument-Button a:active {
+  color: #fff;
+}
+.publicDocument-Button i {
+  margin-right: 5px;
+  margin-left: 15px;
+}
+.indexFooter {
+  background-color: #fff;
+  font-family: Heiti, "黑体", serif;
+  font-size: 1.4rem;
+  line-height: 3rem;
+}
+.indexFooter p {
+  display: inline-block;
+  margin-bottom: -5px;
+}
+.publicPersonal {
+  padding: 19px 0;
+  background-color: #F7F7F7;
+}
+@media (min-width: 0) and (max-width: 768px) {
+  .topNav .top-left-ico {
+    width: 30px;
+    height: 30px;
+    margin: 5px 10px;
+  }
+  .topNav .top-form {
+    width: 80%;
+    padding-top: 8px;
+  }
+  .topNav .top-form .inputIcoWrapper {
+    width: 60%;
+  }
+  .topNav .top-form .inputIcoWrapper .top-form-input {
+    height: 20px;
+  }
+  .topNav .top-form .inputIcoWrapper .inputIcon-button {
+    right: 8px;
+    top: 5px;
+    height: 15px;
+    width: 15px;
+  }
+  .topNav .top-form .inputIcoWrapper .inputIcon-button i {
+    font-size: 1.4rem;
+  }
+  .topNav .top-form .join {
+    margin-right: 0;
+  }
+  .topNav .top-form .join i {
+    margin-right: 5px;
+  }
+  .leftSideBar {
+    min-width: 0;
+    padding: 0 2px !important;
+  }
+  .publicButton {
+    padding: 0 !important;
+    text-align: center;
+  }
+  .publicButton span {
+    display: none !important;
+  }
+  .publicButton i {
+    margin: 0 !important;
+  }
+}
