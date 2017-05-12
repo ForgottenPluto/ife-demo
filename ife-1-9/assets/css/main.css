@@ -2,8 +2,8 @@
 @font-face {
   font-family: 'iconfont';
   /* project id 285309 */
-  src: url('//at.alicdn.com/t/font_tmrcfpuyu0s8m2t9.eot');
-  src: url('//at.alicdn.com/t/font_tmrcfpuyu0s8m2t9.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_tmrcfpuyu0s8m2t9.woff') format('woff'), url('//at.alicdn.com/t/font_tmrcfpuyu0s8m2t9.ttf') format('truetype'), url('//at.alicdn.com/t/font_tmrcfpuyu0s8m2t9.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_8ve58xln6yywg66r.eot');
+  src: url('//at.alicdn.com/t/font_8ve58xln6yywg66r.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_8ve58xln6yywg66r.woff') format('woff'), url('//at.alicdn.com/t/font_8ve58xln6yywg66r.ttf') format('truetype'), url('//at.alicdn.com/t/font_8ve58xln6yywg66r.svg#iconfont') format('svg');
 }
 /*@font-face {
   font-family: 'iconfontleft';
@@ -23,7 +23,6 @@
 }
 /*public*/
 body {
-  max-width: 1280px;
   margin: 0 auto;
   border-right: 1px solid #E0E0DA;
   border-left: 1px solid #E0E0DA;
@@ -31,7 +30,8 @@ body {
 }
 /*topnav*/
 .topNav {
-  height: auto;
+  margin: 0 auto;
+  max-width: 1280px;
   background-color: #75B9E6;
   border-bottom: 1px solid #4a9fca;
 }
@@ -95,9 +95,13 @@ body {
   margin-right: 10px;
 }
 /*index*/
+.indexMain {
+  border-bottom: 1px solid #E6E6E6;
+}
 .leftSideBar {
   background-color: #FCFCFC;
   min-width: 125px;
+  height: 100%;
   border-right: 1px solid #E6E6E6;
   border-bottom: 1px solid #E6E6E6;
   font-family: Heiti, "黑体", serif;
@@ -112,7 +116,7 @@ body {
 }
 .joinMan .pictureBox {
   max-width: 58px;
-  max-height: 58px;
+  height: 58px;
   -moz-border-radius: 60px;
   -webkit-border-radius: 60px;
   border-radius: 60px;
@@ -123,7 +127,7 @@ body {
 }
 .joinMan .pictureBox img {
   max-width: 50px;
-  max-height: 50px;
+  height: 50px;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
@@ -235,6 +239,12 @@ body {
   display: inline-block;
   line-height: 29px;
 }
+.mainWrapper {
+  max-width: 1280px;
+}
+.mainWrapper > div {
+  position: relative;
+}
 .viceIcoLeft {
   margin-right: 8px;
 }
@@ -286,7 +296,6 @@ body {
   margin-left: 15px;
 }
 .indexFooter {
-  height: auto;
   background-color: #fff;
   font-family: Heiti, "黑体", serif;
   font-size: 1.4rem;

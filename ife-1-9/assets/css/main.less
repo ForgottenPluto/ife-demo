@@ -6,13 +6,12 @@
 
 @font-face {
   font-family: 'iconfont';  /* project id 285309 */
-  src: url('//at.alicdn.com/t/font_tmrcfpuyu0s8m2t9.eot');
-  src: url('//at.alicdn.com/t/font_tmrcfpuyu0s8m2t9.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_tmrcfpuyu0s8m2t9.woff') format('woff'),
-  url('//at.alicdn.com/t/font_tmrcfpuyu0s8m2t9.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_tmrcfpuyu0s8m2t9.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_8ve58xln6yywg66r.eot');
+  src: url('//at.alicdn.com/t/font_8ve58xln6yywg66r.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_8ve58xln6yywg66r.woff') format('woff'),
+  url('//at.alicdn.com/t/font_8ve58xln6yywg66r.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_8ve58xln6yywg66r.svg#iconfont') format('svg');
 }
-
 /*@font-face {
   font-family: 'iconfontleft';
   src: url('../font/iconfont.eot');
@@ -81,11 +80,11 @@
 
 .maxSize(@width: auto, @height: auto) {
   max-width: @width;
-  max-height: @height;
+  height: @height;
 }
 
 body {
-  max-width: 1280px;
+  //max-width: 1280px;
   margin: 0 auto;
   .border(right, #E0E0DA, 1px);
   .border(left, #E0E0DA, 1px);
@@ -94,7 +93,8 @@ body {
 
 /*topnav*/
 .topNav {
-  height: auto;
+  margin: 0 auto;
+  max-width: 1280px;
   background-color: #75B9E6;
   .border(bottom, #4a9fca);
   & .top-left-ico {
@@ -158,9 +158,13 @@ body {
 }
 
 /*index*/
+.indexMain{
+  .border(bottom, #E6E6E6, 1px);
+}
 .leftSideBar {
   background-color: #FCFCFC;
   min-width: 125px;
+  height: 100%;
   .border(right, #E6E6E6);
   .border(bottom, #E6E6E6, 1px);
   .public-font(hei, 1.6rem, 2rem);
@@ -209,7 +213,6 @@ body {
       width: 2px;
       height: 40px;
       background-color: #9380A1;
-      //margin: 0 auto;
     }
   }
   & .fans {
@@ -288,6 +291,12 @@ body {
     }
   }
 }
+.mainWrapper {
+  max-width: 1280px;
+  & > div {
+    position: relative;
+  }
+}
 
 .viceIcoLeft {
   margin-right: 8px;
@@ -341,7 +350,6 @@ body {
 }
 
 .indexFooter {
-  height: auto;
   background-color: #fff;
   .public-font(hei, 1.4rem, 3rem);
   & p {
@@ -351,10 +359,8 @@ body {
 }
 
 .publicPersonal {
-  //.size(100%, 1179px);
   padding: 19px 0;
   background-color: #F7F7F7;
-  //display: none;
 }
 
 @media (min-width: 0) and(max-width: 768px) {
