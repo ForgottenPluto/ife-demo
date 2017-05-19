@@ -22,9 +22,10 @@ $(function () {
 
     $(".depotWrapper").each(ImgHtml);
     $(".depotWrapper").on("mouseenter mouseleave", ".imgeMask", function (index) {
-        var $imgOverBlack = $(this).children();
-        var $img = $(this).siblings().find("img");
-        $(this).toggleClass("imgeOver");
+        var $this=$(this);
+        var $imgOverBlack = $this.children();
+        var $img = $this.siblings().find("img");
+        $this.toggleClass("imgeOver");
         if ($imgOverBlack.hasClass("icoOver")) {
             $imgOverBlack.eq(0).removeClass("icoOver")
                 .stop(true, false)
@@ -34,8 +35,8 @@ $(function () {
             var imgNewWitth = $img.width();
             var imgNewHeight = $img.height();
             var icoNewMar = imgNewWitth * 0.5 - 44;
-            $(this).width(imgNewWitth);
-            $(this).height(imgNewHeight);
+            $this.width(imgNewWitth);
+            $this.height(imgNewHeight);
             $imgOverBlack.css("margin-left", icoNewMar);
             $imgOverBlack.eq(0).addClass("icoOver")
                 .stop(true, false)

@@ -24,6 +24,7 @@
         <button class="join"><i class="iconfont">&#xe62f;</i>登录</button>
         <div class="inputIcoWrapper clearfix">
             <button class="inputIcon-button"><i class="iconfont">&#xe6d3;</i></button>
+            <label class="sr-only" for="top-input">搜索</label>
             <input class="top-form-input" id="top-input" type="text" name="#">
         </div>
     </form>
@@ -57,63 +58,57 @@
                     <nav class="row">
                         <ul>
                             <li>
-                                <a class="publicButton" href="personalReport.html" id="personalReport">
+                                <a class="publicButton" href="#" id="personalReport">
                                     <i class="iconfont">&#xe68b;</i><span>个人报表</span>
                                 </a>
-                                <ul>
+                                <ul class="reportFile">
                                     <li>
-                                        <div class="publicVice-Button"><span><i class="iconfont">&#xe6a7;</i><i class="iconfont">&#xe64f;</i></span><a href="#">文件一</a></div>
-                                        <ul class="publicDocument-Button">
-                                            <li>
-                                                <div ><i class="iconfont">&#xe73b;</i><a href="#">文档一</a></div>
-                                            </li>
-                                            <li>
-                                                <div><i class="iconfont">&#xe73b;</i><a href="#">文档二</a></div>
-                                            </li>
-                                        </ul>
+                                        <a class="publicVice-Button">
+                                            <i class="iconfont">&#xe8ed;</i><i class="iconfont">&#xe64f;</i><span>文件一</span>
+                                        </a>
+                                        <div>
+                                            <a class="publicDocument-Button" href="#"><i class="iconfont">&#xe73b;</i><span>文档一</span></a>
+                                            <a class="publicDocument-Button" href="#"><i class="iconfont">&#xe73b;</i><span>文档二</span></a>
+                                        </div>
                                     </li>
                                     <li>
-                                        <div class="publicVice-Button"><span><i class="iconfont">&#xe6a7;</i><i class="iconfont">&#xe64f;</i></span><a href="#">文件二</a></div>
-                                        <ul class="publicDocument-Button">
-                                            <li>
-                                                <div><i class="iconfont">&#xe73b;</i><a href="#">文档一</a></div>
-                                            </li>
-                                            <li>
-                                                <div><i class="iconfont">&#xe73b;</i><a href="#">文档二</a></div>
-                                            </li>
-                                        </ul>
+                                        <a class="publicVice-Button">
+                                            <i class="iconfont">&#xe8ed;</i><i class="iconfont">&#xe64f;</i><span>文件二</span>
+                                        </a>
+                                        <div>
+                                            <a class="publicDocument-Button" href="#"><i class="iconfont">&#xe73b;</i><span>文档一</span></a>
+                                            <a class="publicDocument-Button" href="#"><i class="iconfont">&#xe73b;</i><span>文档二</span></a>
+                                        </div>
                                     </li>
                                     <li>
-                                        <div class="publicVice-Button"><span><i class="iconfont">&#xe6a7;</i><i class="iconfont">&#xe64f;</i></span><a href="#">文件三</a></div>
-                                        <ul class="publicDocument-Button">
-                                            <li>
-                                                <div><i class="iconfont">&#xe73b;</i><a href="#">文档一</a></div>
-                                            </li>
-                                            <li>
-                                                <div><i class="iconfont">&#xe73b;</i><a href="#">文档二</a></div>
-                                            </li>
-                                        </ul>
+                                        <a class="publicVice-Button">
+                                            <i class="iconfont">&#xe8ed;</i><i class="iconfont">&#xe64f;</i><span>文件三</span>
+                                        </a>
+                                        <div>
+                                            <a class="publicDocument-Button" href="#"><i class="iconfont">&#xe73b;</i><span>文档一</span></a>
+                                            <a class="publicDocument-Button" href="#"><i class="iconfont">&#xe73b;</i><span>文档二</span></a>
+                                        </div>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a class="publicButton" href="personalCollect.html" id="personalCollect">
+                                <a class="publicButton" href="personalCollect.html">
                                     <i class="iconfont">&#xe619;</i><span>个人收藏</span></a>
                             </li>
                             <li>
-                                <a class="publicButton" href="personalShare.html" id="personalShare">
+                                <a class="publicButton" href="personalShare.html">
                                     <i class="iconfont">&#xe631;</i><span>我的分享</span></a>
                             </li>
                             <li>
-                                <a class="publicButton" href="personalDepot.html" id="personalDepot">
-                                    <i class="iconfont">&#xe6b6;</i><span>图库&nbsp;&nbsp;&nbsp;&nbsp;</span></a>
+                                <a class="publicButton" href="personalDepot.html">
+                                    <i class="iconfont">&#xe6b6;</i><span>图库&#12288;&#12288;</span></a>
                             </li>
                             <li>
-                                <a class="publicButton" href="personalRecord.html" id="personalRecord">
+                                <a class="publicButton" href="personalRecord.html">
                                     <i class="iconfont">&#xe604;</i><span>成长记录</span></a>
                             </li>
                             <li>
-                                <a class="publicButton" href="personalAccount.html" id="personalAccount">
+                                <a class="publicButton" href="personalAccount.html">
                                     <i class="iconfont">&#xe568;</i><span>账户信息</span></a>
                             </li>
                         </ul>
@@ -123,260 +118,304 @@
         </div>
         <div class="col-xs-11 col-sm-10 indexMain">
             <div class="row">
-                <div class="col-lg-12 indexFooter">
-                    <p>个人报表</p>
+                <div class="col-xs-12 indexFooter">
+                    <p>个人报表/文件一/文档一</p>
                 </div>
-                <div class="col-lg-12 publicPersonal">
-                    <div class="indexMain">
-                        <div class="indexFooter">
-                            <p>C站 / 个人报表/文件一/文档一</p>
-                        </div>
-                        <div class="personalReport publicPersonal">
-                            <form class="mainLine1 clearfix">
-                                <div class="line1QueryWrappet clearfix">
-                                    <label for="line1Query">查询项<select name="query" id="line1Query">
+                <div class="col-xs-12 publicPersonal">
+                    <div class="row">
+                        <form class="col-xs-12 mainLine1">
+                            <div class="row">
+                                <div class="col-xs-5 col-sm-5 col-md-2 form-group line1QueryWrapper ">
+                                    <label for="line1Query">查询项</label>
+                                    <select name="query" id="line1Query">
                                         <option value="1">第一项</option>
                                         <option value="2">第二项</option>
                                     </select>
-                                    </label>
                                 </div>
-                                <div class="line1DealWrappet clearfix">
-                                    <label for="line1Buyer">买方<select name="小A" id="line1Buyer">
-                                        <option value="小A">小A</option>
-                                    </select>
-                                    </label>
-                                    <label for="line1Seller">卖方<select name="小C" id="line1Seller">
-                                        <option value="小C">小C</option>
-                                    </select>
-                                    </label>
+                                <div class="col-xs-5 col-sm-5 col-md-3 form-group line1DealWrapper ">
+                                    <div>
+                                        <div class="form-group">
+                                            <label for="line1Buyer">&#12288;买方</label>
+                                            <select name="小A" id="line1Buyer">
+                                                <option value="小A">小A</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="line1Seller">&#12288;卖方</label>
+                                            <select name="小C" id="line1Seller">
+                                                <option value="小C">小C</option>
+                                            </select>
+                                        </div>
+                                    </div>
                                     <input type="image" src="assets/imags/buttonSwop.png" alt="#">
                                 </div>
-                                <div class="line1DateWrappet clearfix">
-                                    <div class="line1DateTop">
-                                        <label for="line1Date">日期<input type="date" id="line1Date" class="line1Date"></label>
-                                        <label for="line1Time">总耗时<select name="time" id="line1Time" class="line1Time">
-                                            <option value="8">8日</option>
-                                        </select>
-                                        </label>
-                                    </div>
-                                    <div class=" line1DateBottom">
-                                        <label for="line1People">人数<select name="people" id="line1People" class="line1People">
-                                            <option value="10">10人</option>
-                                        </select>
-                                        </label>
-                                        <label for="ling1Number">成交项<select name="number" id="ling1Number" class="line1Number">
-                                            <option value="10">10项</option>
-                                        </select>
-                                        </label>
+                                <div class="col-xs-12 col-sm-10 col-md-6 form-group line1DateWrapper ">
+                                    <div class="row">
+                                        <div class="col-xs-6 col-sm-6 col-md-6 form-group DateWrapper">
+                                            <label for="line1Date">&#12288;日期</label>
+                                            <input type="date" id="line1Date" class="line1Date">
+                                        </div>
+                                        <div class="col-xs-6 col-sm-6 col-md-6 form-group">
+                                            <label for="line1Time">总耗时</label>
+                                            <select name="time" id="line1Time" class="line1Time">
+                                                <option value="8">8日</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 form-group">
+                                            <label for="line1People">&#12288;人数</label>
+                                            <select name="people" id="line1People" class="line1People">
+                                                <option value="10">10人</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4 form-group">
+                                            <label for="ling1Number">成交项</label>
+                                            <select name="number" id="ling1Number" class="line1Number">
+                                                <option value="10">10项</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
-                                <button class="line1Search">搜索</button>
-                            </form>
-                            <div class="mainLine2 clearfix">
-                                <input class="line2ButtonLeft" type="image" src="assets/imags/leftico.png">
-                                <nav class="line2Deal">
-                                    <ul>
-                                        <li><p>10:00<span>am</span></p>
-                                            <div><img src="assets/imags/moneyico.png" alt="#">
-                                                <p>1200</p></div>
+                                <div class="line1Search">
+                                    <button class="">搜索</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="col-xs-12 mainLine2">
+                            <div class="row">
+                                <nav class="col-xs-10 line2Deal">
+                                    <input class="line2ButtonLeft" type="image" src="assets/imags/leftico.png">
+                                    <ul class="row">
+                                        <li class="col-xs-2"><p>10:00<span>am</span></p>
+                                            <div>
+                                                <img src="assets/imags/moneyico.png" alt="#">
+                                                <p>1200</p>
+                                            </div>
                                         </li>
-                                        <li><p>11:00<span>am</span></p>
+                                        <li class="col-xs-2"><p>11:00<span>am</span></p>
                                             <div><img src="assets/imags/moneyico.png" alt="#">
                                                 <p>1300</p></div>
                                         </li>
-                                        <li><p>12:00<span>am</span></p>
+                                        <li class="col-xs-2"><p>12:00<span>am</span></p>
                                             <div><img src="assets/imags/moneyico.png" alt="#">
                                                 <p>1200</p></div>
                                         </li>
-                                        <li><p>01:00<span>pm</span></p>
+                                        <li class="col-xs-2"><p>01:00<span>pm</span></p>
                                             <div><img src="assets/imags/moneyico.png" alt="#">
                                                 <p>1400</p></div>
                                         </li>
-                                        <li><p>02:00<span>pm</span></p>
+                                        <li class="col-xs-2"><p>02:00<span>pm</span></p>
                                             <div><img src="assets/imags/moneyico.png" alt="#">
                                                 <p>1500</p></div>
                                         </li>
-                                        <li><p>03:00<span>pm</span></p>
+                                        <li class="col-xs-2"><p>03:00<span>pm</span></p>
                                             <div><img src="assets/imags/moneyico.png" alt="#">
                                                 <p>1800</p></div>
                                         </li>
                                     </ul>
+                                    <input class="line2ButtonRight" type="image" src="assets/imags/rightico.png">
                                 </nav>
-                                <input class="line2ButtonRight" type="image" src="assets/imags/rightico.png">
-                                <div class="line2HistorySearch">
-                                    <input id="historySearch" type="image" src="assets/imags/dateico.png"><label for="historySearch">历史查询</label>
-                                </div>
-                            </div>
-                            <div class="mainLine3 clearfix">
-                                <p>2016年4月份统计</p>
-                                <nav>
-                                    <ul>
-                                        <li>
-                                            <div class="line3LeftBorder"></div>
-                                            <div class="line3Content">
-                                                <p class="line3ContentTop">133311</p>
-                                                <p class="line3ContentBottom">成交量</p>
-                                            </div>
-                                            <div class="line3RightWrapper">
-                                                <div class="line3RightHeight"></div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="line3LeftBorder"></div>
-                                            <div class="line3Content">
-                                                <p class="line3ContentTop">133311</p>
-                                                <p class="line3ContentBottom">成交量</p>
-                                            </div>
-                                            <div class="line3RightWrapper">
-                                                <div class="line3RightHeight"></div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="line3LeftBorder"></div>
-                                            <div class="line3Content">
-                                                <p class="line3ContentTop">133311</p>
-                                                <p class="line3ContentBottom">成交量</p>
-                                            </div>
-                                            <div class="line3RightWrapper">
-                                                <div class="line3RightHeight"></div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="line3LeftBorder"></div>
-                                            <div class="line3Content">
-                                                <p class="line3ContentTop">133311</p>
-                                                <p class="line3ContentBottom">成交量</p>
-                                            </div>
-                                            <div class="line3RightWrapper">
-                                                <div class="line3RightHeight"></div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="mainLine4Wrapper clearfix">
-                                <div class="line4Left">
-                                    <div class="lineTitle">第一组项目</div>
-                                    <nav>
-                                        <ul>
-                                            <li><a href="#">项目一</a></li>
-                                            <li><a href="#">项目二</a></li>
-                                            <li><a href="#">项目三</a></li>
-                                            <li><a href="#">项目四</a></li>
-                                            <li><a href="#">项目五</a></li>
-                                        </ul>
-                                    </nav>
-                                    <div class="tableWrapper">
-                                        <table>
-                                            <tr>
-                                                <td>购买材料一</td>
-                                                <td>购买材料二</td>
-                                                <td>购买材料三</td>
-                                                <td>购买材料四</td>
-                                            </tr>
-                                            <tr>
-                                                <td>购买材料五</td>
-                                                <td>购买材料六</td>
-                                                <td>购买材料七</td>
-                                                <td>购买材料八</td>
-                                            </tr>
-                                            <tr>
-                                                <td>购买材料三</td>
-                                                <td>购买材料三</td>
-                                                <td>购买材料三</td>
-                                                <td>购买材料三</td>
-                                            </tr>
-                                            <tr>
-                                                <td>购买材料四</td>
-                                                <td>购买材料四</td>
-                                                <td>购买材料四</td>
-                                                <td>购买材料四</td>
-                                            </tr>
-                                            <tr>
-                                                <td>购买材料十五</td>
-                                                <td>购买材料十五</td>
-                                                <td>购买材料十五</td>
-                                                <td>购买材料十五</td>
-                                            </tr>
-                                            <tr>
-                                                <td>购买材料十六</td>
-                                                <td>购买材料十六</td>
-                                                <td>购买材料十六</td>
-                                                <td>购买材料十六</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="line4Right">
-                                    <div class="lineTitle">第一组项目</div>
-                                    <div class="ling4MainWrapper">
-                                        <div class="line4TopWrapper">
-                                            <h2>标题</h2>
-                                            <p>项目报表三</p>
-                                        </div>
-                                        <div class="line4MiddleWrapper">
-                                            <div class="middleLeftWrapper">
-                                                <h2>加个</h2>
-                                                <p>¥153</p>
-                                            </div>
-                                            <div class="middleRightWrapper">
-                                                <h2>负责人</h2>
-                                                <p>小A</p>
-                                            </div>
-                                        </div>
-                                        <div class="middleBottomWrapper">
-                                            <h2>详细描述</h2>
-                                            <textarea name="lin4MiddleText" id="lin4MiddleText" cols="32" rows="7">该项目目前负责人是......</textarea>
-                                        </div>
-                                        <form action="#" class="ChckeBoxWrapper clearfix">
-                                            <input type="checkbox" name="service" value="abserve" id="abserveChckebox" class="inputCheck">
-                                            <label for="abserveChckebox" class="check1"></label>
-                                            <span>遵守保密协议</span>
-                                            <button class="line4RightBotton">搜索</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mainLine5Wrapper clearfix">
-                                <div class="line5Left">
-                                    <div class="lineTitle">日历</div>
-                                    <div class="line5MenologyWrapper">
-                                        <div class="MenologyTop">
-                                            <select class="select1" name="year" id="year"></select>
-                                            <select class="select2" name="month" id="month"></select>
-                                            <select class="select3" name="day" id="day">
-                                                <option value="markDay">标注日期</option>
-                                            </select>
-                                            <button class="returnButton">返回今天</button>
-                                        </div>
-                                        <div class="MenologyMiddle">
-                                            <table>
-                                                <tr>
-                                                    <td>一</td>
-                                                    <td>二</td>
-                                                    <td>三</td>
-                                                    <td>四</td>
-                                                    <td>五</td>
-                                                    <td>六</td>
-                                                    <td>日</td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                        <div class="MenologyBottom" id="cm">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="line5Right">
-                                    <div class="lineTitle">汽车行业品牌榜</div>
-                                    <div></div>
+                                <div class="col-xs-12 line2HistorySearch">
+                                    <input id="historySearch" type="image" src="assets/imags/dateico.png">
+                                    <label for="historySearch">历史查询</label>
                                 </div>
                             </div>
                         </div>
-                        <div class="personalCollect publicPersonal"></div>
-                        <div class="personalShare publicPersonal"></div>
-                        <div class="personalDepot publicPersonal"></div>
-                        <div class="personalRecord publicPersonal"></div>
-                        <div class="personalAccount publicPersonal"></div>
+                        <div class="col-xs-12 mainLine3 ">
+                            <p>2016年4月份统计</p>
+                            <nav>
+                                <ul class="row">
+                                    <li class="col-xs-12 col-sm-6 col-lg-3">
+                                        <div class="line3LiWrapper">
+                                            <div class="line3LeftBorder"></div>
+                                            <div class="line3Content">
+                                                <p class="line3ContentTop">133311</p>
+                                                <p class="line3ContentBottom">成交量</p>
+                                            </div>
+                                            <div class="line3RightWrapper">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-xs-12 col-sm-6 col-lg-3">
+                                        <div class="line3LiWrapper">
+                                            <div class="line3LeftBorder"></div>
+                                            <div class="line3Content">
+                                                <p class="line3ContentTop">133311</p>
+                                                <p class="line3ContentBottom">成交量</p>
+                                            </div>
+                                            <div class="line3RightWrapper">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-xs-12 col-sm-6 col-lg-3">
+                                        <div class="line3LiWrapper">
+                                            <div class="line3LeftBorder"></div>
+                                            <div class="line3Content">
+                                                <p class="line3ContentTop">133311</p>
+                                                <p class="line3ContentBottom">成交量</p>
+                                            </div>
+                                            <div class="line3RightWrapper">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-xs-12 col-sm-6 col-lg-3">
+                                        <div class="line3LiWrapper">
+                                            <div class="line3LeftBorder"></div>
+                                            <div class="line3Content">
+                                                <p class="line3ContentTop">133311</p>
+                                                <p class="line3ContentBottom">成交量</p>
+                                            </div>
+                                            <div class="line3RightWrapper">
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-xs-12 mainLine4Wrapper ">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6">
+                                    <div class="line4Left">
+                                        <div class="lineTitle">第一组项目</div>
+                                        <nav>
+                                            <ul>
+                                                <li><a href="#">项目一</a></li>
+                                                <li><a href="#">项目二</a></li>
+                                                <li><a href="#">项目三</a></li>
+                                                <li><a href="#">项目四</a></li>
+                                                <li><a href="#">项目五</a></li>
+                                            </ul>
+                                        </nav>
+                                        <div class="tableWrapper table-responsive">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                <tr>
+                                                    <th>名称</th>
+                                                    <th>数量</th>
+                                                    <th>价格</th>
+                                                    <th>库存</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>购买材料五</td>
+                                                    <td>1000</td>
+                                                    <td>120</td>
+                                                    <td>100</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>购买材料三</td>
+                                                    <td>2000</td>
+                                                    <td>130</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>购买材料四</td>
+                                                    <td>3000</td>
+                                                    <td>150</td>
+                                                    <td>1000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>购买材料十五</td>
+                                                    <td>4000</td>
+                                                    <td>150</td>
+                                                    <td>200</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>购买材料十六</td>
+                                                    <td>5000</td>
+                                                    <td>160</td>
+                                                    <td>300</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <div class="line4Right table-responsive">
+                                        <div class="lineTitle">第一组项目</div>
+                                        <div class="line4MainWrapper">
+                                            <div class="line4TopWrapper">
+                                                <h2>标题</h2>
+                                                <p>项目报表三</p>
+                                            </div>
+                                            <table class="table line4MiddleWrapper">
+                                                <thead>
+                                                <tr>
+                                                    <th>加个</th>
+                                                    <th>负责人</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>¥153</td>
+                                                    <td>小A</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="middleBottomWrapper">
+                                                <label for="lin4MiddleText">详细描述</label>
+                                                <textarea name="lin4MiddleText" id="lin4MiddleText" cols="32" rows="7">该项目目前负责人是......</textarea>
+                                            </div>
+                                            <form action="#" class="CheckeBoxWrapper clearfix">
+                                                <input type="checkbox" name="service" value="abserve" id="abserveCheckebox" class="inputCheck">
+                                                <label for="abserveCheckebox" class="check1"></label>
+                                                <span>遵守保密协议</span>
+                                                <button class="line4RightBotton">搜索</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 mainLine5Wrapper ">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-5">
+                                    <div class="line5Left">
+                                        <div class="lineTitle">日历</div>
+                                        <div class="line5MenologyWrapper">
+                                            <div class="MenologyTop">
+                                                <span class="prev-month" id="prevMonth"></span>
+                                                <div>
+                                                    <label class="sr-only" for="year" >年</label>
+                                                    <select class="year" name="year" id="year"></select>
+                                                    <label class="sr-only" for="month">月</label>
+                                                    <select class="month" name="month" id="month"></select>
+                                                    <label class="sr-only" for="day">日</label>
+                                                    <select class="day" name="day" id="day">
+                                                    </select>
+                                                    <button id="todayButton">返回今天</button>
+                                                </div>
+                                                <span id="nextMonth" class="next-month"></span>
+                                            </div>
+                                            <div class="MenologyMiddle">
+                                                <table>
+                                                    <tr>
+                                                        <td>日</td>
+                                                        <td>一</td>
+                                                        <td>二</td>
+                                                        <td>三</td>
+                                                        <td>四</td>
+                                                        <td>五</td>
+                                                        <td>六</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class='calendar' id='calendar'>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-7">
+                                    <div class="line5Right">
+                                        <div class="lineTitle">汽车行业品牌榜</div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -388,7 +427,9 @@
 <script src="assets/js/bootstrap.js" type="text/javascript"></script>
 <script src="assets/js/jquery-ui.js" type="text/javascript"></script>
 <script src="assets/js/main.js" type="text/javascript"></script>
-
+<script src="assets/js/pullDownButton.js" type="text/javascript"></script>
+<!--<script src="assets/js/personalReport.js" type="text/javascript"></script>-->
+<script src="assets/js/date.js" type="text/javascript"></script>
 </body>
 </html>
 

@@ -53,3 +53,7 @@ body {
 html {
   font-size: 62.5%;
 }
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}

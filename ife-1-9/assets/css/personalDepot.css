@@ -2,8 +2,8 @@
 @font-face {
   font-family: 'iconfont';
   /* project id 285309 */
-  src: url('//at.alicdn.com/t/font_8ve58xln6yywg66r.eot');
-  src: url('//at.alicdn.com/t/font_8ve58xln6yywg66r.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_8ve58xln6yywg66r.woff') format('woff'), url('//at.alicdn.com/t/font_8ve58xln6yywg66r.ttf') format('truetype'), url('//at.alicdn.com/t/font_8ve58xln6yywg66r.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_3imt2kkbsyhz1tt9.eot');
+  src: url('//at.alicdn.com/t/font_3imt2kkbsyhz1tt9.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_3imt2kkbsyhz1tt9.woff') format('woff'), url('//at.alicdn.com/t/font_3imt2kkbsyhz1tt9.ttf') format('truetype'), url('//at.alicdn.com/t/font_3imt2kkbsyhz1tt9.svg#iconfont') format('svg');
 }
 /*@font-face {
   font-family: 'iconfontleft';
@@ -207,34 +207,34 @@ body {
 .manFolder > nav > ul {
   margin-bottom: 0;
 }
-.manFolder > nav > ul li {
+.manFolder > nav > ul > li {
   border-top: 1px solid #E6E6E6;
   width: auto;
-  height: 30px;
+  min-height: 30px;
   display: block;
   text-align: center;
 }
-.manFolder > nav > ul li .publicButton {
+.publicButton {
   display: block;
   color: #6e8095;
   width: 100%;
 }
-.manFolder > nav > ul li .publicButton:link,
-.manFolder > nav > ul li .publicButton:visited {
+.publicButton:link,
+.publicButton:visited {
   color: #6e8095;
 }
-.manFolder > nav > ul li .publicButton:hover,
-.manFolder > nav > ul li .publicButton:active {
+.publicButton:hover,
+.publicButton:active {
   color: #75B9E6;
   background-color: #F7F7F7;
 }
-.manFolder > nav > ul li .publicButton i {
+.publicButton > i {
   margin-left: -20px;
-  margin-right: 10%;
+  margin-right: 8%;
   line-height: 29px;
   display: inline-block;
 }
-.manFolder > nav > ul li .publicButton span {
+.publicButton > span {
   vertical-align: 1px;
   display: inline-block;
   line-height: 29px;
@@ -244,56 +244,6 @@ body {
 }
 .mainWrapper > div {
   position: relative;
-}
-.viceIcoLeft {
-  margin-right: 8px;
-}
-.publicVice-Button {
-  margin: 10px 22px 0 22px;
-  color: #6e8095;
-}
-.publicVice-Button a {
-  display: inline-block;
-  vertical-align: 1px;
-}
-.publicVice-Button a:link,
-.publicVice-Button a:visited {
-  color: #6e8095;
-}
-.publicVice-Button a:hover {
-  color: #6e8095;
-}
-.publicVice-Button a:active {
-  color: #fff;
-}
-.publicVice-Button i {
-  margin-right: 5px;
-}
-.publicDocument-Button {
-  display: none;
-  overflow: hidden;
-  color: #6e8095;
-}
-.publicDocument-Button li {
-  margin: 10px 22px 0 41px;
-}
-.publicDocument-Button a {
-  display: inline-block;
-  vertical-align: 1px;
-}
-.publicDocument-Button a:link,
-.publicDocument-Button a:visited {
-  color: #6e8095;
-}
-.publicDocument-Button a:hover {
-  color: #6e8095;
-}
-.publicDocument-Button a:active {
-  color: #fff;
-}
-.publicDocument-Button i {
-  margin-right: 5px;
-  margin-left: 15px;
 }
 .indexFooter {
   background-color: #fff;
@@ -308,6 +258,69 @@ body {
 .publicPersonal {
   padding: 19px 0;
   background-color: #F7F7F7;
+}
+.publicLeftSideClick {
+  width: 101%;
+}
+.publicLeftSideClick:link,
+.publicLeftSideClick:visited .publicLeftSideClick:hover,
+.publicLeftSideClick:active {
+  color: #75B9E6;
+  background-color: #F7F7F7 !important;
+}
+#personalReport {
+  width: 101%;
+}
+#personalReport:link,
+#personalReport:visited #personalReport:hover,
+#personalReport:active {
+  color: #75B9E6;
+  background-color: #F7F7F7 !important;
+}
+#personalCollect {
+  width: 101%;
+}
+#personalCollect:link,
+#personalCollect:visited #personalCollect:hover,
+#personalCollect:active {
+  color: #75B9E6;
+  background-color: #F7F7F7 !important;
+}
+#personalShare {
+  width: 101%;
+}
+#personalShare:link,
+#personalShare:visited #personalShare:hover,
+#personalShare:active {
+  color: #75B9E6;
+  background-color: #F7F7F7 !important;
+}
+#personalDepot {
+  width: 101%;
+}
+#personalDepot:link,
+#personalDepot:visited #personalDepot:hover,
+#personalDepot:active {
+  color: #75B9E6;
+  background-color: #F7F7F7 !important;
+}
+#personalRecord {
+  width: 101%;
+}
+#personalRecord:link,
+#personalRecord:visited #personalRecord:hover,
+#personalRecord:active {
+  color: #75B9E6;
+  background-color: #F7F7F7 !important;
+}
+#personalAccount {
+  width: 101%;
+}
+#personalAccount:link,
+#personalAccount:visited #personalAccount:hover,
+#personalAccount:active {
+  color: #75B9E6;
+  background-color: #F7F7F7 !important;
 }
 @media (min-width: 0) and (max-width: 768px) {
   .topNav .top-left-ico {

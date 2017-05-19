@@ -6,12 +6,13 @@
 
 @font-face {
   font-family: 'iconfont';  /* project id 285309 */
-  src: url('//at.alicdn.com/t/font_8ve58xln6yywg66r.eot');
-  src: url('//at.alicdn.com/t/font_8ve58xln6yywg66r.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_8ve58xln6yywg66r.woff') format('woff'),
-  url('//at.alicdn.com/t/font_8ve58xln6yywg66r.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_8ve58xln6yywg66r.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_3imt2kkbsyhz1tt9.eot');
+  src: url('//at.alicdn.com/t/font_3imt2kkbsyhz1tt9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_3imt2kkbsyhz1tt9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_3imt2kkbsyhz1tt9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_3imt2kkbsyhz1tt9.svg#iconfont') format('svg');
 }
+
 /*@font-face {
   font-family: 'iconfontleft';
   src: url('../font/iconfont.eot');
@@ -158,9 +159,10 @@ body {
 }
 
 /*index*/
-.indexMain{
+.indexMain {
   .border(bottom, #E6E6E6, 1px);
 }
+
 .leftSideBar {
   background-color: #FCFCFC;
   min-width: 125px;
@@ -258,94 +260,43 @@ body {
   .public-font(hei, 1.4rem, 1.2rem);
   & > nav > ul {
     margin-bottom: 0;
-    & li {
+    & > li {
       .border(top, #E6E6E6, 1px);
       width: auto;
-      height: 30px;
+      min-height: 30px;
       display: block;
       text-align: center;
-      .publicButton {
-        display: block;
-        color: #6e8095;
-        width: 100%;
-        &:link, &:visited {
-          color: #6e8095;
-        }
-        &:hover, &:active {
-          color: #75B9E6;
-          background-color: #F7F7F7;
-        }
-        & i {
-          margin-left: -20px;
-          margin-right: 10%;
-          line-height: 29px;
-          display: inline-block;
-        }
-        & span {
-          vertical-align: 1px;
-          display: inline-block;
-          line-height: 29px;
-        }
-      }
-
     }
   }
+}
+.publicButton {
+  display: block;
+  color: #6e8095;
+  width: 100%;
+  &:link, &:visited {
+    color: #6e8095;
+  }
+  &:hover, &:active {
+    color: #75B9E6;
+    background-color: #F7F7F7;
+  }
+  & > i {
+    margin-left: -20px;
+    margin-right: 8%;
+    line-height: 29px;
+    display: inline-block;
+  }
+  & > span {
+    vertical-align: 1px;
+    display: inline-block;
+    line-height: 29px;
+  }
+
 }
 .mainWrapper {
   max-width: 1280px;
   & > div {
     position: relative;
-  }
-}
-
-.viceIcoLeft {
-  margin-right: 8px;
-}
-
-.publicVice-Button {
-  margin: 10px 22px 0 22px;
-  color: #6e8095;
-  & a {
-    display: inline-block;
-    vertical-align: 1px;
-    &:link, &:visited {
-      color: #6e8095;
-    }
-    &:hover {
-      color: #6e8095;
-    }
-    &:active {
-      color: #fff;
-    }
-  }
-  & i {
-    margin-right: 5px;
-  }
-}
-
-.publicDocument-Button {
-  display: none;
-  overflow: hidden;
-  color: #6e8095;
-  & li {
-    margin: 10px 22px 0 41px;
-  }
-  & a {
-    display: inline-block;
-    vertical-align: 1px;
-    &:link, &:visited {
-      color: #6e8095;
-    }
-    &:hover {
-      color: #6e8095;
-    }
-    &:active {
-      color: #fff;
-    }
-  }
-  & i {
-    margin-right: 5px;
-    margin-left: 15px;
   }
 }
 
@@ -363,6 +314,31 @@ body {
   background-color: #F7F7F7;
 }
 
+.publicLeftSideClick {
+  width: 100%+1px;
+  &:link, &:visited &:hover, &:active {
+    color: #75B9E6;
+    background-color: #F7F7F7 !important;
+  }
+}
+#personalReport{
+  .publicLeftSideClick;
+}
+#personalCollect{
+  .publicLeftSideClick;
+}
+#personalShare{
+  .publicLeftSideClick;
+}
+#personalDepot{
+  .publicLeftSideClick;
+}
+#personalRecord{
+  .publicLeftSideClick;
+}
+#personalAccount{
+  .publicLeftSideClick;
+}
 @media (min-width: 0) and(max-width: 768px) {
   .topNav {
     & .top-left-ico {
