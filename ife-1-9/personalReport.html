@@ -58,10 +58,10 @@
                     <nav class="row">
                         <ul>
                             <li>
-                                <a class="publicButton" href="#" id="personalReport">
+                                <a class="publicButton personalReport" href="#" id="personalReport">
                                     <i class="iconfont">&#xe68b;</i><span>个人报表</span>
                                 </a>
-                                <ul class="reportFile">
+                                <ul class="reportFile hidden-xs">
                                     <li>
                                         <a class="publicVice-Button">
                                             <i class="iconfont">&#xe8ed;</i><i class="iconfont">&#xe64f;</i><span>文件一</span>
@@ -125,31 +125,35 @@
                     <div class="row">
                         <form class="col-xs-12 mainLine1">
                             <div class="row">
-                                <div class="col-xs-5 col-sm-5 col-md-2 form-group line1QueryWrapper ">
+                                <div class="col-xs-5 col-sm-5 col-md-2 form-group line1QueryWrapper">
                                     <label for="line1Query">查询项</label>
                                     <select name="query" id="line1Query">
                                         <option value="1">第一项</option>
                                         <option value="2">第二项</option>
                                     </select>
                                 </div>
-                                <div class="col-xs-5 col-sm-5 col-md-3 form-group line1DealWrapper ">
+                                <div class="col-xs-5 col-sm-5 col-md-3 form-group line1DealWrapper">
                                     <div>
                                         <div class="form-group">
                                             <label for="line1Buyer">&#12288;买方</label>
-                                            <select name="小A" id="line1Buyer">
+                                            <select name="Buyer" id="line1Buyer">
                                                 <option value="小A">小A</option>
+                                                <option value="小B">小B</option>
+                                                <option value="小C">小C</option>
                                             </select>
                                         </div>
                                         <div class="form-group">
                                             <label for="line1Seller">&#12288;卖方</label>
-                                            <select name="小C" id="line1Seller">
-                                                <option value="小C">小C</option>
+                                            <select name="Seller" id="line1Seller">
+                                                <option value="小D">小D</option>
+                                                <option value="小E">小E</option>
+                                                <option value="小F">小F</option>
                                             </select>
                                         </div>
                                     </div>
-                                    <input type="image" src="assets/imags/buttonSwop.png" alt="#">
+                                    <button id="buttonExchange" type="button"></button>
                                 </div>
-                                <div class="col-xs-12 col-sm-10 col-md-6 form-group line1DateWrapper ">
+                                <div class="col-xs-12 col-sm-10 col-md-6 form-group line1DateWrapper">
                                     <div class="row">
                                         <div class="col-xs-6 col-sm-6 col-md-6 form-group DateWrapper">
                                             <label for="line1Date">&#12288;日期</label>
@@ -159,65 +163,71 @@
                                             <label for="line1Time">总耗时</label>
                                             <select name="time" id="line1Time" class="line1Time">
                                                 <option value="8">8日</option>
+                                                <option value="2">2日</option>
+                                                <option value="1">1日</option>
                                             </select>
                                         </div>
                                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 form-group">
                                             <label for="line1People">&#12288;人数</label>
                                             <select name="people" id="line1People" class="line1People">
                                                 <option value="10">10人</option>
+                                                <option value="2">2人</option>
+                                                <option value="5">5人</option>
                                             </select>
                                         </div>
                                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4 form-group">
                                             <label for="ling1Number">成交项</label>
                                             <select name="number" id="ling1Number" class="line1Number">
                                                 <option value="10">10项</option>
+                                                <option value="1">1项</option>
+                                                <option value="5">5项</option>
+
                                             </select>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="line1Search">
-                                    <button class="">搜索</button>
+                                    <button type="button" class="buttonSearch">搜索</button>
                                 </div>
                             </div>
                         </form>
-                        <div class="col-xs-12 mainLine2">
-                            <div class="row">
-                                <nav class="col-xs-10 line2Deal">
-                                    <input class="line2ButtonLeft" type="image" src="assets/imags/leftico.png">
-                                    <ul class="row">
-                                        <li class="col-xs-2"><p>10:00<span>am</span></p>
-                                            <div>
-                                                <img src="assets/imags/moneyico.png" alt="#">
-                                                <p>1200</p>
-                                            </div>
-                                        </li>
-                                        <li class="col-xs-2"><p>11:00<span>am</span></p>
-                                            <div><img src="assets/imags/moneyico.png" alt="#">
-                                                <p>1300</p></div>
-                                        </li>
-                                        <li class="col-xs-2"><p>12:00<span>am</span></p>
-                                            <div><img src="assets/imags/moneyico.png" alt="#">
+                        <div class="col-xs-12 mainLine2" style="display: none">
+                            <div class="">
+                                <input class="line2ButtonLeft" type="image" src="assets/imags/leftico.png">
+                                <nav class="line2Deal">
+                                    <ul>
+                                        <li>
+                                            <span>10:00 am</span>
+                                            <div><i class="iconfont">&#xe601;</i>
                                                 <p>1200</p></div>
                                         </li>
-                                        <li class="col-xs-2"><p>01:00<span>pm</span></p>
-                                            <div><img src="assets/imags/moneyico.png" alt="#">
+                                        <li><span>11:00 am</span>
+                                            <div><i class="iconfont">&#xe601;</i>
+                                                <p>1300</p></div>
+                                        </li>
+                                        <li><span>12:00 am</span>
+                                            <div><i class="iconfont">&#xe601;</i>
+                                                <p>1200</p></div>
+                                        </li>
+                                        <li><span>01:00 pm</span>
+                                            <div><i class="iconfont">&#xe601;</i>
                                                 <p>1400</p></div>
                                         </li>
-                                        <li class="col-xs-2"><p>02:00<span>pm</span></p>
-                                            <div><img src="assets/imags/moneyico.png" alt="#">
+                                        <li><span>02:00 pm</span>
+                                            <div><i class="iconfont">&#xe601;</i>
                                                 <p>1500</p></div>
                                         </li>
-                                        <li class="col-xs-2"><p>03:00<span>pm</span></p>
-                                            <div><img src="assets/imags/moneyico.png" alt="#">
+                                        <li><span>03:00 pm</span>
+                                            <div><i class="iconfont">&#xe601;</i>
                                                 <p>1800</p></div>
                                         </li>
                                     </ul>
-                                    <input class="line2ButtonRight" type="image" src="assets/imags/rightico.png">
                                 </nav>
                                 <div class="col-xs-12 line2HistorySearch">
                                     <input id="historySearch" type="image" src="assets/imags/dateico.png">
                                     <label for="historySearch">历史查询</label>
                                 </div>
+                                <input class="line2ButtonRight" type="image" src="assets/imags/rightico.png">
                             </div>
                         </div>
                         <div class="col-xs-12 mainLine3 ">
@@ -225,48 +235,43 @@
                             <nav>
                                 <ul class="row">
                                     <li class="col-xs-12 col-sm-6 col-lg-3">
-                                        <div class="line3LiWrapper">
+                                        <div class="line3LiWrapper clearfix">
                                             <div class="line3LeftBorder"></div>
                                             <div class="line3Content">
                                                 <p class="line3ContentTop">133311</p>
                                                 <p class="line3ContentBottom">成交量</p>
                                             </div>
-                                            <div class="line3RightWrapper">
-                                            </div>
+                                            <div class="line3RightWrapper"><div style="height: 60%"></div><span></span></div>
                                         </div>
                                     </li>
                                     <li class="col-xs-12 col-sm-6 col-lg-3">
-                                        <div class="line3LiWrapper">
+                                        <div class="line3LiWrapper clearfix">
                                             <div class="line3LeftBorder"></div>
                                             <div class="line3Content">
                                                 <p class="line3ContentTop">133311</p>
                                                 <p class="line3ContentBottom">成交量</p>
                                             </div>
-                                            <div class="line3RightWrapper">
-                                            </div>
+                                            <div class="line3RightWrapper"><div style="height: 40%"></div><span></span></div>
                                         </div>
                                     </li>
                                     <li class="col-xs-12 col-sm-6 col-lg-3">
-                                        <div class="line3LiWrapper">
+                                        <div class="line3LiWrapper clearfix">
                                             <div class="line3LeftBorder"></div>
                                             <div class="line3Content">
                                                 <p class="line3ContentTop">133311</p>
                                                 <p class="line3ContentBottom">成交量</p>
                                             </div>
-                                            <div class="line3RightWrapper">
-                                            </div>
+                                            <div class="line3RightWrapper"><div style="height: 90%"></div><span></span></div>
                                         </div>
                                     </li>
                                     <li class="col-xs-12 col-sm-6 col-lg-3">
-                                        <div class="line3LiWrapper">
+                                        <div class="line3LiWrapper clearfix">
                                             <div class="line3LeftBorder"></div>
                                             <div class="line3Content">
                                                 <p class="line3ContentTop">133311</p>
                                                 <p class="line3ContentBottom">成交量</p>
                                             </div>
-                                            <div class="line3RightWrapper">
-
-                                            </div>
+                                            <div class="line3RightWrapper"><div style="height: 20%"></div><span></span></div>
                                         </div>
                                     </li>
                                 </ul>
@@ -378,13 +383,12 @@
                                             <div class="MenologyTop">
                                                 <span class="prev-month" id="prevMonth"></span>
                                                 <div>
-                                                    <label class="sr-only" for="year" >年</label>
+                                                    <label class="sr-only" for="year">年</label>
                                                     <select class="year" name="year" id="year"></select>
                                                     <label class="sr-only" for="month">月</label>
                                                     <select class="month" name="month" id="month"></select>
                                                     <label class="sr-only" for="day">日</label>
-                                                    <select class="day" name="day" id="day">
-                                                    </select>
+                                                    <select class="day" name="day" id="day"></select>
                                                     <button id="todayButton">返回今天</button>
                                                 </div>
                                                 <span id="nextMonth" class="next-month"></span>
@@ -411,7 +415,119 @@
                                 <div class="col-xs-12 col-sm-7">
                                     <div class="line5Right">
                                         <div class="lineTitle">汽车行业品牌榜</div>
-                                        <div></div>
+                                        <div class="table-responsive carTableWrapper">
+                                            <table class="table-bordered table-hover">
+                                                <thead>
+                                                <tr>
+                                                    <th>排名</th>
+                                                    <th>品牌</th>
+                                                    <th>搜索指数</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>大众</td>
+                                                    <td>
+                                                        <p>48912001</p>
+                                                        <div class="progress">
+                                                            <div class="progress-bar" style="width: 90%;background-color: #ed6e52"><span></span></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>丰田</td>
+                                                    <td>
+                                                        <p>29307333</p>
+                                                        <div class="progress">
+                                                            <div class="progress-bar" style="width: 85%;background-color: #ef8150"><span></span></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>奥迪</td>
+                                                    <td>
+                                                        <p>23139070</p>
+                                                        <div class="progress">
+                                                            <div class="progress-bar" style="width: 75%;background-color: #f19f4f"><span></span></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>本田</td>
+                                                    <td>
+                                                        <p>22885564</p>
+                                                        <div class="progress">
+                                                            <div class="progress-bar" style="width: 70%;background-color: #7fcaf0"><span></span></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>福特</td>
+                                                    <td>
+                                                        <p>22324792</p>
+                                                        <div class="progress">
+                                                            <div class="progress-bar" style="width: 50%;background-color: #7fcbf0"><span></span></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>宝马</td>
+                                                    <td>
+                                                        <p>21444077</p>
+                                                        <div class="progress">
+                                                            <div class="progress-bar" style="width: 42%;background-color: #7fcbf0"><span></span></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>现代</td>
+                                                    <td>
+                                                        <p>20114969</p>
+                                                        <div class="progress">
+                                                            <div class="progress-bar" style="width: 30%;background-color: #7fcbf0"><span></span></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td>起亚</td>
+                                                    <td>
+                                                        <p>19251680</p>
+                                                        <div class="progress">
+                                                            <div class="progress-bar" style="width: 28%;background-color: #7fcbf0"><span></span></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>奔驰</td>
+                                                    <td>
+                                                        <p>19172837</p>
+                                                        <div class="progress">
+                                                            <div class="progress-bar" style="width: 25%;background-color: #7fcbf0"><span></span></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10</td>
+                                                    <td>大众</td>
+                                                    <td>
+                                                        <p>18544027</p>
+                                                        <div class="progress">
+                                                            <div class="progress-bar" style="width: 22%;background-color: #7fcbf0"><span></span></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -428,7 +544,7 @@
 <script src="assets/js/jquery-ui.js" type="text/javascript"></script>
 <script src="assets/js/main.js" type="text/javascript"></script>
 <script src="assets/js/pullDownButton.js" type="text/javascript"></script>
-<!--<script src="assets/js/personalReport.js" type="text/javascript"></script>-->
+<script src="assets/js/personalReport.js" type="text/javascript"></script>
 <script src="assets/js/date.js" type="text/javascript"></script>
 </body>
 </html>

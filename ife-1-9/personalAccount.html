@@ -79,7 +79,7 @@
                                     <i class="iconfont">&#xe604;</i><span>成长记录</span></a>
                             </li>
                             <li>
-                                <a class="publicButton" href="#" id="personalAccount">
+                                <a class="publicButton accountButton" href="#" id="personalAccount">
                                     <i class="iconfont">&#xe568;</i><span>账户信息</span></a>
                             </li>
                         </ul>
@@ -94,68 +94,116 @@
                 </div>
                 <div class="col-xs-12 publicPersonal">
                     <div class="row">
-                        <div class=" col-xs-12 col-sm-5">
-                            <div class="headPortrait">
-                                <div>454545</div>
-                                <div>4545</div>
+                        <div class="col-xs-12 col-sm-7">
+                            <div class="heardPortrait">
+                                <div class="row">
+                                    <div class="col-xs-12 title">头像</div>
+                                    <div class="col-xs-12 title_h2">选择上传方式</div>
+                                    <div class="col-xs-12">
+                                        <div class="upLoad form-group">
+                                            <button id="localPhoto" type="submit" name="localPhoto" value="">
+                                                <i class="iconfont">&#xe6b7;</i>本地照片
+                                            </button>
+                                            <label class="sr-only" for="localPhoto">本地照片</label>
+                                        </div>
+                                        <div class="upLoad form-group">
+                                            <button id="oneselfPhoto" type="submit" name="oneselfPhoto" value="">
+                                                <i class="iconfont">&#xe66b;</i>自拍头像
+                                            </button>
+                                            <label class="sr-only" for="oneselfPhoto">自拍头像</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 state">仅支持JPG、GIF、PNG格式,文件小于5M。</div>
+                                    <div class="col-xs-12 agreedButton">
+                                        <input id="agreedPhoto" type="checkbox" name="agreedPhoto">
+                                        <span>上存原始图片,生成高清图像</span>
+                                        <label class="sr-only" for="agreedPhoto">同意</label>
+                                    </div>
+                                    <div class="col-xs-6 bigPhoto">
+                                        <span class="state">本地照片:选择一张本地的图片编辑后上传为头像<br/>拍照上传:通过摄像头拍照编辑后上传为头像</span>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="row">
+                                            <div class="col-xs-12">您上存的图片将会自动生成三种尺寸头像,请注意中小尺寸的头像是否清晰.</div>
+                                            <div class="col-xs-6 photo_180">
+                                                <span class="state">大尺寸头像:180 X 180像素</span>
+                                            </div>
+                                            <div class="col-xs-4 photo_50">
+                                                <span class="state">中尺寸头像:50 X 50像素(自动生成)</span>
+                                            </div>
+                                            <div class="col-xs-4 photo_30">
+                                                <span class="state">小尺寸头像:30 X 30像素(自动生成)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-7">
-                            <form class="row personalForm">
-                                <div class="col-xs-12 col-sm-12 form-group">
-                                    <h4>个人资料</h4>
-                                    <p>以下信息将显示在个人资料页，方便大家了解你。</p>
-                                </div>
-                                <div class="col-xs-12 form-group">
-                                    <lable for="name">真实姓名</lable>
-                                    <input type="text" name="">
-                                </div>
-                                <div class="col-xs-12 form-group">
-                                    <lable for="birthplace">&#12288;所在地</lable>
-                                    <select name="birthplace" id="birthplace"></select>
-                                </div>
-                                <div class="col-xs-12 form-group">
-                                    <lable for="">&#12288;&#12288;性别</lable>
-                                    <input type="radio" name="sex" value="man" checked="checked">男
-                                    <input type="radio" name="sex" value="woman">女
-                                </div>
-                                <div class="col-xs-12 form-group">
-                                    <lable for="#">&#12288;&#12288;出生</lable>
-                                    <select name="birthDate" id="birthYear"></select>
-                                    <lable for="birthYear">年</lable>
-                                    <select name="birthDate" id="birthMon"></select>
-                                    <lable for="birthMon">月</lable>
-                                    <select name="birthDate" id="birthDay"></select>
-                                    <lable for="birthDay">日</lable>
-                                </div>
-                                <div class="col-xs-12 form-group">
-                                    <lable for="">&#12288;&#12288;血型</lable>
-                                    <select name="bloodType" >
-                                        <option value="A">A型</option>
-                                        <option value="B">B型</option>
-                                        <option value="AB">AB型</option>
-                                        <option value="O">B型</option>
-                                    </select>
-                                </div>
-                                <div class="col-xs-12 form-group">
-                                    <lable for="">&#12288;&#12288;简介</lable>
-                                    <input type="text" name="" value="请输入个人简介">
-                                </div>
-                                <div class="col-xs-12 form-group">
-                                    <lable for="">博客地址</lable>
-                                    <input type="text" name="blog">
-                                </div>
-                                <div class="col-xs-12 form-group">
-                                    <lable for="">&#12288;登录名</lable>
-                                    <input type="text" name="" value="用户昵称">
-                                </div>
-                                <div class="col-xs-12 form-group">
-                                    <lable for="">&#12288;新密码</lable>
-                                    <input type="password" name="newPassword">
-                                </div>
-                                <div class="col-xs-12 form-group">
-                                    <lable for="">重新输入新密码</lable>
-                                    <input type="password" name="resPassword">
+                        <div class="col-xs-12 col-sm-5">
+                            <form class="personalForm">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 form-group">
+                                        <div class="title">个人资料</div>
+                                        <div class="title_h2">以下信息将显示在个人资料页，方便大家了解你。</div>
+                                    </div>
+                                    <div class="col-xs-12 form-group">
+                                        <label for="ManName">真实姓名</label>
+                                        <input type="text" id="ManName" name="">
+                                    </div>
+                                    <div class="col-xs-12 form-group">
+                                        <label for="birthplace">&#12288;所在地</label>
+                                        <select name="birthplace" id="birthplace"></select>
+                                    </div>
+                                    <div class="col-xs-12 form-group">
+                                        <label>&#12288;&#12288;性别</label>
+                                        <label for="sexMan">男</label>
+                                        <input id="sexMan" type="radio" name="sex" value="man" checked="checked">
+                                        <label for="sexWoman">女</label>
+                                        <input id="sexWoman" type="radio" name="sex" value="woman">
+                                    </div>
+                                    <div class="col-xs-12 form-group">
+                                        <label>&#12288;&#12288;出生</label>
+                                        <select name="birthDate" id="birthYear"></select>
+                                        <label for="birthYear">年</label>
+                                        <select name="birthDate" id="birthMon"></select>
+                                        <label for="birthMon">月</label>
+                                        <select name="birthDate" id="birthDay"></select>
+                                        <label for="birthDay">日</label>
+                                    </div>
+                                    <div class="col-xs-12 form-group">
+                                        <label for="bloodType">&#12288;&#12288;血型</label>
+                                        <select id="bloodType" name="bloodType">
+                                            <option value="A">A型</option>
+                                            <option value="B">B型</option>
+                                            <option value="AB">AB型</option>
+                                            <option value="O">B型</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xs-12 form-group">
+                                        <label for="manIntro">&#12288;&#12288;简介</label>
+                                        <input id="manIntro" type="text" name="manIntro" value="请输入个人简介">
+                                    </div>
+                                    <div class="col-xs-12 form-group">
+                                        <label for="blogAddress">博客地址</label>
+                                        <input id="blogAddress" type="text" name="blogAddress">
+                                    </div>
+                                    <div class="col-xs-12 form-group">
+                                        <label for="uesName">&#12288;登录名</label>
+                                        <input id="uesName" type="text" name="uesName" value="用户昵称">
+                                    </div>
+                                    <div class="col-xs-12 form-group">
+                                        <label for="uesEmail">密保邮箱</label>
+                                        <input id="uesEmail" type="email" name="uesEmail" value="密保邮箱">
+                                    </div>
+                                    <div class="col-xs-12 form-group">
+                                        <label for="newPassword">&#12288;新密码</label>
+                                        <input id="newPassword" class="password" type="password" name="newPassword">
+                                    </div>
+                                    <div class="col-xs-12 form-group">
+                                        <label for="resPassword">重新输入新密码</label>
+                                        <input id="resPassword" type="password" name="resPassword">
+                                    </div>
+                                    <button type="submit">提交</button>
                                 </div>
                             </form>
                         </div>
@@ -171,7 +219,7 @@
 <script src="assets/js/bootstrap.js" type="text/javascript"></script>
 <script src="assets/js/jquery-ui.js" type="text/javascript"></script>
 <script src="assets/js/main.js" type="text/javascript"></script>
-
+<script src="assets/js/personalAccount.js" type="text/javascript"></script>
 
 </body>
 </html>

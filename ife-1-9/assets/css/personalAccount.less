@@ -1,7 +1,103 @@
-@import "main";//1
-.headPortrait{
-  background-color: yellow;
+@import "main"; //1
+.accountButton {
+  color: #75B9E6;
+  &:link, &:visited, &:hover, &:active {
+    color: #75B9E6;
+  }
 }
-.personalForm{
+
+.heardPortrait {
   background-color: #fff;
+  padding: 15px;
+  .public-font(song, 1.2rem, 1.4rem);
+  & .title {
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  & .title_h2 {
+    margin-bottom: 10px;
+  }
+  & .state {
+    color: #808080;
+    .public-font(song);
+  }
+  & .upLoad {
+    display: inline-block;
+    & button {
+      width: 90px;
+      height: 26px;
+      & i {
+        margin-right: 2px;
+        vertical-align: -2px;
+      }
+      &:hover {
+        background-color: #75B9E6;
+        color: #fff;
+      }
+    }
+  }
+  & .agreedButton {
+    margin: 10px 0 0 0;
+    & span {
+      vertical-align: 3px;
+    }
+  }
+  & .bigPhoto {
+    background-color: #d7d7d7;
+    width: 100%;
+    margin: 5px;
+    min-width: 180px;
+    max-width: 250px;
+    max-height: 250px;
+    min-height: 180px;
+    position: relative;
+    overflow: hidden;
+    &:after{
+      content: "";
+      display: block;
+      margin-top: 100%;
+    }
+    & span{
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      margin: 15px;
+
+
+    }
+  }
+  & .photo_180 {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    background-color: #d7d7d7;
+    margin: 5px;
+    & span {
+      position: absolute;
+      bottom: 20px;
+    }
+  }
+  & .photo_50 {
+    width: 80px;
+    height: 80px;
+    padding: 3px;
+    background-color: #d7d7d7;
+    margin: 5px;
+    font-size: 1rem;
+  }
+  & .photo_30 {
+    width: 80px;
+    height: 80px;
+    padding: 3px;
+    background-color: #d7d7d7;
+    margin: 5px;
+  }
+
+}
+
+.personalForm {
+  background-color: #fff;
+  padding: 15px;
+  .public-font(song, 1.2rem, 1.4rem);
 }

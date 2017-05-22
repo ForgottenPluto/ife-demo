@@ -4,8 +4,9 @@
 $(function () {
     /*个人报表二级目录*/
     function buttonTwoClick() {
-        var $folder = $(this);
-        var $i=$folder.children("i");
+        let $folder = $(this);
+        let $i = $folder.children("i");
+
         function buttonOn() {
             $folder.addClass("publicButton-On")
                 .attr("id", "twoChecked")
@@ -13,7 +14,7 @@ $(function () {
             $i.eq(0).html("&#xe8eb;");
             $i.eq(1).html("&#xe8ea;");
             return false;
-        };
+        }
 
         function buttonOff() {
             $i.eq(0).html("&#xe6a7;");
@@ -22,25 +23,27 @@ $(function () {
                 .removeAttr("id")
                 .siblings().slideUp();
             return false;
-        };
-        if ($folder.attr("id")=="twoChecked") {
+        }
+
+        if ($folder.attr("id") === "twoChecked") {
             $folder.siblings().find("#threeChecked").click();
             buttonOff();
             console.log("off");
-        }else {
+        } else {
             $("#twoChecked").click();
             buttonOn();
             console.log("on");
         }
-    };
+    }
 
 
     /*个人报表三级目录*/
     function buttonThreeClick() {
-        var $folder = $(this);
+        let $folder = $(this);
+
         function buttonOn() {
             $folder.addClass("publicButton-On")
-                .attr("id","threeChecked");
+                .attr("id", "threeChecked");
             return false;
         }
 
@@ -50,18 +53,19 @@ $(function () {
             return false;
         }
 
-        if ($folder.attr("id")=="threeChecked") {
+        let $threeChecked = $("#threeChecked");
+        if ($folder.attr("id") === "threeChecked") {
             buttonOff();
         } else {
-            if ($("#threeChecked").length) {
-                $("#threeChecked").click();
+            if ($threeChecked.length) {
+                $threeChecked.click();
             }
             buttonOn();
         }
     }
 
     $(".publicVice-Button").on("click", buttonTwoClick);
-    $(".publicDocument-Button").on("click",buttonThreeClick);
+    $(".publicDocument-Button").on("click", buttonThreeClick);
 
 
 });

@@ -2,8 +2,8 @@
 @font-face {
   font-family: 'iconfont';
   /* project id 285309 */
-  src: url('//at.alicdn.com/t/font_3imt2kkbsyhz1tt9.eot');
-  src: url('//at.alicdn.com/t/font_3imt2kkbsyhz1tt9.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_3imt2kkbsyhz1tt9.woff') format('woff'), url('//at.alicdn.com/t/font_3imt2kkbsyhz1tt9.ttf') format('truetype'), url('//at.alicdn.com/t/font_3imt2kkbsyhz1tt9.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_mob8f03a5zxe0zfr.eot');
+  src: url('//at.alicdn.com/t/font_mob8f03a5zxe0zfr.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_mob8f03a5zxe0zfr.woff') format('woff'), url('//at.alicdn.com/t/font_mob8f03a5zxe0zfr.ttf') format('truetype'), url('//at.alicdn.com/t/font_mob8f03a5zxe0zfr.svg#iconfont') format('svg');
 }
 /*@font-face {
   font-family: 'iconfontleft';
@@ -15,7 +15,7 @@
 }*/
 .iconfont {
   font-family: "iconfont" !important;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke-width: 0.2px;
@@ -59,9 +59,7 @@ body {
   -moz-border-radius: 12px;
   -webkit-border-radius: 12px;
   border-radius: 12px;
-  font-family: Heiti, "黑体", serif;
-  font-size: 1.2rem;
-  line-height: 1.2rem;
+  font: 1.2rem/1.2rem 1.2rem, serif;
   padding-right: 25px;
   padding-left: 10px;
 }
@@ -104,9 +102,7 @@ body {
   height: 100%;
   border-right: 1px solid #E6E6E6;
   border-bottom: 1px solid #E6E6E6;
-  font-family: Heiti, "黑体", serif;
-  font-size: 1.6rem;
-  line-height: 2rem;
+  font: 1.6rem/2rem 1.6rem, serif;
   color: #fff;
 }
 .joinMan {
@@ -134,9 +130,7 @@ body {
   overflow: hidden;
 }
 .joinMan .joinName {
-  font-family: Heiti, "黑体", serif;
-  font-size: 1.6rem;
-  line-height: 1.6rem;
+  font: 1.6rem/1.6rem 1.6rem, serif;
   display: block;
   color: #848095;
   margin: 10px auto;
@@ -166,9 +160,7 @@ body {
   min-width: 50px;
 }
 .manData span {
-  font-family: Heiti, "黑体", serif;
-  font-size: 1.6rem;
-  line-height: 1.6rem;
+  font: 1.6rem/1.6rem 1.6rem, serif;
   display: inline-block;
 }
 .manData p {
@@ -178,6 +170,82 @@ body {
   display: inline-block;
 }
 /*manFolder*/
+.publicLeftSideClick {
+  width: 101%;
+}
+.publicLeftSideClick:link,
+.publicLeftSideClick:visited .publicLeftSideClick:hover,
+.publicLeftSideClick:active {
+  color: #75B9E6;
+  background-color: #F7F7F7 !important;
+}
+.manFolder {
+  font: 1.4rem/1.2rem 1.4rem, serif;
+}
+.manFolder > nav > ul {
+  margin-bottom: 0;
+}
+.manFolder > nav > ul > li {
+  border-top: 1px solid #E6E6E6;
+  width: auto;
+  min-height: 30px;
+  display: block;
+  text-align: center;
+}
+.manFolder .personalReport {
+  width: 101%;
+}
+.manFolder .personalReport:link,
+.manFolder .personalReport:visited .manFolder .personalReport:hover,
+.manFolder .personalReport:active {
+  color: #75B9E6;
+  background-color: #F7F7F7 !important;
+}
+.manFolder .personalCollect {
+  width: 101%;
+}
+.manFolder .personalCollect:link,
+.manFolder .personalCollect:visited .manFolder .personalCollect:hover,
+.manFolder .personalCollect:active {
+  color: #75B9E6;
+  background-color: #F7F7F7 !important;
+}
+.manFolder .personalShare {
+  width: 101%;
+}
+.manFolder .personalShare:link,
+.manFolder .personalShare:visited .manFolder .personalShare:hover,
+.manFolder .personalShare:active {
+  color: #75B9E6;
+  background-color: #F7F7F7 !important;
+}
+.manFolder .personalDepot {
+  width: 101%;
+}
+.manFolder .personalDepot:link,
+.manFolder .personalDepot:visited .manFolder .personalDepot:hover,
+.manFolder .personalDepot:active {
+  color: #75B9E6;
+  background-color: #F7F7F7 !important;
+}
+.manFolder .personalRecord {
+  width: 101%;
+}
+.manFolder .personalRecord:link,
+.manFolder .personalRecord:visited .manFolder .personalRecord:hover,
+.manFolder .personalRecord:active {
+  color: #75B9E6;
+  background-color: #F7F7F7 !important;
+}
+.manFolder .personalAccount {
+  width: 101%;
+}
+.manFolder .personalAccount:link,
+.manFolder .personalAccount:visited .manFolder .personalAccount:hover,
+.manFolder .personalAccount:active {
+  color: #75B9E6;
+  background-color: #F7F7F7 !important;
+}
 .publicButton-On {
   color: #75B9E6 !important;
 }
@@ -198,21 +266,6 @@ body {
 .publicICO > div a:link,
 .publicICO > div a:visited {
   color: #75B9E6 !important;
-}
-.manFolder {
-  font-family: Heiti, "黑体", serif;
-  font-size: 1.4rem;
-  line-height: 1.2rem;
-}
-.manFolder > nav > ul {
-  margin-bottom: 0;
-}
-.manFolder > nav > ul > li {
-  border-top: 1px solid #E6E6E6;
-  width: auto;
-  min-height: 30px;
-  display: block;
-  text-align: center;
 }
 .publicButton {
   display: block;
@@ -247,9 +300,7 @@ body {
 }
 .indexFooter {
   background-color: #fff;
-  font-family: Heiti, "黑体", serif;
-  font-size: 1.4rem;
-  line-height: 3rem;
+  font: 1.4rem/3rem 1.4rem, serif;
 }
 .indexFooter p {
   display: inline-block;
@@ -258,69 +309,6 @@ body {
 .publicPersonal {
   padding: 19px 0;
   background-color: #F7F7F7;
-}
-.publicLeftSideClick {
-  width: 101%;
-}
-.publicLeftSideClick:link,
-.publicLeftSideClick:visited .publicLeftSideClick:hover,
-.publicLeftSideClick:active {
-  color: #75B9E6;
-  background-color: #F7F7F7 !important;
-}
-#personalReport {
-  width: 101%;
-}
-#personalReport:link,
-#personalReport:visited #personalReport:hover,
-#personalReport:active {
-  color: #75B9E6;
-  background-color: #F7F7F7 !important;
-}
-#personalCollect {
-  width: 101%;
-}
-#personalCollect:link,
-#personalCollect:visited #personalCollect:hover,
-#personalCollect:active {
-  color: #75B9E6;
-  background-color: #F7F7F7 !important;
-}
-#personalShare {
-  width: 101%;
-}
-#personalShare:link,
-#personalShare:visited #personalShare:hover,
-#personalShare:active {
-  color: #75B9E6;
-  background-color: #F7F7F7 !important;
-}
-#personalDepot {
-  width: 101%;
-}
-#personalDepot:link,
-#personalDepot:visited #personalDepot:hover,
-#personalDepot:active {
-  color: #75B9E6;
-  background-color: #F7F7F7 !important;
-}
-#personalRecord {
-  width: 101%;
-}
-#personalRecord:link,
-#personalRecord:visited #personalRecord:hover,
-#personalRecord:active {
-  color: #75B9E6;
-  background-color: #F7F7F7 !important;
-}
-#personalAccount {
-  width: 101%;
-}
-#personalAccount:link,
-#personalAccount:visited #personalAccount:hover,
-#personalAccount:active {
-  color: #75B9E6;
-  background-color: #F7F7F7 !important;
 }
 @media (min-width: 0) and (max-width: 768px) {
   .topNav .top-left-ico {

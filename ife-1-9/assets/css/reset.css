@@ -16,6 +16,7 @@ dd,
 a,
 p,
 input,
+button,
 textarea,
 form {
   margin: 0;
@@ -45,13 +46,13 @@ img {
   clear: both;
   overflow: hidden;
 }*/
-body {
-  margin: 0 auto!important;
-  background-color: #000000;
-  font-family: Heiti, "黑体", "Microsoft YaHei", "微软雅黑", Helvetica, Tahoma, Arial, STXihei, "华文细黑", SimSun, "宋体", sans-serif;
-}
 html {
   font-size: 62.5%;
+}
+body {
+  margin: 0 auto !important;
+  background-color: #000000;
+  font: 1.2rem/1.2rem Heiti, "黑体", "Microsoft YaHei", "微软雅黑", Helvetica, Tahoma, Arial, STXihei, "华文细黑", SimSun, "宋体", sans-serif;
 }
 button::-moz-focus-inner {
   border: 0;
