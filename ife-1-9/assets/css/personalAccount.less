@@ -6,18 +6,24 @@
   }
 }
 
+.title {
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #000;
+}
+
+.title_h2 {
+  margin-bottom: 10px;
+}
+
 .heardPortrait {
   background-color: #fff;
   padding: 15px;
+  .border(all, #d0d2d5, 1px);
+  .public-radius(10px);
   .public-font(song, 1.2rem, 1.4rem);
-  & .title {
-    font-weight: 700;
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-  }
-  & .title_h2 {
-    margin-bottom: 10px;
-  }
   & .state {
     color: #808080;
     .public-font(song);
@@ -53,18 +59,20 @@
     min-height: 180px;
     position: relative;
     overflow: hidden;
-    &:after{
+    &:after {
       content: "";
       display: block;
       margin-top: 100%;
     }
-    & span{
+    & span {
       position: absolute;
       bottom: 20px;
       left: 0;
       margin: 15px;
-
-
+    }
+    & img {
+      width: 100%;
+      height: 100%;
     }
   }
   & .photo_180 {
@@ -76,6 +84,13 @@
     & span {
       position: absolute;
       bottom: 20px;
+      left: 15px;
+    }
+    & img {
+      position: absolute;
+      height: 180px;
+      width: 180px;
+      overflow: hidden;
     }
   }
   & .photo_50 {
@@ -85,6 +100,12 @@
     background-color: #d7d7d7;
     margin: 5px;
     font-size: 1rem;
+    & img {
+      height: 50px;
+      width: 50px;
+      overflow: hidden;
+      margin: 11px;
+    }
   }
   & .photo_30 {
     width: 80px;
@@ -92,6 +113,12 @@
     padding: 3px;
     background-color: #d7d7d7;
     margin: 5px;
+    & img {
+      height: 30px;
+      width: 30px;
+      overflow: hidden;
+      margin: 21px;
+    }
   }
 
 }
@@ -99,5 +126,29 @@
 .personalForm {
   background-color: #fff;
   padding: 15px;
+  .border(all, #d0d2d5, 1px);
+  .public-radius(10px);
   .public-font(song, 1.2rem, 1.4rem);
+  text-align: left;
+  & .publicInput {
+    & input {
+      padding: 2px 2px 2px 3px;
+    }
+  }
+  & .manIntro {
+    font-size: 1rem;
+  }
+  & .borderWrapper {
+    border-top: 2px #d7d7d7 dashed;
+    height: 0;
+    margin-bottom: 15px;
+  }
+  & label {
+    font-weight: 500;
+  }
+  & .manSubmit {
+    width: 80px;
+    height: 20px;
+    margin-left: 25%;
+  }
 }
