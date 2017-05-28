@@ -477,32 +477,28 @@
       text-align: center;
       margin: auto 5px;
       & .year {
-        max-width: 60px;
+        width: 70px;
         .publicLin5Select;
 
       }
       & .month {
-        max-width: 50px;
+        width: 50px;
         .publicLin5Select;
 
       }
       & .day {
-        width: 50px;
+        width: 52px;
         .publicLin5Select;
       }
-      & button {
+      & .todayButton{
         .border(all, #cdcece);
         .public-font(hei, 1.2rem, 1.2rem);
         background-color: #A9CFEC;
         height: 20px;
         width: 70px;
-        &:link, &:visited {
-          padding-right: 8px !important;
-          padding-left: 8px !important;
-        }
-        &:hover, &:active {
-          padding-right: 8px !important;
-          padding-left: 8px !important;
+        vertical-align: 1px;
+        &:link, &:visited,&:hover, &:active{
+          padding: 0 !important;
         }
       }
     }

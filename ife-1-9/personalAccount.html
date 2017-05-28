@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.theme.css" type="text/css">
     <link rel="stylesheet" href="assets/css/personalAccount.css" type="text/css">
     <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <!--引用less-->
     <!--<link rel="stylesheet/less" type="text/css" href="assets/css/main.less">-->
@@ -21,7 +22,7 @@
 <header class="topNav clearfix">
     <img class="top-left-ico" src="assets/imags/topnavIco.png" alt="#">
     <form class="top-form clearfix">
-        <button class="join"><i class="iconfont">&#xe62f;</i>登录</button>
+        <a class="join" href="login.html"><i class="iconfont">&#xe62f;</i>登录</a>
         <div class="inputIcoWrapper clearfix">
             <button class="inputIcon-button"><i class="iconfont">&#xe6d3;</i></button>
             <label class="sr-only" for="top-input">搜索</label>
@@ -155,22 +156,22 @@
                                         <div class="title_h2">以下信息将显示在个人资料页，方便大家了解你。</div>
                                     </div>
                                     <div class="col-xs-12 form-group publicInput">
-                                        <label for="uesName">&#12288;登录名:</label>
+                                        <label for="uesName">&#12288;登录名</label>
                                         <input id="uesName" type="text" name="uesName" placeholder="登录名">
                                     </div>
                                     <div class="col-xs-12 form-group" style="display: none">
-                                        <label for="birthplace">&#12288;所在地:</label>
+                                        <label for="birthplace">&#12288;所在地</label>
                                         <select name="birthplace" id="birthplace"></select>
                                     </div>
                                     <div class="col-xs-12 form-group">
-                                        <label>&#12288;&#12288;性别:</label>
+                                        <label>&#12288;&#12288;性别</label>
                                         <label for="sexMan">男</label>
                                         <input id="sexMan" type="radio" name="sex" value="man" checked="checked">
                                         <label for="sexWoman">女</label>
                                         <input id="sexWoman" type="radio" name="sex" value="woman">
                                     </div>
                                     <div class="col-xs-12 form-group">
-                                        <label for="bloodType">&#12288;&#12288;血型:</label>
+                                        <label for="bloodType">&#12288;&#12288;血型</label>
                                         <select id="bloodType" name="bloodType">
                                             <option value="A">A型</option>
                                             <option value="B">B型</option>
@@ -179,7 +180,7 @@
                                         </select>
                                     </div>
                                     <div class="col-xs-12">
-                                        <label>&#12288;&#12288;出生:</label>
+                                        <label>&#12288;&#12288;出生</label>
                                         <select name="birthDate" id="birthYear"></select>
                                         <label for="birthYear">年</label>
                                         <select name="birthDate" id="birthMon"></select>
@@ -188,32 +189,34 @@
                                         <label for="birthDay" class="sr-only">日</label>
                                     </div>
                                     <div class="col-xs-12 form-group">
-                                        <label for="manIntro">简介:</label>
+                                        <label for="manIntro">简介</label>
                                         <textarea class="form-control manIntro" rows="3" id="manIntro" name="manIntro" placeholder="个人简介"></textarea>
                                     </div>
                                     <div class="col-xs-12 form-group publicInput">
-                                        <label for="blogAddress">博客地址:</label>
+                                        <label for="blogAddress">博客地址</label>
                                         <input id="blogAddress" type="text" name="blogAddress">
                                     </div>
                                     <span class="col-xs-12 borderWrapper"></span>
                                     <div class="col-xs-12 title">密保信息</div>
                                     <div class="col-xs-12 form-group publicInput">
-                                        <label for="ManName">真实姓名:</label>
+                                        <label for="ManName">真实姓名</label>
                                         <input type="text" id="ManName" name="ManName" placeholder="真实姓名">
                                     </div>
                                     <div class="col-xs-12 form-group publicInput">
-                                        <label for="uesEmail">密保邮箱:</label>
+                                        <label for="uesEmail">密保邮箱</label>
                                         <input id="uesEmail" type="email" name="uesEmail" placeholder="密保邮箱">
                                     </div>
                                     <div class="col-xs-12 form-group publicInput">
-                                        <label for="newPassword">&#12288;新密码:</label>
+                                        <label for="newPassword">&#12288;新密码</label>
                                         <input id="newPassword" class="" type="password" name="newPassword" placeholder="请输入新密码">
                                     </div>
                                     <div class="col-xs-12 form-group publicInput">
-                                        <label for="resPassword">重新输入:</label>
-                                        <input id="resPassword" type="password" name="resPassword" placeholder="重新输入新密码">
+                                        <label for="resPassword">确认密码</label>
+                                        <input id="resPassword" type="password" name="resPassword" placeholder="确认密码">
                                     </div>
-                                    <button id="manFormSubmit" class="manSubmit" type="submit">提交</button>
+                                    <div class="col-xs-12">
+                                        <button id="manFormSubmit" class="manSubmit" type="submit">提交</button>
+                                    </div>
                                 </div>
                             </form>
                         </div>
