@@ -27,6 +27,7 @@ body {
   border-right: 1px solid #E0E0DA;
   border-left: 1px solid #E0E0DA;
   position: relative;
+  min-width: 320px;
 }
 /*topnav*/
 .topNav {

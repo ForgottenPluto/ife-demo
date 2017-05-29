@@ -27,6 +27,7 @@ body {
   border-right: 1px solid #E0E0DA;
   border-left: 1px solid #E0E0DA;
   position: relative;
+  min-width: 320px;
 }
 /*topnav*/
 .topNav {
@@ -410,6 +411,7 @@ body {
 /*mainLine1*/
 .mainLine1 {
   background-color: #F7F7F7;
+  position: relative;
 }
 .mainLine1 > div {
   font: 1.2rem/2.3rem 1.2rem, serif;
@@ -468,24 +470,25 @@ body {
   padding-right: 0;
 }
 .mainLine1 > div .line1DateWrapper .DateWrapper {
-  min-width: 200px;
+  min-width: 250px;
+}
+.mainLine1 > div .line1DateWrapper .DateWrapper .line1Date {
+  display: inline-block;
+  height: 23px;
+  width: 135px !important;
+  border: 1px solid #cbcbcb;
 }
 .mainLine1 > div .line1DateWrapper > div > div {
   margin-bottom: 0;
 }
-.mainLine1 > div .line1DateWrapper .line1Date {
-  height: 23px;
-  border: 1px solid #cbcbcb;
-}
-.mainLine1 > div .line1Search {
+.mainLine1 .line1Search {
   position: absolute;
   right: 40px;
-  max-width: 60px;
-  top: 30%;
+  bottom: 30%;
   padding: 0;
 }
-.mainLine1 > div .line1Search button {
-  max-width: 60px;
+.mainLine1 .line1Search button {
+  width: 60px;
   font: 1.2rem/2.3rem 1.2rem, serif;
   background-color: #388ac1;
   color: #fff;
@@ -1029,13 +1032,13 @@ body {
   color: #ede;
 }
 @media (min-width: 0) and (max-width: 768px) {
-  .mainLine1 .line1Search {
-    top: auto !important;
-    bottom: 5%;
-    right: 22px !important;
-  }
+  /*mainLine1*/
   .mainLine1 .line1DateWrapper > div > div {
     margin-bottom: 0;
-    min-width: 200px;
+    min-width: 250px !important;
+  }
+  .mainLine1 .line1Search {
+    bottom: 10%;
+    right: 40px !important;
   }
 }
