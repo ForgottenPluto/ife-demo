@@ -1,4 +1,5 @@
-@import "main"; //1
+@import "main";
+
 .accountButton {
   color: #75B9E6;
   &:link, &:visited, &:hover, &:active {
@@ -69,6 +70,7 @@
       bottom: 20px;
       left: 0;
       margin: 15px;
+      line-height: 1.6rem;
     }
     & img {
       width: 100%;
@@ -76,15 +78,22 @@
     }
   }
   & .photo_180 {
-    position: relative;
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     background-color: #d7d7d7;
-    margin: 5px;
-    & span {
-      position: absolute;
-      bottom: 20px;
-      left: 15px;
+    padding: 0;
+    margin: 5px 5px 5px 20px;
+    & > div {
+      width: 180px;
+      height: 180px;
+      margin: 10px;
+      position: relative;
+      & span {
+        position: absolute;
+        bottom: 15px;
+        left: 18px;
+        line-height: 1.6rem;
+      }
     }
     & img {
       position: absolute;
@@ -94,25 +103,45 @@
     }
   }
   & .photo_50 {
-    width: 80px;
-    height: 80px;
-    padding: 3px;
+    padding: 0;
+    width: 100px;
+    height: 100px;
     background-color: #d7d7d7;
-    margin: 5px;
+    margin: 5px 5px 5px 20px;
     font-size: 1rem;
+    & > div {
+      width: 80px;
+      height: 80px;
+      margin: 10px;
+    }
     & img {
       height: 50px;
       width: 50px;
       overflow: hidden;
       margin: 11px;
     }
+    & {
+      line-height: 1.4rem;
+    }
   }
   & .photo_30 {
+    padding: 0;
     width: 80px;
     height: 80px;
-    padding: 3px;
     background-color: #d7d7d7;
-    margin: 5px;
+    margin: 5px 5px 5px 20px;
+    position: relative;
+    & > div {
+      width: 30px;
+      height: 30px;
+      margin: 25px;
+      & span {
+        position: absolute;
+        top: 10px;
+        left: 5px;
+        line-height: 1.4rem;
+      }
+    }
     & img {
       height: 30px;
       width: 30px;
@@ -146,9 +175,16 @@
   & label {
     font-weight: 500;
   }
+  & span{
+    display:block;
+    width: auto;
+    margin-left: 55px;
+    margin-top: 5px;
+  }
   & .manSubmit {
     width: 80px;
     height: 20px;
-    margin:  0 auto;
+    margin: 0 auto;
   }
 }
+

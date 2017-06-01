@@ -3,8 +3,13 @@
  */
 $(function () {
 
-
+    let $localPhoto=$("#localPhoto");
     let dateObj2 = dateFun();
+
+    /*绑定事件*/
+    $localPhoto.on("click",LocalPhotoOn);
+
+
 
     /*初始化html部分*/
     birthDayHtml();
@@ -54,6 +59,13 @@ $(function () {
             $day.append(dayHtml);
         }
         $day.val(_day);
+    }
+
+    function LocalPhotoOn() {
+
+
+
+
     }
 
 });

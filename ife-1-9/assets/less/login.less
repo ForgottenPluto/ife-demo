@@ -1,0 +1,118 @@
+@import "main";
+
+body {
+  min-height: 100%;
+  background-color: #75b9e6 !important;
+}
+
+.loginIndex {
+  margin: 3% auto;
+  max-width: 400px;
+  & .myTab {
+    & li a {
+      border: none;
+      &:link {
+        background-color: #f2f7f9;
+        border: 0 !important;
+      }
+      &:hover, & :active {
+        background-color: #E4E9EB;
+        color: #75B9E6;
+      }
+    }
+    & .active a {
+      background-color: #fff;
+      &:link, &:visited, &:hover, & :active {
+        background-color: #fff;
+      }
+    }
+  }
+  & .myTabContent {
+    margin-top: 15px;
+  }
+  & .loginImg {
+    margin: 10px auto;
+  }
+  & .login-wrapper {
+    background-color: #fff;
+    .public-radius(5px);
+  }
+  & .loginWay a {
+    .border(all, #75b9e6, 2px);
+    width: 40px;
+    display: inline-block;
+    height: 40px;
+    .public-radius(20px);
+    position: relative;
+    margin: 5px;
+    &:link, &:visited {
+      color: #75b9e6;
+      border-color: #75b9e6;
+    }
+    &:hover, & :active {
+      color: #82CEFF;
+      border-color: #82CEFF;
+    }
+    & i {
+      position: absolute;
+      left: 3px;
+      top: -2px;
+      font-size: 3rem;
+    }
+
+  }
+  & .borderWrapper {
+    position: relative;
+    border-color: #EEEEEE;
+    text-align: center;
+    height: 30px;
+    & strong {
+      background-color: #fff;
+      display: inline-block;
+      width: 40px;
+      font-weight: 900;
+      color: #768399;
+      z-index: 9999;
+      position: relative;
+    }
+    & span {
+      width: 100%;
+      border-bottom: 1px solid #EEEEEE;
+      position: absolute;
+      top: 10px;
+      left: 0;
+      z-index: 888;
+    }
+  }
+
+  & .loginCheck {
+    margin-left: 25px;
+    color: #768399;
+  }
+  & .checkSubmit {
+    margin-bottom: 15px;
+  }
+  & .resButton {
+    padding: 20px;
+  }
+
+}
+
+.loginButton {
+  padding: 0 5px;
+  margin-bottom:0;
+  & i {
+    background-color: #fff;
+    border-right: none;
+  }
+}
+.hint{
+  margin: 0 0 8px 4px;
+  display: inline-block;
+}
+.help-block {
+  .loginButton;
+  & a small {
+    color: #75B9E6;
+  }
+}

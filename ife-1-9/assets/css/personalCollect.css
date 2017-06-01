@@ -2,8 +2,8 @@
 @font-face {
   font-family: 'iconfont';
   /* project id 285309 */
-  src: url('//at.alicdn.com/t/font_mob8f03a5zxe0zfr.eot');
-  src: url('//at.alicdn.com/t/font_mob8f03a5zxe0zfr.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_mob8f03a5zxe0zfr.woff') format('woff'), url('//at.alicdn.com/t/font_mob8f03a5zxe0zfr.ttf') format('truetype'), url('//at.alicdn.com/t/font_mob8f03a5zxe0zfr.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_qt12q6gif2h85mi.eot');
+  src: url('//at.alicdn.com/t/font_qt12q6gif2h85mi.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_qt12q6gif2h85mi.woff') format('woff'), url('//at.alicdn.com/t/font_qt12q6gif2h85mi.ttf') format('truetype'), url('//at.alicdn.com/t/font_qt12q6gif2h85mi.svg#iconfont') format('svg');
 }
 /*@font-face {
   font-family: 'iconfontleft';
@@ -44,54 +44,30 @@ body {
   display: inline-block;
 }
 .topNav .top-form {
+  width: 80%;
+  display: inline-block;
   float: right;
-  width: 50%;
-  padding-top: 14px;
+  margin-top: 15px;
 }
-.topNav .top-form .inputIcoWrapper {
+.topNav .top-form > a {
   float: right;
-  width: 50%;
-  position: relative;
+  display: inline-block;
+  margin: 3px 5px 0 15px;
 }
-.topNav .top-form .inputIcoWrapper .top-form-input {
+.topNav .top-form > div {
   float: right;
-  width: 100%;
-  height: 26px;
-  border: 1px solid #acd3e7;
-  -moz-border-radius: 12px;
-  -webkit-border-radius: 12px;
-  border-radius: 12px;
-  font: 1.2rem/1.2rem 1.2rem, serif;
-  padding-right: 25px;
-  padding-left: 10px;
+  width: 70%;
+  max-width: 400px;
 }
-.topNav .top-form .inputIcoWrapper .inputIcon-button {
+.topNav .top-form > div button {
+  padding-bottom: 12px;
+  width: 40px;
+}
+.topNav .top-form > div i {
+  font-size: 2rem;
   position: absolute;
-  right: 6px;
-  top: 3px;
-  float: right;
-  height: 20px;
-  width: 20px;
-  line-height: 100%;
-  background-color: #fff;
-  border: none;
-  padding: 0;
-  outline: none;
-}
-.topNav .top-form .inputIcoWrapper .inputIcon-button i {
-  font-size: 1.8rem;
-}
-.topNav .top-form .join {
-  float: right;
-  margin: 2px 20px;
-  width: 70px;
-  height: 30px;
-  background-color: #75B9E6;
-  border: none;
-  color: #fff;
-}
-.topNav .top-form .join i {
-  margin-right: 10px;
+  top: 0;
+  left: 10px;
 }
 /*index*/
 .indexMain {
@@ -103,7 +79,7 @@ body {
   height: 100%;
   border-right: 1px solid #E6E6E6;
   border-bottom: 1px solid #E6E6E6;
-  font: 1.6rem/2rem 1.6rem, serif;
+  font: 1.6rem/2rem Heiti, "黑体", serif;
   color: #fff;
 }
 .joinMan {
@@ -114,8 +90,6 @@ body {
 .joinMan .pictureBox {
   max-width: 58px;
   height: 58px;
-  -moz-border-radius: 60px;
-  -webkit-border-radius: 60px;
   border-radius: 60px;
   border: 2px solid #dfdedf;
   padding: 2px;
@@ -125,13 +99,11 @@ body {
 .joinMan .pictureBox img {
   max-width: 50px;
   height: 50px;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
   border-radius: 50px;
   overflow: hidden;
 }
 .joinMan .joinName {
-  font: 1.6rem/1.6rem 1.6rem, serif;
+  font: 1.6rem/1.6rem Heiti, "黑体", serif;
   display: block;
   color: #848095;
   margin: 10px auto;
@@ -161,7 +133,7 @@ body {
   min-width: 50px;
 }
 .manData span {
-  font: 1.6rem/1.6rem 1.6rem, serif;
+  font: 1.6rem/1.6rem Heiti, "黑体", serif;
   display: inline-block;
 }
 .manData p {
@@ -181,7 +153,7 @@ body {
   background-color: #F7F7F7 !important;
 }
 .manFolder {
-  font: 1.4rem/1.2rem 1.4rem, serif;
+  font: 1.4rem/1.2rem Heiti, "黑体", serif;
 }
 .manFolder > nav > ul {
   margin-bottom: 0;
@@ -301,7 +273,7 @@ body {
 }
 .indexFooter {
   background-color: #fff;
-  font: 1.4rem/3rem 1.4rem, serif;
+  font: 1.4rem/3rem Heiti, "黑体", serif;
 }
 .indexFooter p {
   display: inline-block;
@@ -318,31 +290,7 @@ body {
     margin: 5px 10px;
   }
   .topNav .top-form {
-    width: 80%;
-    padding-top: 8px;
-  }
-  .topNav .top-form .inputIcoWrapper {
-    width: 60%;
-  }
-  .topNav .top-form .inputIcoWrapper .top-form-input {
-    height: 20px;
-    width: 80%;
-    max-width: 240px;
-  }
-  .topNav .top-form .inputIcoWrapper .inputIcon-button {
-    right: 8px;
-    top: 1px;
-    height: 15px;
-    width: 15px;
-  }
-  .topNav .top-form .inputIcoWrapper .inputIcon-button i {
-    font-size: 1.4rem;
-  }
-  .topNav .top-form .join {
-    margin: 0;
-  }
-  .topNav .top-form .join i {
-    margin-right: 5px;
+    margin-top: 5px;
   }
   .leftSideBar {
     min-width: 0;
@@ -357,6 +305,9 @@ body {
   }
   .publicButton i {
     margin: 0 !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 /*leftSide*/
@@ -402,7 +353,7 @@ body {
 }
 /*indexMain*/
 .publicLine1 {
-  font: 1.2rem/2.3rem 1.2rem, serif;
+  font: 1.2rem/2.3rem Heiti, "黑体", serif;
   border: 1px solid #cbcbcb;
   color: #000;
   height: 23px;
@@ -414,7 +365,7 @@ body {
   position: relative;
 }
 .mainLine1 > div {
-  font: 1.2rem/2.3rem 1.2rem, serif;
+  font: 1.2rem/2.3rem Heiti, "黑体", serif;
   border: 1px solid #dddee0;
   color: #aaa;
   background-color: #fff;
@@ -422,7 +373,7 @@ body {
   padding-top: 5px;
 }
 .mainLine1 > div select {
-  font: 1.2rem/2.3rem 1.2rem, serif;
+  font: 1.2rem/2.3rem Heiti, "黑体", serif;
   border: 1px solid #cbcbcb;
   color: #000;
   height: 23px;
@@ -489,7 +440,7 @@ body {
 }
 .mainLine1 .line1Search button {
   width: 60px;
-  font: 1.2rem/2.3rem 1.2rem, serif;
+  font: 1.2rem/2.3rem Heiti, "黑体", serif;
   background-color: #388ac1;
   color: #fff;
   border: none;
@@ -587,7 +538,7 @@ body {
 /*mainLine3*/
 .mainLine3 {
   min-height: 75px;
-  font: 1.2rem/1.2rem 1.2rem, serif;
+  font: 1.2rem/1.2rem Heiti, "黑体", serif;
   margin-top: 22px;
 }
 .mainLine3 > p {
@@ -601,7 +552,7 @@ body {
   border: 1px solid #d3d4d8;
   background-color: #fff;
   position: relative;
-  font: 1.2rem/1.2rem 1.2rem, serif;
+  font: 1.2rem/1.2rem Heiti, "黑体", serif;
 }
 .mainLine3 nav ul .line3LiWrapper .line3LeftBorder {
   float: left;
@@ -642,8 +593,6 @@ body {
 .publicLine45Wrapper {
   background: url("../imags/publicLineBack.png") repeat-x;
   overflow: hidden;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   border-top: solid #d0d2d5 1px;
   border-right: solid #d8d9db 1px;
@@ -663,8 +612,6 @@ body {
   padding: 15px;
   background: url("../imags/publicLineBack.png") repeat-x;
   overflow: hidden;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   border-top: solid #d0d2d5 1px;
   border-right: solid #d8d9db 1px;
@@ -688,11 +635,7 @@ body {
   font: 1.2rem/3rem "Microsoft YaHei", "微软雅黑", serif;
   text-align: center;
   background-color: #ededf0;
-  -moz-border-radius-topleft: 4px;
-  -webkit-border-top-left-radius: 4px;
   border-top-left-radius: 4px;
-  -moz-border-radius-topright: 4px;
-  -webkit-border-top-right-radius: 4px;
   border-top-right-radius: 4px;
   display: inline-block;
   height: 30px;
@@ -710,8 +653,6 @@ body {
   border: solid #cacbcb 1px;
 }
 .mainLine4Wrapper .line4Left .tableWrapper {
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
   border-radius: 4px;
   margin: -8px 0 0 0;
   border: 1px solid #cacbcb;
@@ -729,8 +670,6 @@ body {
   width: 100%;
   background: url("../imags/publicLineBack.png") repeat-x;
   overflow: hidden;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   border-top: solid #d0d2d5 1px;
   border-right: solid #d8d9db 1px;
@@ -791,7 +730,7 @@ body {
 .mainLine4Wrapper .line4Right .line4RightBotton {
   position: absolute;
   right: 10px;
-  font: 12px/23px 12px, serif;
+  font: 12px/23px Heiti, "黑体", serif;
   background-color: #388ac1;
   color: #fff;
   border: none;
@@ -833,8 +772,6 @@ body {
   width: 100%;
   background: url("../imags/publicLineBack.png") repeat-x;
   overflow: hidden;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   border-top: solid #d0d2d5 1px;
   border-right: solid #d8d9db 1px;
@@ -849,7 +786,7 @@ body {
 }
 .publicLin5Select {
   height: 20px;
-  font: 1.2rem/2rem 1.2rem, serif;
+  font: 1.2rem/2rem Heiti, "黑体", serif;
   border: 1px solid #cdcece;
   text-align: center;
   margin-bottom: 5px;
@@ -857,7 +794,7 @@ body {
 .line5MenologyWrapper {
   width: 100%;
   padding-top: 10px;
-  font: 1.2rem/1.2rem 1.2rem, serif;
+  font: 1.2rem/1.2rem Heiti, "黑体", serif;
 }
 .line5MenologyWrapper .MenologyTop {
   position: relative;
@@ -870,7 +807,7 @@ body {
 .line5MenologyWrapper .MenologyTop > div .year {
   width: 70px;
   height: 20px;
-  font: 1.2rem/2rem 1.2rem, serif;
+  font: 1.2rem/2rem Heiti, "黑体", serif;
   border: 1px solid #cdcece;
   text-align: center;
   margin-bottom: 5px;
@@ -878,7 +815,7 @@ body {
 .line5MenologyWrapper .MenologyTop > div .month {
   width: 50px;
   height: 20px;
-  font: 1.2rem/2rem 1.2rem, serif;
+  font: 1.2rem/2rem Heiti, "黑体", serif;
   border: 1px solid #cdcece;
   text-align: center;
   margin-bottom: 5px;
@@ -886,14 +823,14 @@ body {
 .line5MenologyWrapper .MenologyTop > div .day {
   width: 52px;
   height: 20px;
-  font: 1.2rem/2rem 1.2rem, serif;
+  font: 1.2rem/2rem Heiti, "黑体", serif;
   border: 1px solid #cdcece;
   text-align: center;
   margin-bottom: 5px;
 }
 .line5MenologyWrapper .MenologyTop > div .todayButton {
   border: 1px solid #cdcece;
-  font: 1.2rem/1.2rem 1.2rem, serif;
+  font: 1.2rem/1.2rem Heiti, "黑体", serif;
   background-color: #A9CFEC;
   height: 20px;
   width: 70px;
@@ -933,8 +870,6 @@ body {
   width: 100%;
   background: url("../imags/publicLineBack.png") repeat-x;
   overflow: hidden;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   border-top: solid #d0d2d5 1px;
   border-right: solid #d8d9db 1px;
@@ -951,7 +886,7 @@ body {
   margin-top: 15px;
 }
 .line5Right tbody {
-  font: 1.3rem/1.2rem 1.3rem, serif;
+  font: 1.3rem/1.2rem Heiti, "黑体", serif;
 }
 .line5Right table {
   width: 100%;

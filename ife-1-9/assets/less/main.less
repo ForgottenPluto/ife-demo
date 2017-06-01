@@ -6,11 +6,11 @@
 
 @font-face {
   font-family: 'iconfont';  /* project id 285309 */
-  src: url('//at.alicdn.com/t/font_mob8f03a5zxe0zfr.eot');
-  src: url('//at.alicdn.com/t/font_mob8f03a5zxe0zfr.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_mob8f03a5zxe0zfr.woff') format('woff'),
-  url('//at.alicdn.com/t/font_mob8f03a5zxe0zfr.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_mob8f03a5zxe0zfr.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_qt12q6gif2h85mi.eot');
+  src: url('//at.alicdn.com/t/font_qt12q6gif2h85mi.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_qt12q6gif2h85mi.woff') format('woff'),
+  url('//at.alicdn.com/t/font_qt12q6gif2h85mi.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_qt12q6gif2h85mi.svg#iconfont') format('svg');
 }
 
 /*@font-face {
@@ -32,12 +32,13 @@
 
 /*public*/
 .public-font(hei,@script: 1.2rem,@height: 1.2rem) {
-  font:@script/@height @script,@font-r;
+  font: @script/@height @font-hei, @font-r;
 }
 
 .public-font(wei,@script:  1.2rem,@height:  1.2rem) {
   font: @script/@height @font-wei, @font-r;
 }
+
 .public-font(song,@script:  1.2rem,@height:  1.2rem) {
   font: @script/@height @font-SimSun, @font-r;
 }
@@ -107,52 +108,32 @@ body {
     display: inline-block;
   }
   & .top-form {
+    width: 80%;
+    display: inline-block;
     float: right;
-    width: 50%;
-    padding-top: 14px;
-    & .inputIcoWrapper {
+    margin-top: 15px;
+    & > a {
       float: right;
-      width: 50%;
-      position: relative;
-      & .top-form-input {
-        float: right;
-        width: 100%;
-        height: 26px;
-        border: 1px solid #acd3e7;
-        .public-radius(12px);
-        .public-font(hei);
-        padding-right: 25px;
-        padding-left: 10px;
-      }
-      & .inputIcon-button {
-        position: absolute;
-        right: 6px;
-        top: 3px;
-        float: right;
-        height: 20px;
-        width: 20px;
-        line-height: 100%;
-        background-color: #fff;
-        border: none;
-        padding: 0;
-        outline: none;
-        & i {
-          font-size: 1.8rem;
-        }
-      }
+      display: inline-block;
+      margin: 3px 5px 0 15px;
     }
-    & .join {
+    & > div {
       float: right;
-      margin:2px 20px;
-      width: 70px;
-      height: 30px;
-      background-color: #75B9E6;
-      border: none;
-      color: #fff;
+      width: 70%;
+      max-width: 400px;
+      & button {
+        padding-bottom: 12px;
+        width: 40px;
+      }
       & i {
-        margin-right: 10px;
+        font-size: 2rem;
+       position: absolute;
+        top: 0;
+        left: 10px;
       }
+
     }
+
   }
 
 }
@@ -161,6 +142,7 @@ body {
 .indexMain {
   .border(bottom, #E6E6E6, 1px);
 }
+
 .leftSideBar {
   background-color: #FCFCFC;
   min-width: 125px;
@@ -240,7 +222,8 @@ body {
     background-color: #F7F7F7 !important;
   }
 }
-.manFolder{
+
+.manFolder {
   .public-font(hei, 1.4rem, 1.2rem);
   & > nav > ul {
     margin-bottom: 0;
@@ -252,25 +235,26 @@ body {
       text-align: center;
     }
   }
-  & .personalReport{
+  & .personalReport {
     .publicLeftSideClick;
   }
-  & .personalCollect{
+  & .personalCollect {
     .publicLeftSideClick;
   }
-  & .personalShare{
+  & .personalShare {
     .publicLeftSideClick;
   }
-  & .personalDepot{
+  & .personalDepot {
     .publicLeftSideClick;
   }
-  &  .personalRecord{
+  & .personalRecord {
     .publicLeftSideClick;
   }
-  & .personalAccount{
+  & .personalAccount {
     .publicLeftSideClick;
   }
 }
+
 .publicButton-On {
   color: #75B9E6 !important;
   & a {
@@ -291,6 +275,7 @@ body {
   }
 
 }
+
 .publicButton {
   display: block;
   color: #6e8095;
@@ -315,6 +300,7 @@ body {
   }
 
 }
+
 .mainWrapper {
   max-width: 1280px;
   & > div {
@@ -336,8 +322,6 @@ body {
   background-color: #F7F7F7;
 }
 
-
-
 @media (min-width: 0) and(max-width: 768px) {
   .topNav {
     & .top-left-ico {
@@ -346,33 +330,7 @@ body {
       margin: 5px 10px;
     }
     & .top-form {
-      width: 80%;
-      padding-top: 8px;
-      & .inputIcoWrapper {
-        width: 60%;
-        & .top-form-input {
-          height: 20px;
-          width: 80%;
-          max-width: 240px;
-        }
-        & .inputIcon-button {
-          right: 8px;
-          top: 1px;
-          height: 15px;
-          width: 15px;
-          & i {
-            font-size: 1.4rem;
-          }
-        }
-      }
-      & .join {
-        margin: 0;
-        
-
-        & i {
-          margin-right: 5px;
-        }
-      }
+      margin-top: 5px;
     }
 
   }
@@ -390,10 +348,13 @@ body {
     }
     & i {
       margin: 0 !important;
+      display: flex;
     }
   }
 
 }
+
+
 
 
 
